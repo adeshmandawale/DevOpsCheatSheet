@@ -50,7 +50,7 @@ export default async function BashPage({
     <AppShell>
       {/* Page heading */}
       <section>
-        <p className="text-sm font-semibold tracking-[0.2em] text-emerald-400">
+        <p className="text-sm font-semibold tracking-[0.2em] text-teal-400">
           BASH
         </p>
 
@@ -79,7 +79,7 @@ export default async function BashPage({
           href="/bash"
           className={`rounded-full border px-3 py-1.5 text-xs font-medium transition ${
             selectedCategory === "all"
-              ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-400"
+              ? "border-teal-500/40 bg-teal-500/10 text-teal-400"
               : "border-zinc-800 bg-zinc-900 text-zinc-500 hover:border-zinc-700 hover:text-zinc-300"
           }`}
         >
@@ -92,7 +92,7 @@ export default async function BashPage({
             href={`/bash?category=${encodeURIComponent(category)}`}
             className={`rounded-full border px-3 py-1.5 text-xs font-medium transition ${
               selectedCategory === category
-                ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-400"
+                ? "border-teal-500/40 bg-teal-500/10 text-teal-400"
                 : "border-zinc-800 bg-zinc-900 text-zinc-500 hover:border-zinc-700 hover:text-zinc-300"
             }`}
           >
@@ -116,7 +116,7 @@ export default async function BashPage({
                 <div className="min-w-0">
                   <Link
                     href={`/command/${command.tool}/${command.slug}`}
-                    className="font-mono text-lg font-semibold text-emerald-400 transition hover:text-emerald-300"
+                    className="font-mono text-lg font-semibold text-teal-400 transition hover:text-teal-300"
                   >
                     {command.name}
                   </Link>
@@ -129,9 +129,9 @@ export default async function BashPage({
                 <span
                   className={`shrink-0 rounded-full border px-2.5 py-1 text-xs font-medium capitalize ${
                     command.difficulty === "beginner"
-                      ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-400"
+                      ? "border-teal-500/40 bg-teal-500/10 text-teal-400"
                       : command.difficulty === "intermediate"
-                        ? "border-amber-500/40 bg-amber-500/10 text-amber-400"
+                        ? "border-teal-500/40 bg-teal-500/10 text-teal-400"
                         : "border-red-500/40 bg-red-500/10 text-red-400"
                   }`}
                 >
