@@ -25,18 +25,14 @@ The project is inspired by Devhints but should be more interactive and practical
 
 # Environment
 
-OS:
-
-```
+OS:```
 ```
 
 ```
 Windows
 ```
 
-Shell:
-
-```
+Shell:```
 ```
 
 ```
@@ -44,7 +40,6 @@ PowerShell
 ```
 
 Project location:
-
 ```
 ```
 
@@ -53,7 +48,6 @@ C:\Users\adesh\devops-cheatsheet
 ```
 
 Node:
-
 ```
 ```
 
@@ -62,7 +56,6 @@ v24.21.0
 ```
 
 Git:
-
 ```
 ```
 
@@ -71,7 +64,6 @@ Git:
 ```
 
 Next.js:
-
 ```
 ```
 
@@ -80,12 +72,10 @@ Next.js:
 ```
 
 Package manager:
-
 -  pnpm failed because of Corepack/Windows Application Control. 
 -  Use `npm.cmd` instead of `npm`. 
 
 Examples:
-
 ```
 ```
 
@@ -95,7 +85,6 @@ npm.cmd run generate:linux
 ```
 
 Dev server:
-
 ```
 ```
 
@@ -108,7 +97,6 @@ http://localhost:3000
 # Project architecture
 
 Current structure:
-
 ```
 ```
 
@@ -131,7 +119,6 @@ devops-cheatsheet/
 ```
 
 Created directories:
-
 ```
 ```
 
@@ -161,7 +148,6 @@ scripts/
 # Technology decisions
 
 Current / planned stack:
-
 -  Next.js 
 -  TypeScript 
 -  React 
@@ -180,11 +166,9 @@ Current / planned stack:
 -  Neon/Postgres later 
 
 Important architecture decision:
-
 ### Content
 
 Technical content should live in:
-
 ```
 ```
 
@@ -193,7 +177,6 @@ content/tools/
 ```
 
 and be generated from TypeScript datasets in:
-
 ```
 ```
 
@@ -202,7 +185,6 @@ scripts/data/
 ```
 
 For example:
-
 ```
 ```
 
@@ -215,7 +197,6 @@ content/tools/bash/*.yaml
 ```
 
 Database should eventually be used only for user-specific things such as:
-
 -  favorites 
 -  notes 
 -  progress 
@@ -230,7 +211,6 @@ Do not put the core command documentation in PostgreSQL.
 The website uses a **dark-first developer UI**.
 
 Current style:
-
 -  dark zinc background 
 -  emerald accents for Linux/general UI 
 -  Git uses Git's orange-ish accent 
@@ -241,7 +221,6 @@ Current style:
 -  no unnecessary overengineering 
 
 Landing page:
-
 -  clean/minimal 
 -  no sidebar 
 -  tool launcher style 
@@ -257,7 +236,6 @@ Landing page:
   -  Terraform 
 
 Used package:
-
 ```
 ```
 
@@ -272,7 +250,6 @@ Future tools should follow the same visual system.
 # Header
 
 Current `components/ui/Header.tsx`:
-
 ```
 ```
 
@@ -326,7 +303,6 @@ The `⚡ DevOps` brand is clickable and goes to `/`.
 # AppShell
 
 Current `components/layout/AppShell.tsx`:
-
 ```
 ```
 
@@ -359,7 +335,6 @@ There is currently no sidebar.
 # Copy button
 
 Current `components/ui/CopyButton.tsx`:
-
 ```
 ```
 
@@ -403,7 +378,6 @@ export default function CopyButton({ text }: CopyButtonProps) {
 Search uses Fuse.js.
 
 Current `components/search/SearchButton.tsx`:
-
 ```
 ```
 
@@ -450,7 +424,6 @@ export default function SearchButton() {
 ```
 
 Current `components/search/SearchClient.tsx`:
-
 ```
 ```
 
@@ -575,7 +548,6 @@ export default function SearchClient({
 Search currently works wonderfully.
 
 Search uses:
-
 ```
 ```
 
@@ -590,7 +562,6 @@ Therefore once Bash YAML is generated, Bash commands automatically become search
 # Shared command loader
 
 Current `lib/content/commands.ts`:
-
 ```
 ```
 
@@ -683,7 +654,6 @@ export function getCommand(
 Linux content is complete for the current stage.
 
 Linux has:
-
 ```
 ```
 
@@ -692,7 +662,6 @@ Linux has:
 ```
 
 Categories:
-
 ```
 ```
 
@@ -715,7 +684,6 @@ volume-management
 ```
 
 Recently added:
-
 ```
 ```
 
@@ -729,7 +697,6 @@ whois
 ```
 
 Linux page design:
-
 -  heading `LINUX` 
 -  title `Linux Commands` 
 -  category pills 
@@ -742,7 +709,6 @@ Linux page design:
 -  no "View command" button 
 
 Dangerous warning:
-
 ```
 ```
 
@@ -762,7 +728,6 @@ Git content is complete for the current stage.
 Git initially had 28 commands.
 
 Then added:
-
 ```
 ```
 
@@ -777,7 +742,6 @@ git grep
 ```
 
 Current Git total:
-
 ```
 ```
 
@@ -786,7 +750,6 @@ Current Git total:
 ```
 
 Git YAML files include:
-
 ```
 ```
 
@@ -831,7 +794,6 @@ grep.yaml
 Git page works.
 
 Git categories:
-
 ```
 ```
 
@@ -858,7 +820,6 @@ Git uses the same design system as Linux.
 # Shared command detail page
 
 Path:
-
 ```
 ```
 
@@ -869,7 +830,6 @@ app/command/[tool]/[slug]/page.tsx
 This is shared by Linux, Git, Bash, and future tools.
 
 It imports:
-
 ```
 ```
 
@@ -885,7 +845,6 @@ import {
 ```
 
 It uses:
-
 ```
 ```
 
@@ -894,7 +853,6 @@ const commands = getCommands(tool);
 ```
 
 Features:
-
 -  command title 
 -  difficulty 
 -  dangerous warning 
@@ -907,7 +865,6 @@ Features:
 -  back-to-tool link 
 
 Back link:
-
 ```
 ```
 
@@ -931,7 +888,6 @@ This page already works for Linux and Git.
 We are currently adding Bash.
 
 Created:
-
 ```
 ```
 
@@ -942,9 +898,7 @@ scripts/data/bash-commands.ts
 A Bash dataset was created containing **41 commands/features**.
 
 Important correction that was made before saving:
-
 Every Bash entry must have:
-
 ```
 ```
 
@@ -953,9 +907,7 @@ tool: "bash",
 ```
 
 Two specific mistakes were corrected:
-
 The `cd` entry originally had:
-
 ```
 ```
 
@@ -964,7 +916,6 @@ tool: "Bash",
 ```
 
 It was changed to:
-
 ```
 ```
 
@@ -973,7 +924,6 @@ tool: "bash",
 ```
 
 The `$?` / exit status entry originally had:
-
 ```
 ```
 
@@ -982,7 +932,6 @@ tool: "$?",
 ```
 
 It was changed to:
-
 ```
 ```
 
@@ -991,7 +940,6 @@ tool: "bash",
 ```
 
 The Bash dataset covers:
-
 ### Output
 
 ```
@@ -1150,7 +1098,6 @@ disown
 # Bash generator
 
 Created:
-
 ```
 ```
 
@@ -1159,7 +1106,6 @@ scripts/generate-bash-content.ts
 ```
 
 Current generator:
-
 ```
 ```
 
@@ -1201,19 +1147,16 @@ title: ${command.title}
 slug: ${command.slug}
 description: ${command.description}
 
-syntax:
-${command.syntax.map((item) => `  - ${item}`).join("\n")}
+syntax:${command.syntax.map((item) => `  - ${item}`).join("\n")}
 
-examples:
-${command.examples
+examples:${command.examples
   .map(
     (example) => `  - command: ${example.command}
     description: ${example.description}`,
   )
   .join("\n\n")}
 
-flags:
-${
+flags:${
   command.flags.length === 0
     ? "  []"
     : command.flags
@@ -1224,8 +1167,7 @@ ${
         .join("\n\n")
 }
 
-tags:
-${command.tags.map((tag) => `  - ${tag}`).join("\n")}
+tags:${command.tags.map((tag) => `  - ${tag}`).join("\n")}
 
 difficulty: ${command.difficulty}
 common: ${command.common}
@@ -1247,7 +1189,6 @@ console.log(
 # package.json scripts
 
 Currently these scripts were added:
-
 ```
 ```
 
@@ -1258,7 +1199,6 @@ Currently these scripts were added:
 ```
 
 Bash was generated with:
-
 ```
 ```
 
@@ -1267,7 +1207,6 @@ npm.cmd run generate:bash
 ```
 
 The generator reported:
-
 ```
 ```
 
@@ -1282,7 +1221,6 @@ This is correct.
 # Bash YAML files currently generated
 
 The following **41 files exist**:
-
 ```
 ```
 
@@ -1331,7 +1269,6 @@ while.yaml
 ```
 
 The user verified this with:
-
 ```
 ```
 
@@ -1348,7 +1285,6 @@ Everything generated successfully.
 The current generator manually constructs YAML strings.
 
 Some Bash dataset examples contain multi-line shell syntax such as:
-
 ```
 ```
 
@@ -1372,9 +1308,7 @@ For now, verify first.
 # Immediate next step
 
 The last instruction to the user was:
-
 Run:
-
 ```
 ```
 
@@ -1383,7 +1317,6 @@ npm.cmd run dev
 ```
 
 Then open:
-
 ```
 ```
 
@@ -1392,7 +1325,6 @@ http://localhost:3000/search
 ```
 
 Because `/search` calls:
-
 ```
 ```
 
@@ -1403,7 +1335,6 @@ getAllCommands()
 this will test whether all Linux + Git + Bash YAML can be parsed together.
 
 If search loads normally, tell me:
-
 ```
 ```
 
@@ -1412,11 +1343,9 @@ search works
 ```
 
 Then the next task is:
-
 ## Build the Bash page
 
 Path:
-
 ```
 ```
 
@@ -1427,7 +1356,6 @@ app/bash/page.tsx
 It should use the **exact same design system as Linux and Git**.
 
 Expected Bash page:
-
 - `BASH` 
 - `Bash Commands` 
 -  category pills 
@@ -1448,7 +1376,6 @@ Expected Bash page:
 ```
 
 It should use:
-
 ```
 ```
 
@@ -1463,7 +1390,6 @@ and therefore automatically read the 41 generated Bash YAML files.
 # Current command totals
 
 Current content:
-
 ```
 ```
 
@@ -1482,7 +1408,6 @@ Total = 186
 Please continue from this exact state.
 
 Do NOT:
-
 -  recreate Linux 
 -  recreate Git 
 -  change the architecture unnecessarily 
@@ -1501,29 +1426,23 @@ The Bash cheatsheet page has now been successfully implemented and integrated.
 ### Bash Implementation
 
 Route:
-
 `/bash`
 
 Bash content is generated using:
-
 `scripts/data/bash-commands.ts`
 
 Generator:
-
 `scripts/generate-bash-content.ts`
 
 Generated YAML files:
-
 `content/tools/bash/*.yaml`
 
 Package script:
-
 ```json
 "generate:bash": "tsx scripts/generate-bash-content.ts"
 Bash Coverage
 
 The Bash page currently contains 41 commands/features covering:
-
 Output
 echo
 printf
@@ -1584,7 +1503,6 @@ Bash UI
 The /bash page follows the same UI architecture as /linux and /git.
 
 It includes:
-
 Category filtering
 Compact command cards
 Command names linking to the shared command detail page
@@ -1596,20 +1514,17 @@ Search integration
 Responsive layout
 
 The shared command detail route works automatically:
-
 /command/bash/[slug]
 
 Bash Fixes
 
 Two YAML tool field issues were corrected:
-
 cd.yaml was changed from tool: "Bash" to tool: "bash"
 exit-status / $? was changed from an incorrect tool value to tool: "bash"
 
 The >> append-redirection search/parsing issue was also fixed and verified.
 
 Verification command:
-
 Get-ChildItem content\tools\bash\*.yaml | Select-Object -ExpandProperty Name
 
 This confirms all 41 Bash YAML files are present.
@@ -1617,17 +1532,14 @@ This confirms all 41 Bash YAML files are present.
 Search Integration
 
 Bash commands are automatically included in global search because the search system uses:
-
 getAllCommands()
 
 Therefore, no separate Bash search implementation is required.
 
 Bash commands can be found through:
-
 /search
 
 and link to:
-
 /command/bash/[slug]
 
 Current Project Totals
@@ -1650,7 +1562,6 @@ Next Implementation — Docker
 The next tool to implement is Docker.
 
 Before starting Docker:
-
 Inspect the actual repository/current state.
 Confirm Docker does not already exist.
 Reuse the existing Linux/Git/Bash architecture.
