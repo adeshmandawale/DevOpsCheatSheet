@@ -1,0 +1,27 @@
+id: docker-pull
+tool: docker
+category: images
+name: docker pull
+title: Download an image
+slug: docker-pull
+description: Download a container image from a Docker registry to the local system.
+syntax:
+  - docker pull <image>
+  - docker pull <image>:<tag>
+examples:
+  - command: docker pull nginx
+    description: Download the latest nginx image.
+  - command: docker pull nginx:alpine
+    description: Download the Alpine-based nginx image.
+flags:
+  - flag: -a, --all-tags
+    meaning: Download all tagged images in the repository.
+  - flag: --platform
+    meaning: Set the target platform for the image.
+tags:
+  - images
+  - registry
+  - download
+difficulty: beginner
+common: true
+dangerous: false

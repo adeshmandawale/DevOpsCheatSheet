@@ -1,5 +1,5 @@
 id: bash-globbing
-tool: globbing
+tool: bash
 category: expansion
 name: Globbing
 title: Match filenames with patterns

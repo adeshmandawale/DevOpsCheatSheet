@@ -1,5 +1,5 @@
 id: bash-command-substitution
-tool: $()
+tool: bash
 category: expansion
 name: $()
 title: Use command substitution

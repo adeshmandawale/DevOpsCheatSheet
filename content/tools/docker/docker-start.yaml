@@ -1,0 +1,24 @@
+id: docker-start
+tool: docker
+category: containers
+name: docker start
+title: Start stopped containers
+slug: docker-start
+description: Start one or more stopped Docker containers.
+syntax:
+  - docker start <container>
+  - docker start <container1> <container2>
+examples:
+  - command: docker start myapp
+    description: Start the stopped container named myapp.
+flags:
+  - flag: -a, --attach
+    meaning: Attach the container's standard output and error streams.
+  - flag: -i, --interactive
+    meaning: Attach the container's standard input.
+tags:
+  - containers
+  - start
+difficulty: beginner
+common: true
+dangerous: false

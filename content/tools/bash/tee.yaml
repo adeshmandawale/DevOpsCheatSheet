@@ -1,5 +1,5 @@
 id: bash-tee
-tool: tee
+tool: bash
 category: pipes-redirection
 name: tee
 title: Write output to a file and the terminal

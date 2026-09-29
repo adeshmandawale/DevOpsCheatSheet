@@ -1,0 +1,20 @@
+id: docker-push
+tool: docker
+category: registry
+name: docker push
+title: Push an image to a registry
+slug: docker-push
+description: Upload a locally available Docker image to a container registry.
+syntax:
+  - docker push <image>:<tag>
+examples:
+  - command: docker push myuser/myapp:latest
+    description: Push the tagged image to a registry.
+flags: []
+tags:
+  - registry
+  - images
+  - upload
+difficulty: beginner
+common: true
+dangerous: false

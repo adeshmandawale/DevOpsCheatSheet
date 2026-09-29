@@ -1,0 +1,28 @@
+id: docker-compose-down
+tool: docker
+category: compose
+name: docker compose down
+title: Stop and remove Compose resources
+slug: docker-compose-down
+description: Stop and remove containers, networks, and other resources created
+  by Docker Compose.
+syntax:
+  - docker compose down
+  - docker compose down -v
+examples:
+  - command: docker compose down
+    description: Stop and remove the Compose application resources.
+  - command: docker compose down -v
+    description: Stop and remove Compose resources including named volumes.
+flags:
+  - flag: -v, --volumes
+    meaning: Remove named and anonymous volumes declared by the Compose file.
+  - flag: --remove-orphans
+    meaning: Remove containers for services not defined in the Compose file.
+tags:
+  - compose
+  - cleanup
+  - containers
+difficulty: beginner
+common: true
+dangerous: true

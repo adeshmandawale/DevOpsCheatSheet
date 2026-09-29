@@ -1,0 +1,28 @@
+id: docker-stats
+tool: docker
+category: inspection
+name: docker stats
+title: Monitor container resources
+slug: docker-stats
+description: Display live CPU, memory, network, and block I/O usage statistics
+  for running containers.
+syntax:
+  - docker stats
+  - docker stats <container>
+examples:
+  - command: docker stats
+    description: Monitor resource usage for running containers.
+  - command: docker stats myapp
+    description: Monitor resource usage for a specific container.
+flags:
+  - flag: --no-stream
+    meaning: Show the current statistics without continuously updating.
+  - flag: --format
+    meaning: Format the statistics using a Go template.
+tags:
+  - inspection
+  - monitoring
+  - resources
+difficulty: beginner
+common: true
+dangerous: false

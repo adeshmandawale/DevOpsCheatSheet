@@ -1,5 +1,5 @@
 id: bash-stderr
-tool: 2>
+tool: bash
 category: pipes-redirection
 name: 2>
 title: Redirect error output

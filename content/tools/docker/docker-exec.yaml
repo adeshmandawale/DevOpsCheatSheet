@@ -1,0 +1,32 @@
+id: docker-exec
+tool: docker
+category: execution
+name: docker exec
+title: Run a command inside a container
+slug: docker-exec
+description: Execute a command inside an already running Docker container.
+syntax:
+  - docker exec <container> <command>
+  - docker exec -it <container> <command>
+examples:
+  - command: docker exec -it myapp sh
+    description: Open an interactive shell inside the myapp container.
+  - command: docker exec myapp ls /app
+    description: List the contents of /app inside the container.
+flags:
+  - flag: -i, --interactive
+    meaning: Keep standard input open.
+  - flag: -t, --tty
+    meaning: Allocate a pseudo-terminal.
+  - flag: -u, --user
+    meaning: Run the command as a specific user.
+  - flag: -e, --env
+    meaning: Set an environment variable for the command.
+tags:
+  - execution
+  - containers
+  - shell
+  - debugging
+difficulty: beginner
+common: true
+dangerous: false

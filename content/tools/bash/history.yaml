@@ -1,5 +1,5 @@
 id: bash-history
-tool: history
+tool: bash
 category: shell
 name: history
 title: View command history

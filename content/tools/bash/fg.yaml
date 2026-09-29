@@ -1,5 +1,5 @@
 id: bash-fg
-tool: fg
+tool: bash
 category: processes
 name: fg
 title: Bring a job to the foreground

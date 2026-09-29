@@ -1,5 +1,5 @@
 id: bash-set
-tool: set
+tool: bash
 category: scripts
 name: set
 title: Control shell options and positional parameters

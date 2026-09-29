@@ -1,0 +1,23 @@
+id: docker-image-rm
+tool: docker
+category: images
+name: docker image rm
+title: Remove Docker images
+slug: docker-image-rm
+description: Remove one or more Docker images from the local Docker host.
+syntax:
+  - docker image rm <image>
+  - docker image rm <image-id>
+examples:
+  - command: docker image rm nginx
+    description: Remove the nginx image.
+flags:
+  - flag: -f, --force
+    meaning: Force removal of the image.
+tags:
+  - images
+  - remove
+  - cleanup
+difficulty: beginner
+common: true
+dangerous: true

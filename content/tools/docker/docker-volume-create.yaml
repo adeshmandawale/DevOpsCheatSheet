@@ -1,0 +1,24 @@
+id: docker-volume-create
+tool: docker
+category: volumes
+name: docker volume create
+title: Create a Docker volume
+slug: docker-volume-create
+description: Create a named Docker volume that can be used to persist container data.
+syntax:
+  - docker volume create <name>
+examples:
+  - command: docker volume create app-data
+    description: Create a named volume called app-data.
+flags:
+  - flag: --driver
+    meaning: Specify the volume driver.
+  - flag: --label
+    meaning: Add metadata labels to the volume.
+tags:
+  - volumes
+  - storage
+  - persistence
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,5 +1,5 @@
 id: bash-output-redirection
-tool: ">"
+tool: bash
 category: pipes-redirection
 name: ">"
 title: Redirect command output

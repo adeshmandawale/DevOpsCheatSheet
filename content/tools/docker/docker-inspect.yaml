@@ -1,0 +1,25 @@
+id: docker-inspect
+tool: docker
+category: inspection
+name: docker inspect
+title: Inspect Docker objects
+slug: docker-inspect
+description: Display detailed low-level information about Docker containers,
+  images, networks, or volumes.
+syntax:
+  - docker inspect <object>
+examples:
+  - command: docker inspect myapp
+    description: Display detailed configuration information for a container.
+flags:
+  - flag: --format
+    meaning: Format the output using a Go template.
+  - flag: -s, --size
+    meaning: Display total file sizes for containers.
+tags:
+  - inspection
+  - metadata
+  - debugging
+difficulty: intermediate
+common: true
+dangerous: false

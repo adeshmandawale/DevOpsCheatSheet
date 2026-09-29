@@ -313,7 +313,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-history",
-    tool: "history",
+    tool: "bash",
     category: "shell",
     name: "history",
     title: "View command history",
@@ -786,7 +786,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-pipeline",
-    tool: "|",
+    tool: "bash",
     category: "pipes-redirection",
     name: "|",
     title: "Pipe command output",
@@ -816,7 +816,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-output-redirection",
-    tool: ">",
+    tool: "bash",
     category: "pipes-redirection",
     name: ">",
     title: "Redirect command output",
@@ -874,7 +874,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-stderr",
-    tool: "2>",
+    tool: "bash",
     category: "pipes-redirection",
     name: "2>",
     title: "Redirect error output",
@@ -904,7 +904,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-command-substitution",
-    tool: "$()",
+    tool: "bash",
     category: "expansion",
     name: "$()",
     title: "Use command substitution",
@@ -934,7 +934,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-globbing",
-    tool: "globbing",
+    tool: "bash",
     category: "expansion",
     name: "Globbing",
     title: "Match filenames with patterns",
@@ -966,7 +966,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-quotes",
-    tool: "quotes",
+    tool: "bash",
     category: "expansion",
     name: "Quotes",
     title: "Control shell expansion",
@@ -996,7 +996,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-exit",
-    tool: "exit",
+    tool: "bash",
     category: "scripts",
     name: "exit",
     title: "Exit a shell or script",
@@ -1026,7 +1026,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-set",
-    tool: "set",
+    tool: "bash",
     category: "scripts",
     name: "set",
     title: "Control shell options and positional parameters",
@@ -1075,7 +1075,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-trap",
-    tool: "trap",
+    tool: "bash",
     category: "scripts",
     name: "trap",
     title: "Handle signals and shell events",
@@ -1110,7 +1110,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-sleep",
-    tool: "sleep",
+    tool: "bash",
     category: "timing",
     name: "sleep",
     title: "Pause execution",
@@ -1140,7 +1140,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-background",
-    tool: "&",
+    tool: "bash",
     category: "processes",
     name: "&",
     title: "Run a command in the background",
@@ -1170,7 +1170,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-jobs",
-    tool: "jobs",
+    tool: "bash",
     category: "processes",
     name: "jobs",
     title: "List shell jobs",
@@ -1205,7 +1205,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-fg",
-    tool: "fg",
+    tool: "bash",
     category: "processes",
     name: "fg",
     title: "Bring a job to the foreground",
@@ -1235,7 +1235,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-bg",
-    tool: "bg",
+    tool: "bash",
     category: "processes",
     name: "bg",
     title: "Resume a job in the background",
@@ -1261,7 +1261,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-disown",
-    tool: "disown",
+    tool: "bash",
     category: "processes",
     name: "disown",
     title: "Detach a shell job",
@@ -1301,7 +1301,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-here-document",
-    tool: "<<",
+    tool: "bash",
     category: "pipes-redirection",
     name: "<<",
     title: "Use a here-document",
@@ -1331,7 +1331,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-here-string",
-    tool: "<<<",
+    tool: "bash",
     category: "pipes-redirection",
     name: "<<<",
     title: "Use a here-string",
@@ -1360,7 +1360,7 @@ const bashCommands: BashCommand[] = [
 
   {
     id: "bash-tee",
-    tool: "tee",
+    tool: "bash",
     category: "pipes-redirection",
     name: "tee",
     title: "Write output to a file and the terminal",

@@ -1,5 +1,5 @@
 id: bash-exit
-tool: exit
+tool: bash
 category: scripts
 name: exit
 title: Exit a shell or script

@@ -1,5 +1,5 @@
 id: bash-quotes
-tool: quotes
+tool: bash
 category: expansion
 name: Quotes
 title: Control shell expansion

@@ -1,5 +1,5 @@
 id: bash-background
-tool: "&"
+tool: bash
 category: processes
 name: "&"
 title: Run a command in the background

@@ -1,0 +1,31 @@
+id: docker-context
+tool: docker
+category: basics
+name: docker context
+title: Manage Docker contexts
+slug: docker-context
+description: Create, inspect, list, and switch between Docker contexts used to
+  connect to different Docker daemons.
+syntax:
+  - docker context ls
+  - docker context use <context>
+  - docker context create <name>
+examples:
+  - command: docker context ls
+    description: List available Docker contexts.
+  - command: docker context use remote
+    description: Switch the Docker CLI to the remote context.
+flags:
+  - flag: ls
+    meaning: List available Docker contexts.
+  - flag: use
+    meaning: Set the active Docker context.
+  - flag: create
+    meaning: Create a new Docker context.
+tags:
+  - basics
+  - context
+  - remote
+difficulty: intermediate
+common: false
+dangerous: false

@@ -1,0 +1,23 @@
+id: docker-version
+tool: docker
+category: basics
+name: docker version
+title: Display Docker version
+slug: docker-version
+description: Display version information for the Docker client and Docker server.
+syntax:
+  - docker version
+  - docker version --format '{{.Server.Version}}'
+examples:
+  - command: docker version
+    description: Show client and server version information.
+flags:
+  - flag: --format
+    meaning: Format the output using a Go template.
+tags:
+  - basics
+  - version
+  - information
+difficulty: beginner
+common: true
+dangerous: false

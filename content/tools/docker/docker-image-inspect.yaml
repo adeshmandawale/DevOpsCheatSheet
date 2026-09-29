@@ -1,0 +1,23 @@
+id: docker-image-inspect
+tool: docker
+category: images
+name: docker image inspect
+title: Inspect an image
+slug: docker-image-inspect
+description: Display detailed metadata and configuration information for one or
+  more Docker images.
+syntax:
+  - docker image inspect <image>
+examples:
+  - command: docker image inspect nginx
+    description: Inspect the nginx image configuration and metadata.
+flags:
+  - flag: --format
+    meaning: Format the output using a Go template.
+tags:
+  - images
+  - inspect
+  - metadata
+difficulty: intermediate
+common: true
+dangerous: false

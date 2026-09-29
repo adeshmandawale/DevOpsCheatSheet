@@ -1,0 +1,30 @@
+id: docker-system-prune
+tool: docker
+category: cleanup
+name: docker system prune
+title: Remove unused Docker resources
+slug: docker-system-prune
+description: Remove unused Docker resources such as stopped containers, unused
+  networks, dangling images, and build cache.
+syntax:
+  - docker system prune
+  - docker system prune -a
+examples:
+  - command: docker system prune
+    description: Remove unused resources after confirmation.
+  - command: docker system prune -a
+    description: Remove unused resources including unused images, after confirmation.
+flags:
+  - flag: -a, --all
+    meaning: Remove all unused images, not only dangling images.
+  - flag: -f, --force
+    meaning: Do not prompt for confirmation.
+  - flag: --volumes
+    meaning: Also remove unused volumes.
+tags:
+  - cleanup
+  - disk-space
+  - maintenance
+difficulty: intermediate
+common: true
+dangerous: true

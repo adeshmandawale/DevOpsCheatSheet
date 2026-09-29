@@ -1,5 +1,5 @@
 id: bash-pipeline
-tool: "|"
+tool: bash
 category: pipes-redirection
 name: "|"
 title: Pipe command output

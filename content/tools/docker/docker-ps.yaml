@@ -1,0 +1,29 @@
+id: docker-ps
+tool: docker
+category: containers
+name: docker ps
+title: List containers
+slug: docker-ps
+description: List Docker containers, showing running containers by default.
+syntax:
+  - docker ps
+  - docker ps -a
+examples:
+  - command: docker ps
+    description: List currently running containers.
+  - command: docker ps -a
+    description: List all containers including stopped containers.
+flags:
+  - flag: -a, --all
+    meaning: Show all containers, including stopped containers.
+  - flag: -q, --quiet
+    meaning: Display only container IDs.
+  - flag: --format
+    meaning: Format the output using a Go template.
+tags:
+  - containers
+  - list
+  - inspection
+difficulty: beginner
+common: true
+dangerous: false

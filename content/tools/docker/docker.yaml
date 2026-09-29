@@ -1,0 +1,25 @@
+id: docker-help
+tool: docker
+category: basics
+name: docker
+title: Docker CLI help
+slug: docker
+description: Display Docker CLI help and list the available top-level commands.
+syntax:
+  - docker
+  - docker --help
+examples:
+  - command: docker
+    description: Display the main Docker CLI help.
+  - command: docker --help
+    description: Display detailed help for Docker commands.
+flags:
+  - flag: --help
+    meaning: Display help information.
+tags:
+  - basics
+  - help
+  - cli
+difficulty: beginner
+common: true
+dangerous: false

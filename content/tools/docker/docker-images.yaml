@@ -1,0 +1,27 @@
+id: docker-images
+tool: docker
+category: images
+name: docker images
+title: List Docker images
+slug: docker-images
+description: List container images stored locally on the Docker host.
+syntax:
+  - docker images
+  - docker images <repository>
+examples:
+  - command: docker images
+    description: List all locally available Docker images.
+  - command: docker images nginx
+    description: List local images from the nginx repository.
+flags:
+  - flag: -a, --all
+    meaning: Show intermediate and dangling images.
+  - flag: -q, --quiet
+    meaning: Display only image IDs.
+tags:
+  - images
+  - list
+  - inspection
+difficulty: beginner
+common: true
+dangerous: false

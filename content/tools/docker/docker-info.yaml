@@ -1,0 +1,23 @@
+id: docker-info
+tool: docker
+category: basics
+name: docker info
+title: Display Docker system information
+slug: docker-info
+description: Display system-wide information about the Docker daemon,
+  containers, images, storage, and resources.
+syntax:
+  - docker info
+examples:
+  - command: docker info
+    description: Display Docker daemon and system information.
+flags:
+  - flag: --format
+    meaning: Format the output using a Go template.
+tags:
+  - basics
+  - information
+  - daemon
+difficulty: beginner
+common: true
+dangerous: false

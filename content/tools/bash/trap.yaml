@@ -1,5 +1,5 @@
 id: bash-trap
-tool: trap
+tool: bash
 category: scripts
 name: trap
 title: Handle signals and shell events

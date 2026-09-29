@@ -1,0 +1,24 @@
+id: docker-network-create
+tool: docker
+category: networking
+name: docker network create
+title: Create a Docker network
+slug: docker-network-create
+description: Create a Docker network that allows containers to communicate with each other.
+syntax:
+  - docker network create <name>
+examples:
+  - command: docker network create app-network
+    description: Create a bridge network named app-network.
+flags:
+  - flag: -d, --driver
+    meaning: Specify the network driver.
+  - flag: --subnet
+    meaning: Specify the subnet for the network.
+tags:
+  - networking
+  - containers
+  - bridge
+difficulty: beginner
+common: true
+dangerous: false

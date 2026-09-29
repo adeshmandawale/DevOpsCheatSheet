@@ -1,0 +1,35 @@
+id: docker-run
+tool: docker
+category: containers
+name: docker run
+title: Create and start a container
+slug: docker-run
+description: Create a new container from an image and start it with the
+  specified configuration.
+syntax:
+  - docker run <image>
+  - docker run -d -p <host-port>:<container-port> <image>
+examples:
+  - command: docker run nginx
+    description: Create and start an nginx container.
+  - command: docker run -d -p 8080:80 nginx
+    description: Run nginx in the background and map host port 8080 to container port 80.
+flags:
+  - flag: -d, --detach
+    meaning: Run the container in the background.
+  - flag: -p, --publish
+    meaning: Publish a container port to the host.
+  - flag: --name
+    meaning: Assign a custom name to the container.
+  - flag: -e, --env
+    meaning: Set an environment variable inside the container.
+  - flag: -v, --volume
+    meaning: Mount a volume or host path into the container.
+tags:
+  - containers
+  - run
+  - ports
+  - volumes
+difficulty: beginner
+common: true
+dangerous: false

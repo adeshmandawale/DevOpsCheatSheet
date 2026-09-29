@@ -1,5 +1,5 @@
 id: bash-sleep
-tool: sleep
+tool: bash
 category: timing
 name: sleep
 title: Pause execution

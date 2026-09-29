@@ -1,0 +1,29 @@
+id: docker-compose-up
+tool: docker
+category: compose
+name: docker compose up
+title: Start Compose services
+slug: docker-compose-up
+description: Create and start the services defined in a Docker Compose file.
+syntax:
+  - docker compose up
+  - docker compose up -d
+examples:
+  - command: docker compose up
+    description: Create and start the services in the Compose file.
+  - command: docker compose up -d
+    description: Start Compose services in detached mode.
+flags:
+  - flag: -d, --detach
+    meaning: Run services in the background.
+  - flag: --build
+    meaning: Build images before starting containers.
+  - flag: --force-recreate
+    meaning: Recreate containers even when their configuration has not changed.
+tags:
+  - compose
+  - containers
+  - services
+difficulty: beginner
+common: true
+dangerous: false

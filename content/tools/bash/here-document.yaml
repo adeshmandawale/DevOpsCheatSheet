@@ -1,5 +1,5 @@
 id: bash-here-document
-tool: <<
+tool: bash
 category: pipes-redirection
 name: <<
 title: Use a here-document

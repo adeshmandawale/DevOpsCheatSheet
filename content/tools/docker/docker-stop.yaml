@@ -1,0 +1,23 @@
+id: docker-stop
+tool: docker
+category: containers
+name: docker stop
+title: Stop running containers
+slug: docker-stop
+description: Stop one or more running containers by sending them a termination signal.
+syntax:
+  - docker stop <container>
+  - docker stop <container1> <container2>
+examples:
+  - command: docker stop myapp
+    description: Gracefully stop the container named myapp.
+flags:
+  - flag: -t, --timeout
+    meaning: Seconds to wait before forcibly stopping the container.
+tags:
+  - containers
+  - stop
+  - lifecycle
+difficulty: beginner
+common: true
+dangerous: false

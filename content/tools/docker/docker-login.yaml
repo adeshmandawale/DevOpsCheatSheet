@@ -1,0 +1,28 @@
+id: docker-login
+tool: docker
+category: registry
+name: docker login
+title: Authenticate with a registry
+slug: docker-login
+description: Authenticate the Docker CLI with a container registry so images can
+  be pulled or pushed using authenticated access.
+syntax:
+  - docker login
+  - docker login <registry>
+examples:
+  - command: docker login
+    description: Log in to the default Docker registry.
+  - command: docker login ghcr.io
+    description: Authenticate with GitHub Container Registry.
+flags:
+  - flag: -u, --username
+    meaning: Specify the registry username.
+  - flag: --password-stdin
+    meaning: Read the password or access token from standard input.
+tags:
+  - registry
+  - authentication
+  - docker-hub
+difficulty: beginner
+common: true
+dangerous: false

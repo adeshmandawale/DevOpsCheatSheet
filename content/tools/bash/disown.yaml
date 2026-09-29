@@ -1,5 +1,5 @@
 id: bash-disown
-tool: disown
+tool: bash
 category: processes
 name: disown
 title: Detach a shell job

@@ -1,0 +1,25 @@
+id: docker-rm
+tool: docker
+category: containers
+name: docker rm
+title: Remove containers
+slug: docker-rm
+description: Remove one or more stopped Docker containers from the local host.
+syntax:
+  - docker rm <container>
+  - docker rm <container1> <container2>
+examples:
+  - command: docker rm myapp
+    description: Remove the stopped container named myapp.
+flags:
+  - flag: -f, --force
+    meaning: Force removal of a running container.
+  - flag: -v, --volumes
+    meaning: Remove anonymous volumes associated with the container.
+tags:
+  - containers
+  - remove
+  - cleanup
+difficulty: beginner
+common: true
+dangerous: true

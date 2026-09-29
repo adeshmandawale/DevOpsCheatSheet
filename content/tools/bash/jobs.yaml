@@ -1,5 +1,5 @@
 id: bash-jobs
-tool: jobs
+tool: bash
 category: processes
 name: jobs
 title: List shell jobs

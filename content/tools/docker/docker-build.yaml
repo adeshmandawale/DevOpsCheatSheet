@@ -1,0 +1,29 @@
+id: docker-build
+tool: docker
+category: images
+name: docker build
+title: Build a Docker image
+slug: docker-build
+description: Build a Docker image from a Dockerfile and the specified build context.
+syntax:
+  - docker build <context>
+  - docker build -t <name>:<tag> <context>
+examples:
+  - command: docker build -t myapp:latest .
+    description: Build an image named myapp using the Dockerfile in the current directory.
+  - command: docker build -t myapp:v1 .
+    description: Build and tag the image as version v1.
+flags:
+  - flag: -t, --tag
+    meaning: Assign a name and optionally a tag to the image.
+  - flag: -f, --file
+    meaning: Specify a Dockerfile to use.
+  - flag: --no-cache
+    meaning: Do not use cached layers during the build.
+tags:
+  - images
+  - build
+  - dockerfile
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,5 +1,5 @@
 id: bash-bg
-tool: bg
+tool: bash
 category: processes
 name: bg
 title: Resume a job in the background
