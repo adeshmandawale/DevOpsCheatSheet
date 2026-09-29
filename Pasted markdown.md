@@ -1493,6 +1493,7 @@ Do NOT:
 
 The next logical step is to **verify `/search` parses the Bash content**, then build the Bash page using the same established Linux/Git design.
 
+```
 ## Bash Page — Completed
 
 The Bash cheatsheet page has now been successfully implemented and integrated.
