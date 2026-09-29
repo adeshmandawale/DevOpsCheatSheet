@@ -1321,3 +1321,43 @@ Package script:
 ```
 generate:bash": "tsx scripts/generate-bash-content.ts
 ```
+
+---
+### Bash UI
+
+The `/bash` page follows the same established UI architecture as `/linux` and `/git`.
+
+It includes:
+
+- Category filtering
+- Compact command cards
+- Command names linking to the shared command detail page
+- Difficulty badges
+- Dangerous-command warnings
+- Example boxes
+- Copy buttons
+- Search integration
+- Responsive layout
+
+The page uses the existing shared components and styling patterns rather than introducing a separate Bash-specific UI architecture.
+
+### Shared Command Detail Page
+
+Bash commands use the existing shared command detail route:
+
+`/command/bash/[slug]`
+
+No separate Bash command-detail implementation is required.
+
+The shared page provides:
+
+- Command title
+- Difficulty
+- Dangerous warning when applicable
+- Syntax
+- Copy button
+- Examples
+- Flags
+- Tags
+- Previous/next command navigation
+- Back-to-tool navigation
