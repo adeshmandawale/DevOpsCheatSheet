@@ -2,29 +2,22 @@ id: bash-function
 tool: bash
 category: functions
 name: function
-title: Define reusable shell functions
+title: Create reusable shell functions
 slug: function
-description: Create reusable groups of Bash commands that can accept arguments.
-
+description: Define reusable blocks of shell commands that can accept arguments.
 syntax:
-  - function <name> { <commands>; }
-  - <name>() { <commands>; }
-
+  - name() { <commands>; }
+  - function name { <commands>; }
 examples:
   - command: greet() { echo "Hello $1"; }
-    description: Define a function that accepts a name as its first argument.
-
+    description: Define a function that accepts one argument.
   - command: deploy() { echo "Deploying $1"; }
-    description: Define a reusable deployment function.
-
-flags:
-  []
-
+    description: Create a reusable deployment function.
+flags: []
 tags:
   - functions
   - scripting
   - automation
-
 difficulty: intermediate
 common: true
 dangerous: false

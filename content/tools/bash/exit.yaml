@@ -1,0 +1,24 @@
+id: bash-exit
+tool: exit
+category: scripts
+name: exit
+title: Exit a shell or script
+slug: exit
+description: Terminate the current shell or script and optionally return a
+  specific exit status.
+syntax:
+  - exit
+  - exit <status>
+examples:
+  - command: exit 0
+    description: Exit successfully.
+  - command: exit 1
+    description: Exit with a generic failure status.
+flags: []
+tags:
+  - scripts
+  - exit-status
+  - shell
+difficulty: beginner
+common: true
+dangerous: false

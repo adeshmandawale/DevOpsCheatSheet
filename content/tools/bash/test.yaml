@@ -4,37 +4,26 @@ category: conditions
 name: test
 title: Evaluate conditions
 slug: test
-description: Evaluate file, string, and numeric conditions for use in shell scripts.
-
+description: Evaluate file, string, and numeric conditions in shell scripts.
 syntax:
   - test <condition>
-  - [ <condition> ]
-
+  - "[ <condition> ]"
 examples:
-  - command: [ -f "config.yaml" ]
-    description: Check whether config.yaml exists as a regular file.
-
-  - command: [ "$ENV" = "production" ]
-    description: Check whether ENV equals production.
-
+  - command: test -f app.sh && echo "File exists"
+    description: Check whether a regular file exists.
+  - command: '[ "$USER" = "root" ] && echo "Running as root"'
+    description: Compare a variable using Bash test syntax.
 flags:
-  - flag: "-f"
-    meaning: True when a regular file exists.
-
-  - flag: "-d"
-    meaning: True when a directory exists.
-
-  - flag: "-z"
-    meaning: True when a string has zero length.
-
-  - flag: "-n"
-    meaning: True when a string is not empty.
-
+  - flag: -f <file>
+    meaning: True when the path is a regular file.
+  - flag: -d <path>
+    meaning: True when the path is a directory.
+  - flag: -e <path>
+    meaning: True when the path exists.
 tags:
   - conditions
-  - files
   - scripting
-
+  - files
 difficulty: beginner
 common: true
 dangerous: false

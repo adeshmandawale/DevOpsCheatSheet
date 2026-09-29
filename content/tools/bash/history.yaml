@@ -1,0 +1,28 @@
+id: bash-history
+tool: history
+category: shell
+name: history
+title: View command history
+slug: history
+description: Display previously executed commands from the shell history.
+syntax:
+  - history
+  - history <number>
+  - history | grep <pattern>
+examples:
+  - command: history
+    description: Display the shell command history.
+  - command: history | grep docker
+    description: Find previous commands containing docker.
+flags:
+  - flag: -c
+    meaning: Clear the current shell history.
+  - flag: -d <offset>
+    meaning: Delete a specific history entry.
+tags:
+  - shell
+  - history
+  - commands
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,25 @@
+id: bash-which
+tool: bash
+category: command-discovery
+name: which
+title: Locate an executable
+slug: which
+description: Locate the executable file that would be invoked for a command.
+syntax:
+  - which <command>
+  - which -a <command>
+examples:
+  - command: which git
+    description: Find the git executable in PATH.
+  - command: which -a python
+    description: List all matching python executables in PATH.
+flags:
+  - flag: -a
+    meaning: Show all matching executables in PATH.
+tags:
+  - commands
+  - path
+  - discovery
+difficulty: beginner
+common: true
+dangerous: false

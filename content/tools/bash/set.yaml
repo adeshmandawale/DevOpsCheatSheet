@@ -1,0 +1,33 @@
+id: bash-set
+tool: set
+category: scripts
+name: set
+title: Control shell options and positional parameters
+slug: set
+description: Enable shell options and control positional parameters used by Bash scripts.
+syntax:
+  - set -e
+  - set -u
+  - set -x
+  - set -euo pipefail
+examples:
+  - command: set -e
+    description: Exit a script when a command returns a non-zero status.
+  - command: set -x
+    description: Print commands before executing them for debugging.
+  - command: set -euo pipefail
+    description: Enable common strict-mode options for Bash scripts.
+flags:
+  - flag: -e
+    meaning: Exit when a simple command fails.
+  - flag: -u
+    meaning: Treat unset variables as errors.
+  - flag: -x
+    meaning: Print commands and their arguments as they are executed.
+tags:
+  - scripts
+  - debugging
+  - strict-mode
+difficulty: intermediate
+common: true
+dangerous: false

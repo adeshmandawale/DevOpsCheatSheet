@@ -1,26 +1,20 @@
 id: bash-case
 tool: bash
-category: control-flow
+category: conditions
 name: case
 title: Match multiple conditions
 slug: case
-description: Select a block of commands based on pattern matching.
-
+description: Match a value against multiple patterns and execute the corresponding commands.
 syntax:
   - case <value> in <pattern>) <commands> ;; esac
-
 examples:
-  - command: case "$ENV" in production) echo "prod" ;; staging) echo "stage" ;; *) echo "other" ;; esac
-    description: Choose an action based on the value of ENV.
-
-flags:
-  []
-
+  - command: case "$ENV" in prod) echo "Production";; dev) echo "Development";; esac
+    description: Run different commands depending on the environment.
+flags: []
 tags:
   - conditions
-  - control-flow
+  - scripting
   - patterns
-
 difficulty: intermediate
 common: true
 dangerous: false

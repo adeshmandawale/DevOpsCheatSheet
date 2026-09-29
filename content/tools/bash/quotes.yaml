@@ -1,0 +1,24 @@
+id: bash-quotes
+tool: quotes
+category: expansion
+name: Quotes
+title: Control shell expansion
+slug: quotes
+description: Use single and double quotes to control variable expansion,
+  whitespace, and special characters.
+syntax:
+  - "'literal text'"
+  - '"expanded $VARIABLE"'
+examples:
+  - command: echo "$HOME"
+    description: Expand the HOME variable inside double quotes.
+  - command: echo '$HOME'
+    description: Print the literal string $HOME using single quotes.
+flags: []
+tags:
+  - quoting
+  - expansion
+  - variables
+difficulty: beginner
+common: true
+dangerous: false

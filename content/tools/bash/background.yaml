@@ -1,30 +1,23 @@
 id: bash-background
-tool: &
-category: jobs-processes
-name: &
-title: Run commands in the background
+tool: "&"
+category: processes
+name: "&"
+title: Run a command in the background
 slug: background
-description: Start a command as a background job so the shell can continue accepting commands.
-
+description: Start a command asynchronously so the shell can continue accepting commands.
 syntax:
-  - command &
-  - command > output.log 2>&1 &
-
+  - <command> &
+  - <command> > output.log 2>&1 &
 examples:
-  - command: npm run dev &
-    description: Start a development process in the background.
-
-  - command: long-task > task.log 2>&1 &
-    description: Run a long task in the background and redirect its output.
-
-flags:
-  []
-
+  - command: sleep 60 &
+    description: Run sleep in the background.
+  - command: ./deploy.sh > deploy.log 2>&1 &
+    description: Run a deployment script in the background and capture output.
+flags: []
 tags:
   - processes
-  - jobs
   - background
-
+  - jobs
 difficulty: beginner
 common: true
 dangerous: false

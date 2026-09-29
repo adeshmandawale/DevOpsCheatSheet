@@ -1,0 +1,22 @@
+id: bash-here-string
+tool: <<<
+category: pipes-redirection
+name: <<<
+title: Use a here-string
+slug: here-string
+description: Provide a single string as standard input to a command.
+syntax:
+  - <command> <<< <string>
+examples:
+  - command: grep "error" <<< "$LOG_LINE"
+    description: Pass a variable directly to grep as standard input.
+  - command: read -r value <<< "hello world"
+    description: Read a string into a variable using a here-string.
+flags: []
+tags:
+  - redirection
+  - input
+  - scripting
+difficulty: intermediate
+common: false
+dangerous: false

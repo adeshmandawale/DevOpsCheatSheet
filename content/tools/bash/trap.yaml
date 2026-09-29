@@ -1,0 +1,26 @@
+id: bash-trap
+tool: trap
+category: scripts
+name: trap
+title: Handle signals and shell events
+slug: trap
+description: Execute commands when the shell receives signals or reaches
+  specific shell events.
+syntax:
+  - trap '<command>' <signal>
+  - trap -l
+examples:
+  - command: trap 'echo "Interrupted"; exit 1' INT
+    description: Handle Ctrl+C in a script.
+  - command: trap 'rm -f "$tmpfile"' EXIT
+    description: Clean up a temporary file when a script exits.
+flags:
+  - flag: -l
+    meaning: List available signal names and numbers.
+tags:
+  - signals
+  - scripts
+  - cleanup
+difficulty: advanced
+common: false
+dangerous: false

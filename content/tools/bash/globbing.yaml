@@ -1,0 +1,25 @@
+id: bash-globbing
+tool: globbing
+category: expansion
+name: Globbing
+title: Match filenames with patterns
+slug: globbing
+description: Use wildcard patterns such as *, ?, and [] to match filenames.
+syntax:
+  - "*"
+  - "?"
+  - "[abc]"
+  - "*.log"
+examples:
+  - command: ls *.log
+    description: Match all files ending in .log.
+  - command: rm *.tmp
+    description: Match temporary files in the current directory.
+flags: []
+tags:
+  - globbing
+  - wildcards
+  - files
+difficulty: beginner
+common: true
+dangerous: true

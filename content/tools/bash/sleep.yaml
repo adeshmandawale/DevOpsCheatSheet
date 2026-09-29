@@ -1,0 +1,23 @@
+id: bash-sleep
+tool: sleep
+category: timing
+name: sleep
+title: Pause execution
+slug: sleep
+description: Pause shell execution for a specified amount of time.
+syntax:
+  - sleep <seconds>
+  - sleep <number><unit>
+examples:
+  - command: sleep 5
+    description: Pause for five seconds.
+  - command: sleep 2m
+    description: Pause for two minutes.
+flags: []
+tags:
+  - timing
+  - scripts
+  - automation
+difficulty: beginner
+common: true
+dangerous: false

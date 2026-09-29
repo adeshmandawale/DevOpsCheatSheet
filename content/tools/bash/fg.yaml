@@ -1,30 +1,23 @@
 id: bash-fg
 tool: fg
-category: jobs-processes
+category: processes
 name: fg
 title: Bring a job to the foreground
 slug: fg
-description: Resume a stopped or background job in the foreground.
-
+description: Move a background or stopped shell job into the foreground.
 syntax:
   - fg
   - fg %<job>
-
 examples:
   - command: fg
-    description: Bring the most recently suspended or background job to the foreground.
-
+    description: Bring the most recent background job to the foreground.
   - command: fg %1
     description: Bring job number 1 to the foreground.
-
-flags:
-  []
-
+flags: []
 tags:
   - jobs
   - processes
-  - foreground
-
+  - shell
 difficulty: beginner
 common: true
 dangerous: false

@@ -1,0 +1,26 @@
+id: bash-arguments
+tool: bash
+category: variables
+name: $1 / $@ / $#
+title: Access script arguments
+slug: script-arguments
+description: Access positional arguments and argument counts passed to a Bash
+  script or function.
+syntax:
+  - $1
+  - $@
+  - $#
+  - $0
+examples:
+  - command: 'echo "Script: $0, first argument: $1"'
+    description: Display the script name and first argument.
+  - command: for arg in "$@"; do echo "$arg"; done
+    description: Loop through all script arguments safely.
+flags: []
+tags:
+  - arguments
+  - variables
+  - scripting
+difficulty: beginner
+common: true
+dangerous: false

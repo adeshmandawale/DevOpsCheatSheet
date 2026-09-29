@@ -1,0 +1,32 @@
+id: bash-here-document
+tool: <<
+category: pipes-redirection
+name: <<
+title: Use a here-document
+slug: here-document
+description: Provide multiple lines of input to a command directly from a shell
+  script or command line.
+syntax:
+  - <<EOF
+  - <command> <<EOF
+examples:
+  - command: |-
+      cat <<EOF
+      Hello
+      World
+      EOF
+    description: Pass multiple lines of text to cat.
+  - command: |-
+      cat <<EOF > config.txt
+      PORT=8080
+      ENV=production
+      EOF
+    description: Generate a configuration file using a here-document.
+flags: []
+tags:
+  - redirection
+  - scripting
+  - input
+difficulty: intermediate
+common: true
+dangerous: false

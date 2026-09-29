@@ -1,0 +1,29 @@
+id: bash-disown
+tool: disown
+category: processes
+name: disown
+title: Detach a shell job
+slug: disown
+description: Remove a job from the shell's job table so it is not managed by the
+  current shell.
+syntax:
+  - disown
+  - disown %<job>
+  - disown -a
+examples:
+  - command: disown %1
+    description: Detach job number 1 from the current shell.
+  - command: disown -a
+    description: Remove all jobs from the shell's job table.
+flags:
+  - flag: -a
+    meaning: Remove all jobs from the job table.
+  - flag: -h
+    meaning: Mark jobs so they are not sent SIGHUP when the shell exits.
+tags:
+  - jobs
+  - processes
+  - background
+difficulty: intermediate
+common: false
+dangerous: false

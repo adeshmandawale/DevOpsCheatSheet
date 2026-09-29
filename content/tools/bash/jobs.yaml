@@ -1,31 +1,25 @@
 id: bash-jobs
 tool: jobs
-category: jobs-processes
+category: processes
 name: jobs
 title: List shell jobs
 slug: jobs
-description: Display the active jobs managed by the current shell.
-
+description: Display active jobs started by the current shell.
 syntax:
   - jobs
   - jobs -l
-
 examples:
   - command: jobs
-    description: List background and stopped jobs.
-
+    description: List active background and stopped jobs.
   - command: jobs -l
-    description: List jobs with process IDs.
-
+    description: Show jobs together with their process IDs.
 flags:
-  - flag: "-l"
+  - flag: -l
     meaning: Include process IDs in the output.
-
 tags:
   - jobs
   - processes
   - shell
-
 difficulty: beginner
 common: true
 dangerous: false

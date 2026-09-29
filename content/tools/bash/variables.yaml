@@ -1,0 +1,26 @@
+id: bash-variables
+tool: bash
+category: variables
+name: variables
+title: Create and use variables
+slug: variables
+description: Store values in shell variables and reference them using parameter expansion.
+syntax:
+  - VARIABLE=value
+  - echo "$VARIABLE"
+  - export VARIABLE=value
+examples:
+  - command: name="Adesh"
+    description: Create a shell variable.
+  - command: echo "Hello $name"
+    description: Expand a variable inside a string.
+  - command: export APP_ENV=production
+    description: Create an environment variable available to child processes.
+flags: []
+tags:
+  - variables
+  - environment
+  - shell
+difficulty: beginner
+common: true
+dangerous: false

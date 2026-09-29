@@ -1,0 +1,27 @@
+id: bash-pwd
+tool: bash
+category: navigation
+name: pwd
+title: Print working directory
+slug: pwd
+description: Display the absolute path of the current working directory.
+syntax:
+  - pwd
+  - pwd -P
+examples:
+  - command: pwd
+    description: Show the current directory.
+  - command: pwd -P
+    description: Show the physical directory path without symbolic links.
+flags:
+  - flag: -P
+    meaning: Use the physical directory structure.
+  - flag: -L
+    meaning: Use the logical directory path.
+tags:
+  - navigation
+  - directory
+  - shell
+difficulty: beginner
+common: true
+dangerous: false

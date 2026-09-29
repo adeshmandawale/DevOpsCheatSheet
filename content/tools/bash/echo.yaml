@@ -2,33 +2,27 @@ id: bash-echo
 tool: bash
 category: output
 name: echo
-title: Print text
+title: Print text or variables
 slug: echo
-description: Print text or variable values to standard output.
-
+description: Print text, variables, or command output to standard output.
 syntax:
   - echo <text>
-  - echo "$VARIABLE"
-
+  - echo $VARIABLE
+  - echo "<text>"
 examples:
   - command: echo "Hello World"
     description: Print a message to the terminal.
-
-  - command: echo "Home: $HOME"
-    description: Print the value of the HOME environment variable.
-
+  - command: 'echo "Home: $HOME"'
+    description: Print text containing an environment variable.
 flags:
-  - flag: "-n"
-    meaning: Do not print a trailing newline.
-
-  - flag: "-e"
+  - flag: -n
+    meaning: Do not print the trailing newline.
+  - flag: -e
     meaning: Enable interpretation of backslash escape sequences.
-
 tags:
   - output
   - variables
   - shell
-
 difficulty: beginner
 common: true
 dangerous: false

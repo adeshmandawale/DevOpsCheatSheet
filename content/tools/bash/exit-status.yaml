@@ -1,30 +1,24 @@
 id: bash-exit-status
-tool: $?
-category: scripting
+tool: bash
+category: conditions
 name: $?
 title: Read the last exit status
 slug: exit-status
 description: Read the exit status returned by the most recently executed command.
-
 syntax:
   - echo $?
-  - if [ $? -eq 0 ]; then ... fi
-
+  - <command> && echo success
+  - <command> || echo failed
 examples:
-  - command: mkdir /tmp/example && echo $?
-    description: Print the exit status of the previous command.
-
-  - command: if [ $? -eq 0 ]; then echo "Success"; fi
-    description: Check whether the previous command succeeded.
-
-flags:
-  []
-
+  - command: mkdir test && echo $?
+    description: Display the exit status of the mkdir command.
+  - command: ./deploy.sh || echo "Deployment failed"
+    description: Run a fallback command when deployment returns a non-zero status.
+flags: []
 tags:
   - exit-status
+  - conditions
   - scripting
-  - debugging
-
 difficulty: beginner
 common: true
 dangerous: false

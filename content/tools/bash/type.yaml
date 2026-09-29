@@ -1,0 +1,28 @@
+id: bash-type
+tool: bash
+category: command-discovery
+name: type
+title: Identify command types
+slug: type
+description: Show whether a command is an alias, builtin, function, keyword, or
+  external executable.
+syntax:
+  - type <command>
+  - type -a <command>
+examples:
+  - command: type cd
+    description: Show that cd is a Bash builtin.
+  - command: type -a python
+    description: Show all known locations or definitions of python.
+flags:
+  - flag: -a
+    meaning: Show all locations containing the command.
+  - flag: -t
+    meaning: Print the command type.
+tags:
+  - commands
+  - shell
+  - discovery
+difficulty: beginner
+common: true
+dangerous: false

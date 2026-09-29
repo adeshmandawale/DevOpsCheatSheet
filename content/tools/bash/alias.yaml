@@ -4,28 +4,21 @@ category: shell
 name: alias
 title: Create command shortcuts
 slug: alias
-description: Define or display shell aliases that expand into commands.
-
+description: Create or display shell aliases that expand to other commands.
 syntax:
   - alias
   - alias <name>='<command>'
   - unalias <name>
-
 examples:
   - command: alias ll='ls -lah'
     description: Create a shortcut named ll.
-
-  - command: alias gs='git status'
-    description: Create a shortcut for git status.
-
-flags:
-  []
-
+  - command: alias
+    description: List currently defined aliases.
+flags: []
 tags:
   - shell
-  - alias
-  - shortcuts
-
+  - aliases
+  - productivity
 difficulty: beginner
 common: true
 dangerous: false

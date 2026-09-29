@@ -1,0 +1,22 @@
+id: bash-append-redirection
+tool: bash
+category: pipes-redirection
+name: ">>"
+title: Append command output
+slug: append-redirection
+description: Redirect standard output to a file while preserving its existing contents.
+syntax:
+  - <command> >> <file>
+examples:
+  - command: echo "new entry" >> app.log
+    description: Append a line to a log file.
+  - command: date >> backup.log
+    description: Append the current date to a log file.
+flags: []
+tags:
+  - redirection
+  - files
+  - logs
+difficulty: beginner
+common: true
+dangerous: false

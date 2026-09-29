@@ -1,0 +1,26 @@
+id: bash-cd
+tool: bash
+category: navigation
+name: cd
+title: Change directory
+slug: cd
+description: Change the current working directory of the shell.
+syntax:
+  - cd <directory>
+  - cd ~
+  - cd -
+examples:
+  - command: cd /var/log
+    description: Change to the /var/log directory.
+  - command: cd -
+    description: Return to the previous working directory.
+  - command: cd ~
+    description: Change to the current user's home directory.
+flags: []
+tags:
+  - navigation
+  - directory
+  - shell
+difficulty: beginner
+common: true
+dangerous: false

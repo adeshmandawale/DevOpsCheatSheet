@@ -1,0 +1,29 @@
+id: bash-command
+tool: bash
+category: command-discovery
+name: command
+title: Identify or execute commands
+slug: command
+description: Determine how a command name is interpreted by the shell or execute
+  it while bypassing aliases.
+syntax:
+  - command -v <command>
+  - command -V <command>
+  - command <command>
+examples:
+  - command: command -v git
+    description: Show the path or shell interpretation of git.
+  - command: command -v docker
+    description: Check whether docker is available in PATH.
+flags:
+  - flag: -v
+    meaning: Print a command's location or interpretation.
+  - flag: -V
+    meaning: Print a more detailed command description.
+tags:
+  - commands
+  - shell
+  - discovery
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { stringify } from "yaml";
 import bashCommands from "./data/bash-commands";
 
 const outputDirectory = path.join(
@@ -27,46 +28,9 @@ for (const command of bashCommands) {
     `${command.slug}.yaml`,
   );
 
-  const yaml = `id: ${command.id}
-tool: ${command.tool}
-category: ${command.category}
-name: ${command.name}
-title: ${command.title}
-slug: ${command.slug}
-description: ${command.description}
+  const yamlContent = stringify(command);
 
-syntax:
-${command.syntax.map((item) => `  - ${item}`).join("\n")}
-
-examples:
-${command.examples
-  .map(
-    (example) => `  - command: ${example.command}
-    description: ${example.description}`,
-  )
-  .join("\n\n")}
-
-flags:
-${
-  command.flags.length === 0
-    ? "  []"
-    : command.flags
-        .map(
-          (flag) => `  - flag: "${flag.flag}"
-    meaning: ${flag.meaning}`,
-        )
-        .join("\n\n")
-}
-
-tags:
-${command.tags.map((tag) => `  - ${tag}`).join("\n")}
-
-difficulty: ${command.difficulty}
-common: ${command.common}
-dangerous: ${command.dangerous}
-`;
-
-  fs.writeFileSync(filePath, yaml);
+  fs.writeFileSync(filePath, yamlContent);
 
   console.log(`Generated: ${filePath}`);
 }

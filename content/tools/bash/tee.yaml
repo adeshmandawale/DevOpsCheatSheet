@@ -1,0 +1,26 @@
+id: bash-tee
+tool: tee
+category: pipes-redirection
+name: tee
+title: Write output to a file and the terminal
+slug: tee
+description: Read standard input and write it both to standard output and one or more files.
+syntax:
+  - <command> | tee <file>
+  - <command> | tee -a <file>
+examples:
+  - command: echo "hello" | tee output.txt
+    description: Display output and write it to a file.
+  - command: echo "new entry" | tee -a app.log
+    description: Display output and append it to a log file.
+flags:
+  - flag: -a
+    meaning: Append to the file instead of overwriting it.
+tags:
+  - pipes
+  - redirection
+  - files
+  - logs
+difficulty: beginner
+common: true
+dangerous: false

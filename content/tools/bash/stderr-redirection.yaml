@@ -1,0 +1,23 @@
+id: bash-stderr
+tool: 2>
+category: pipes-redirection
+name: 2>
+title: Redirect error output
+slug: stderr-redirection
+description: Redirect standard error output separately from standard output.
+syntax:
+  - <command> 2> <file>
+  - <command> 2>> <file>
+examples:
+  - command: ./deploy.sh 2> errors.log
+    description: Write error output to errors.log.
+  - command: ./deploy.sh 2>> errors.log
+    description: Append error output to errors.log.
+flags: []
+tags:
+  - stderr
+  - redirection
+  - errors
+difficulty: beginner
+common: true
+dangerous: false

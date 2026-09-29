@@ -4,26 +4,19 @@ category: loops
 name: for
 title: Loop over values
 slug: for
-description: Execute commands repeatedly for each item in a list.
-
+description: Execute a block of commands repeatedly for each item in a list.
 syntax:
   - for <variable> in <list>; do <commands>; done
-
 examples:
   - command: for file in *.log; do echo "$file"; done
-    description: Loop through all .log files in the current directory.
-
+    description: Loop through log files in the current directory.
   - command: for env in dev staging prod; do echo "$env"; done
-    description: Loop through a fixed list of environments.
-
-flags:
-  []
-
+    description: Loop through a list of environments.
+flags: []
 tags:
   - loops
   - scripting
   - automation
-
 difficulty: beginner
 common: true
 dangerous: false
