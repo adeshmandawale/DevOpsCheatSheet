@@ -1358,6 +1358,8 @@ Package script:
 
 ```json
 "generate:bash": "tsx scripts/generate-bash-content.ts"
+
+---
 Bash Coverage
 
 The Bash page currently contains 41 commands/features covering:
