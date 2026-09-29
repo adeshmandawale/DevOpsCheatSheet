@@ -103,7 +103,7 @@ devops-cheatsheet/
 └── ...
 ```
 
-Created directories:
+### Created directories:
 
 ```
 components/
@@ -1361,3 +1361,209 @@ The shared page provides:
 - Tags
 - Previous/next command navigation
 - Back-to-tool navigation
+
+---
+### Search Integration
+
+Bash commands are automatically included in the global search system.
+
+The search system uses:
+
+`getAllCommands()`
+
+Because the command loader reads all tool YAML files, no separate Bash search implementation is required.
+
+Bash commands are therefore searchable through:
+
+`/search`
+
+Search results link to:
+
+`/command/bash/[slug]`
+
+Search supports:
+
+- Command name
+- Title
+- Description
+- Tags
+- Tool
+- Difficulty
+- Dangerous-command indication
+
+The existing Fuse.js search implementation is reused.
+
+### Bash Verification Checklist
+
+The following Bash functionality has been verified:
+
+- `/bash` route loads correctly
+- Bash categories display correctly
+- Bash command cards display correctly
+- Difficulty badges display correctly
+- Dangerous warnings display correctly
+- Examples display correctly
+- Copy buttons work
+- Command names link to shared command pages
+- `/command/bash/[slug]` works
+- Bash commands appear in `/search`
+- `>>` append-redirection works correctly
+- All 41 Bash YAML files are present
+- Bash commands use `tool: "bash"`
+
+### Current Project Totals
+
+| Tool | Commands |
+| --- | ---: |
+| Linux | 110 |
+| Git | 35 |
+| Bash | 41 |
+| **Total** | **186** |
+
+### Current Completion Status
+
+- Linux → ✅ Complete
+- Git → ✅ Complete
+- Bash → ✅ Complete
+- Docker → ⏳ Next
+- Kubernetes → ⏳ Planned
+- Jenkins → ⏳ Planned
+- Ansible → ⏳ Planned
+- Terraform → ⏳ Planned
+
+### Landing Page Tool Order
+
+The current planned tool order on the landing page is:
+
+1. Linux
+2. Git
+3. Bash
+4. Docker
+5. Kubernetes
+6. Jenkins
+7. Ansible
+8. Terraform
+
+### Next Implementation — Docker
+
+The next tool to implement is **Docker**.
+
+Before implementing Docker:
+
+1. Inspect the actual repository/current state.
+2. Confirm Docker does not already exist.
+3. Reuse the existing architecture and UI.
+4. Create `scripts/data/docker-commands.ts`.
+5. Create `scripts/generate-docker-content.ts`.
+6. Add the following package script:
+
+```
+generate:docker": "tsx scripts/generate-docker-content.ts
+```
+
+7. Generate Docker YAML files under:
+
+```
+content/tools/docker/
+```
+
+8. Create:
+
+```
+app/docker/page.tsx
+```
+
+9. Reuse the existing shared command detail route:
+
+```
+/command/docker/[slug]
+```
+
+10. Verify Docker commands are included in global search.
+11. Test `/docker`.
+12. Test Docker command detail pages.
+13. Test Docker search results.
+14. Verify the generated YAML content.
+15. Update this project context after Docker is complete.
+
+### Docker Implementation Rule
+
+Do not implement Docker by creating a new architecture.
+
+Reuse the established Linux/Git/Bash pattern:
+
+```
+scripts/data/docker-commands.ts
+        ↓
+scripts/generate-docker-content.ts
+        ↓
+content/tools/docker/*.yaml
+        ↓
+lib/content/commands.ts
+        ↓
+app/docker/page.tsx
+        ↓
+/command/docker/[slug]
+        ↓
+/search
+```
+
+## Working Rules
+
+- Prefer incremental changes.
+- Inspect the existing implementation before changing it.
+- Reuse existing shared components.
+- Keep the UI consistent across all tools.
+- Do not unnecessarily rewrite working code.
+- Keep technical content file-based.
+- Use TypeScript datasets and generators for tool content.
+- Keep generated YAML under `content/tools/<tool>/`.
+- Reuse the shared command loader.
+- Reuse the shared command detail page.
+- Ensure new tools automatically integrate with global search.
+- Verify generated YAML after adding new commands.
+- Use `npm.cmd` in PowerShell.
+- Do not introduce a database for the core technical command content.
+- Do not rewrite Linux, Git, or Bash unless a regression is discovered.
+
+## Project Architecture Reference
+
+Current core structure:
+
+```
+app/
+├── bash/
+├── command/
+├── git/
+├── linux/
+├── search/
+├── favicon.ico
+├── globals.css
+├── layout.tsx
+└── page.tsx
+
+components/
+├── layout/
+├── navigation/
+├── search/
+└── ui/
+
+content/
+└── tools/
+    ├── bash/
+    ├── git/
+    └── linux/
+
+lib/
+└── content/
+    └── commands.ts
+
+scripts/
+├── data/
+│   ├── bash-commands.ts
+│   ├── git-commands.ts
+│   └── linux-commands.ts
+├── generate-bash-content.ts
+├── generate-git-content.ts
+└── generate-linux-content.ts
+```
