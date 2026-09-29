@@ -1,0 +1,31 @@
+id: linux-fg
+tool: linux
+category: process-management
+name: fg
+title: Bring a job to the foreground
+slug: fg
+description: Moves a background or stopped shell job into the foreground.
+
+syntax:
+  - fg
+  - fg %1
+
+examples:
+  - command: fg
+    description: Bring the most recently used background job to the foreground.
+
+  - command: fg %1
+    description: Bring job number 1 to the foreground.
+
+flags:
+  []
+
+tags:
+  - linux
+  - processes
+  - jobs
+  - shell
+
+difficulty: beginner
+common: true
+dangerous: false

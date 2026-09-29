@@ -1,0 +1,31 @@
+id: lvm
+tool: linux
+category: volume-management
+name: lvm
+title: Manage Logical Volumes
+slug: lvm
+description: Manage Linux Logical Volume Manager components such as physical volumes, volume groups, and logical volumes.
+
+syntax:
+  - lvm
+  - lvm <command>
+
+examples:
+  - command: lvm
+    description: Display the LVM command interface and available subcommands.
+
+  - command: lvm help
+    description: Display help for LVM commands.
+
+flags:
+  []
+
+tags:
+  - lvm
+  - storage
+  - volumes
+  - disk
+
+difficulty: intermediate
+common: true
+dangerous: false

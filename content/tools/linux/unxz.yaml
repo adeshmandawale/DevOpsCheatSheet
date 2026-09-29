@@ -1,0 +1,27 @@
+id: linux-unxz
+tool: linux
+category: archives-compression
+name: unxz
+title: Decompress xz files
+slug: unxz
+description: Decompresses files compressed using the xz format.
+
+syntax:
+  - unxz file.xz
+
+examples:
+  - command: unxz package.tar.xz
+    description: Decompress an xz-compressed file.
+
+flags:
+  []
+
+tags:
+  - linux
+  - compression
+  - files
+  - archives
+
+difficulty: intermediate
+common: false
+dangerous: false

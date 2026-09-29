@@ -1,0 +1,39 @@
+id: linux-uname
+tool: linux
+category: system-information
+name: uname
+title: Show System Information
+slug: uname
+description: Display information about the operating system and kernel.
+
+syntax:
+  - uname
+  - uname -a
+  - uname -r
+
+examples:
+  - command: uname
+    description: Display the operating system name.
+
+  - command: uname -a
+    description: Display detailed system and kernel information.
+
+  - command: uname -r
+    description: Display the kernel release version.
+
+flags:
+  - flag: "-a"
+    meaning: Display all available system information
+
+  - flag: "-r"
+    meaning: Display the kernel release
+
+tags:
+  - linux
+  - system
+  - kernel
+  - information
+
+difficulty: beginner
+common: true
+dangerous: false

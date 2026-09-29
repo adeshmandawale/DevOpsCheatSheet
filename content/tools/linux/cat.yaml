@@ -1,0 +1,35 @@
+id: linux-cat
+tool: linux
+category: text-processing
+name: cat
+title: Display File Contents
+slug: cat
+description: Display the contents of one or more files in the terminal.
+
+syntax:
+  - cat file.txt
+  - cat file1.txt file2.txt
+
+examples:
+  - command: cat config.txt
+    description: Display the contents of config.txt.
+
+  - command: cat file1.txt file2.txt
+    description: Display the contents of multiple files.
+
+  - command: cat -n file.txt
+    description: Display the file with line numbers.
+
+flags:
+  - flag: "-n"
+    meaning: Show line numbers
+
+tags:
+  - linux
+  - files
+  - text
+  - output
+
+difficulty: beginner
+common: true
+dangerous: false

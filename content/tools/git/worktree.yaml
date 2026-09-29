@@ -1,0 +1,39 @@
+id: git-worktree
+tool: git
+category: advanced
+name: git worktree
+title: Manage multiple working trees
+slug: worktree
+description: Create and manage multiple working trees linked to the same Git repository.
+
+syntax:
+  - git worktree list
+  - git worktree add <path> <branch>
+  - git worktree remove <path>
+
+examples:
+  - command: git worktree list
+    description: List all working trees associated with the repository.
+
+  - command: git worktree add ../feature-login feature-login
+    description: Create a separate working tree for the feature-login branch.
+
+flags:
+  - flag: "list"
+    meaning: List existing working trees.
+
+  - flag: "add"
+    meaning: Create a new working tree.
+
+  - flag: "remove"
+    meaning: Remove a working tree.
+
+tags:
+  - worktree
+  - branch
+  - workflow
+  - advanced
+
+difficulty: advanced
+common: false
+dangerous: false

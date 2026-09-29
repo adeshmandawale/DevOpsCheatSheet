@@ -1,0 +1,30 @@
+id: bash-source
+tool: bash
+category: shell
+name: source
+title: Execute a script in the current shell
+slug: source
+description: Read and execute commands from a file in the current shell environment.
+
+syntax:
+  - source <file>
+  - . <file>
+
+examples:
+  - command: source ~/.bashrc
+    description: Reload the Bash configuration in the current shell.
+
+  - command: source ./config.sh
+    description: Load variables and functions from a script.
+
+flags:
+  []
+
+tags:
+  - shell
+  - scripts
+  - environment
+
+difficulty: beginner
+common: true
+dangerous: false

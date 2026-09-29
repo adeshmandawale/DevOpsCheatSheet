@@ -1,0 +1,37 @@
+id: git-commit
+tool: git
+category: commits
+name: git commit
+title: Create a commit
+slug: commit
+description: Record staged changes in the repository history.
+
+syntax:
+  - git commit -m "commit message"
+  - git commit -am "commit message"
+
+examples:
+  - command: git commit -m "Add login page"
+    description: Create a commit with a message.
+
+  - command: git commit -am "Fix configuration"
+    description: Stage tracked modified files and commit them.
+
+flags:
+  - flag: "-m <message>"
+    meaning: Specify the commit message.
+
+  - flag: "-a"
+    meaning: Automatically stage modified and deleted tracked files.
+
+  - flag: "--amend"
+    meaning: Modify the most recent commit.
+
+tags:
+  - commit
+  - history
+  - staging
+
+difficulty: beginner
+common: true
+dangerous: false

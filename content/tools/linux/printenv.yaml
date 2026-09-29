@@ -1,0 +1,31 @@
+id: linux-printenv
+tool: linux
+category: environment
+name: printenv
+title: Print environment variables
+slug: printenv
+description: Displays the value of environment variables.
+
+syntax:
+  - printenv
+  - printenv PATH
+
+examples:
+  - command: printenv
+    description: Display all environment variables.
+
+  - command: printenv PATH
+    description: Display the current PATH environment variable.
+
+flags:
+  []
+
+tags:
+  - linux
+  - environment
+  - variables
+  - shell
+
+difficulty: beginner
+common: true
+dangerous: false

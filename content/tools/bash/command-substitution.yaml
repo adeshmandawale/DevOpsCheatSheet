@@ -1,0 +1,30 @@
+id: bash-command-substitution
+tool: $()
+category: scripting
+name: $()
+title: Capture command output
+slug: command-substitution
+description: Run a command and substitute its output into another command or assignment.
+
+syntax:
+  - VARIABLE=$(command)
+  - echo "$(command)"
+
+examples:
+  - command: current_dir=$(pwd)
+    description: Store the output of pwd in a variable.
+
+  - command: echo "Today is $(date)"
+    description: Insert command output into a string.
+
+flags:
+  []
+
+tags:
+  - substitution
+  - variables
+  - scripting
+
+difficulty: beginner
+common: true
+dangerous: false

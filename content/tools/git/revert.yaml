@@ -1,0 +1,34 @@
+id: git-revert
+tool: git
+category: undo
+name: git revert
+title: Undo a commit with a new commit
+slug: revert
+description: Create a new commit that reverses the changes introduced by an earlier commit.
+
+syntax:
+  - git revert <commit>
+  - git revert HEAD
+
+examples:
+  - command: git revert HEAD
+    description: Create a new commit that reverses the latest commit.
+
+  - command: git revert abc1234
+    description: Create a new commit that reverses a specific commit.
+
+flags:
+  - flag: "--no-edit"
+    meaning: Use the default generated commit message without opening an editor.
+
+  - flag: "--no-commit"
+    meaning: Apply the reverse changes without creating the commit immediately.
+
+tags:
+  - undo
+  - history
+  - commit
+
+difficulty: intermediate
+common: true
+dangerous: false

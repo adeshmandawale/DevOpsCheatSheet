@@ -1,0 +1,35 @@
+id: git-tag
+tool: git
+category: tagging
+name: git tag
+title: Create and manage tags
+slug: tag
+description: Create, list, delete, and manage tags used to mark important points in Git history.
+
+syntax:
+  - git tag
+  - git tag <tag>
+  - git tag -a <tag> -m "message"
+
+examples:
+  - command: git tag v1.0.0
+    description: Create a lightweight tag at the current commit.
+
+  - command: git tag -a v1.0.0 -m "Release 1.0.0"
+    description: Create an annotated release tag.
+
+flags:
+  - flag: "-a"
+    meaning: Create an annotated tag.
+
+  - flag: "-d"
+    meaning: Delete a local tag.
+
+tags:
+  - tag
+  - release
+  - versioning
+
+difficulty: intermediate
+common: true
+dangerous: false

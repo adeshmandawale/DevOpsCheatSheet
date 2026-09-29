@@ -1,0 +1,31 @@
+id: linux-nslookup
+tool: linux
+category: networking
+name: nslookup
+title: Query DNS information
+slug: nslookup
+description: Queries DNS servers to retrieve information about domain names and IP addresses.
+
+syntax:
+  - nslookup domain
+  - nslookup IP
+
+examples:
+  - command: nslookup example.com
+    description: Find the IP address associated with a domain.
+
+  - command: nslookup 8.8.8.8
+    description: Perform a reverse DNS lookup for an IP address.
+
+flags:
+  []
+
+tags:
+  - linux
+  - networking
+  - dns
+  - troubleshooting
+
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,35 @@
+id: linux-gzip
+tool: linux
+category: archives-compression
+name: gzip
+title: Compress files
+slug: gzip
+description: Compresses files using the gzip compression format.
+
+syntax:
+  - gzip file.txt
+  - gzip -k file.txt
+
+examples:
+  - command: gzip access.log
+    description: Compress a log file into access.log.gz.
+
+  - command: gzip -k access.log
+    description: Compress the file while keeping the original file.
+
+flags:
+  - flag: "-k"
+    meaning: Keep the original file after compression.
+
+  - flag: "-d"
+    meaning: Decompress a gzip file.
+
+tags:
+  - linux
+  - compression
+  - logs
+  - files
+
+difficulty: beginner
+common: true
+dangerous: false

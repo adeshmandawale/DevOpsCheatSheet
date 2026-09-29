@@ -1,0 +1,32 @@
+id: linux-userdel
+tool: linux
+category: user-management
+name: userdel
+title: Delete a user account
+slug: userdel
+description: Removes a user account from the Linux system.
+
+syntax:
+  - sudo userdel username
+  - sudo userdel -r username
+
+examples:
+  - command: sudo userdel username
+    description: Delete a user account while leaving its home directory.
+
+  - command: sudo userdel -r username
+    description: Delete the user account and its home directory.
+
+flags:
+  - flag: "-r"
+    meaning: Remove the user's home directory and mail spool.
+
+tags:
+  - linux
+  - users
+  - accounts
+  - administration
+
+difficulty: intermediate
+common: false
+dangerous: true

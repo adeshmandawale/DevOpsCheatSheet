@@ -1,0 +1,30 @@
+id: bash-command-grouping
+tool: { }
+category: shell
+name: { }
+title: Group commands in the current shell
+slug: command-grouping
+description: Group multiple commands so they execute as a single compound command in the current shell.
+
+syntax:
+  - { command1; command2; }
+  - { command1; command2; } > output.txt
+
+examples:
+  - command: { echo "Start"; echo "Done"; }
+    description: Execute multiple commands as one grouped command.
+
+  - command: { echo "one"; echo "two"; } > output.txt
+    description: Redirect the combined output of a command group.
+
+flags:
+  []
+
+tags:
+  - shell
+  - grouping
+  - redirection
+
+difficulty: intermediate
+common: false
+dangerous: false

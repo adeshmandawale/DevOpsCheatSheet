@@ -1,0 +1,32 @@
+id: linux-dig
+tool: linux
+category: networking
+name: dig
+title: Query DNS records
+slug: dig
+description: Performs DNS lookups and displays detailed information about DNS records and responses.
+
+syntax:
+  - dig domain
+  - dig domain A
+  - dig domain MX
+
+examples:
+  - command: dig example.com
+    description: Perform a DNS lookup for a domain.
+
+  - command: dig example.com MX
+    description: Query the mail exchange records for a domain.
+
+flags:
+  []
+
+tags:
+  - linux
+  - networking
+  - dns
+  - troubleshooting
+
+difficulty: intermediate
+common: true
+dangerous: false

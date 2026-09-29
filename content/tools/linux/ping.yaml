@@ -1,0 +1,32 @@
+id: linux-ping
+tool: linux
+category: networking
+name: ping
+title: Test network connectivity
+slug: ping
+description: Tests whether a host is reachable over a network and measures round-trip time.
+
+syntax:
+  - ping hostname
+  - ping -c 4 hostname
+
+examples:
+  - command: ping google.com
+    description: Send ICMP requests to test connectivity to a host.
+
+  - command: ping -c 4 8.8.8.8
+    description: Send four ICMP requests to a specific IP address.
+
+flags:
+  - flag: "-c"
+    meaning: Specify the number of packets to send.
+
+tags:
+  - linux
+  - networking
+  - connectivity
+  - troubleshooting
+
+difficulty: beginner
+common: true
+dangerous: false

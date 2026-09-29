@@ -1,0 +1,38 @@
+id: git-bisect
+tool: git
+category: debugging
+name: git bisect
+title: Find the commit that introduced a bug
+slug: bisect
+description: Use binary search through commit history to identify the commit that introduced a problem.
+
+syntax:
+  - git bisect start
+  - git bisect bad
+  - git bisect good <commit>
+
+examples:
+  - command: git bisect start
+    description: Start a bisect session.
+
+  - command: git bisect bad
+    description: Mark the current commit as containing the problem.
+
+  - command: git bisect good v1.0.0
+    description: Mark a known-good commit so Git can narrow down the problematic commit.
+
+  - command: git bisect reset
+    description: End the bisect session and return to the previous branch.
+
+flags:
+  []
+
+tags:
+  - debugging
+  - history
+  - bisect
+  - troubleshooting
+
+difficulty: advanced
+common: false
+dangerous: false

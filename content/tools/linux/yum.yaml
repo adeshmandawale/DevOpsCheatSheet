@@ -1,0 +1,43 @@
+id: linux-yum
+tool: linux
+category: package-management
+name: yum
+title: Manage packages on RPM-based systems
+slug: yum
+description: A package management command traditionally used by RHEL, CentOS, and other RPM-based distributions.
+
+syntax:
+  - sudo yum install package
+  - sudo yum update
+  - yum search package
+
+examples:
+  - command: sudo yum install nginx
+    description: Install nginx using YUM.
+
+  - command: sudo yum update
+    description: Update installed packages.
+
+flags:
+  - flag: "install"
+    meaning: Install packages.
+
+  - flag: "update"
+    meaning: Update installed packages.
+
+  - flag: "remove"
+    meaning: Remove packages.
+
+  - flag: "search"
+    meaning: Search for packages.
+
+tags:
+  - linux
+  - yum
+  - rhel
+  - centos
+  - packages
+
+difficulty: beginner
+common: true
+dangerous: true

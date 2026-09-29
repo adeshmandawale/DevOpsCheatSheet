@@ -1,0 +1,35 @@
+id: git-blame
+tool: git
+category: inspection
+name: git blame
+title: Show line-by-line authorship
+slug: blame
+description: Show which commit and author last modified each line of a file.
+
+syntax:
+  - git blame <file>
+  - git blame -L <start>,<end> <file>
+
+examples:
+  - command: git blame app.js
+    description: Show the commit and author associated with each line of app.js.
+
+  - command: git blame -L 10,20 app.js
+    description: Show authorship information for lines 10 through 20.
+
+flags:
+  - flag: "-L <start>,<end>"
+    meaning: Limit the output to a specific range of lines.
+
+  - flag: "-e"
+    meaning: Show author email addresses instead of names.
+
+tags:
+  - inspection
+  - history
+  - debugging
+  - authorship
+
+difficulty: intermediate
+common: true
+dangerous: false

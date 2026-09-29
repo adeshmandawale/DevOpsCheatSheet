@@ -1,0 +1,33 @@
+id: linux-umount
+tool: linux
+category: disk-filesystem
+name: umount
+title: Unmount a filesystem
+slug: umount
+description: Detaches a mounted filesystem from the Linux filesystem hierarchy.
+
+syntax:
+  - sudo umount /mnt
+  - sudo umount /dev/sdb1
+
+examples:
+  - command: sudo umount /mnt
+    description: Unmount the filesystem mounted at /mnt.
+
+  - command: sudo umount /dev/sdb1
+    description: Unmount a specific block device.
+
+flags:
+  - flag: "-a"
+    meaning: Unmount all filesystems that match the specified criteria.
+
+tags:
+  - linux
+  - disk
+  - filesystem
+  - mount
+  - storage
+
+difficulty: intermediate
+common: true
+dangerous: true

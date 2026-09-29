@@ -1,0 +1,29 @@
+id: linux-touch
+tool: linux
+category: file-management
+name: touch
+title: Create or Update Files
+slug: touch
+description: Create an empty file or update the modification time of an existing file.
+
+syntax:
+  - touch filename
+
+examples:
+  - command: touch notes.txt
+    description: Create an empty file named notes.txt.
+
+  - command: touch file1.txt file2.txt
+    description: Create multiple files at once.
+
+flags:
+  []
+
+tags:
+  - linux
+  - files
+  - creation
+
+difficulty: beginner
+common: true
+dangerous: false

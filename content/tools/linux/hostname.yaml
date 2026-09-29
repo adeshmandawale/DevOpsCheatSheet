@@ -1,0 +1,32 @@
+id: linux-hostname
+tool: linux
+category: system-information
+name: hostname
+title: Display or set the system hostname
+slug: hostname
+description: Displays the current system hostname and can be used to query related host information.
+
+syntax:
+  - hostname
+  - hostname -I
+
+examples:
+  - command: hostname
+    description: Display the system hostname.
+
+  - command: hostname -I
+    description: Display the IP addresses assigned to the host.
+
+flags:
+  - flag: "-I"
+    meaning: Display all configured network addresses of the host.
+
+tags:
+  - linux
+  - system
+  - hostname
+  - networking
+
+difficulty: beginner
+common: true
+dangerous: false

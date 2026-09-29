@@ -1,0 +1,27 @@
+id: linux-bunzip2
+tool: linux
+category: archives-compression
+name: bunzip2
+title: Decompress bzip2 files
+slug: bunzip2
+description: Decompresses files compressed using bzip2.
+
+syntax:
+  - bunzip2 file.bz2
+
+examples:
+  - command: bunzip2 large.log.bz2
+    description: Decompress a bzip2 file.
+
+flags:
+  []
+
+tags:
+  - linux
+  - compression
+  - files
+  - archives
+
+difficulty: beginner
+common: false
+dangerous: false

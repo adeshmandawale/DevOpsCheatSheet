@@ -1,0 +1,35 @@
+id: git-push
+tool: git
+category: remote
+name: git push
+title: Upload local changes
+slug: push
+description: Send local commits and references to a remote repository.
+
+syntax:
+  - git push
+  - git push origin <branch>
+  - git push -u origin <branch>
+
+examples:
+  - command: git push origin main
+    description: Push the local main branch to origin.
+
+  - command: git push -u origin feature-login
+    description: Push a new branch and set its upstream remote branch.
+
+flags:
+  - flag: "-u"
+    meaning: Set the upstream tracking branch.
+
+  - flag: "--force-with-lease"
+    meaning: Safely force-update a remote branch when it has not changed unexpectedly.
+
+tags:
+  - remote
+  - sync
+  - upload
+
+difficulty: beginner
+common: true
+dangerous: false

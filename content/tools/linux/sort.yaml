@@ -1,0 +1,39 @@
+id: linux-sort
+tool: linux
+category: text-processing
+name: sort
+title: Sort Lines of Text
+slug: sort
+description: Sort lines of text alphabetically or numerically.
+
+syntax:
+  - sort file.txt
+  - sort -r file.txt
+  - sort -n numbers.txt
+
+examples:
+  - command: sort names.txt
+    description: Sort lines alphabetically.
+
+  - command: sort -r names.txt
+    description: Sort lines in reverse order.
+
+  - command: sort -n numbers.txt
+    description: Sort numbers numerically.
+
+flags:
+  - flag: "-r"
+    meaning: Reverse the sorting order
+
+  - flag: "-n"
+    meaning: Sort numerically
+
+tags:
+  - linux
+  - text
+  - sorting
+  - files
+
+difficulty: beginner
+common: true
+dangerous: false

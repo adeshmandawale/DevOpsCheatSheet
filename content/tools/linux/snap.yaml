@@ -1,0 +1,42 @@
+id: linux-snap
+tool: linux
+category: package-management
+name: snap
+title: Manage Snap packages
+slug: snap
+description: Installs and manages applications distributed as Snap packages.
+
+syntax:
+  - sudo snap install package
+  - snap list
+  - sudo snap remove package
+
+examples:
+  - command: sudo snap install docker
+    description: Install an application using Snap.
+
+  - command: snap list
+    description: List installed Snap packages.
+
+  - command: sudo snap remove package
+    description: Remove a Snap package.
+
+flags:
+  - flag: "install"
+    meaning: Install a Snap package.
+
+  - flag: "list"
+    meaning: List installed Snap packages.
+
+  - flag: "remove"
+    meaning: Remove a Snap package.
+
+tags:
+  - linux
+  - snap
+  - packages
+  - ubuntu
+
+difficulty: beginner
+common: false
+dangerous: true

@@ -1,0 +1,27 @@
+id: linux-htop
+tool: linux
+category: process-management
+name: htop
+title: Interactive process viewer
+slug: htop
+description: Provides an interactive and easier-to-read view of running processes and system resources.
+
+syntax:
+  - htop
+
+examples:
+  - command: htop
+    description: Open an interactive process monitor.
+
+flags:
+  []
+
+tags:
+  - linux
+  - processes
+  - monitoring
+  - htop
+
+difficulty: beginner
+common: true
+dangerous: false

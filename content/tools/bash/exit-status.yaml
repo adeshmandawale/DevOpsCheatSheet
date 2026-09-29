@@ -1,0 +1,30 @@
+id: bash-exit-status
+tool: $?
+category: scripting
+name: $?
+title: Read the last exit status
+slug: exit-status
+description: Read the exit status returned by the most recently executed command.
+
+syntax:
+  - echo $?
+  - if [ $? -eq 0 ]; then ... fi
+
+examples:
+  - command: mkdir /tmp/example && echo $?
+    description: Print the exit status of the previous command.
+
+  - command: if [ $? -eq 0 ]; then echo "Success"; fi
+    description: Check whether the previous command succeeded.
+
+flags:
+  []
+
+tags:
+  - exit-status
+  - scripting
+  - debugging
+
+difficulty: beginner
+common: true
+dangerous: false

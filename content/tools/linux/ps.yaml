@@ -1,0 +1,48 @@
+id: linux-ps
+tool: linux
+category: process-management
+name: ps
+title: Display running processes
+slug: ps
+description: Displays information about currently running processes.
+
+syntax:
+  - ps
+  - ps aux
+  - ps -ef
+
+examples:
+  - command: ps
+    description: Show processes associated with the current terminal.
+
+  - command: ps aux
+    description: Show detailed information about all running processes.
+
+  - command: ps -ef
+    description: Display all processes in a full-format listing.
+
+flags:
+  - flag: "a"
+    meaning: Show processes for all users with a terminal.
+
+  - flag: "u"
+    meaning: Display user-oriented process information.
+
+  - flag: "x"
+    meaning: Include processes without a controlling terminal.
+
+  - flag: "-e"
+    meaning: Select all processes.
+
+  - flag: "-f"
+    meaning: Show full-format process information.
+
+tags:
+  - linux
+  - processes
+  - monitoring
+  - devops
+
+difficulty: beginner
+common: true
+dangerous: false

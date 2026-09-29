@@ -1,0 +1,32 @@
+id: linux-service
+tool: linux
+category: systemd
+name: service
+title: Manage system services
+slug: service
+description: Runs System V init scripts and provides a compatibility interface for managing services.
+
+syntax:
+  - service service status
+  - sudo service service start
+  - sudo service service stop
+
+examples:
+  - command: service ssh status
+    description: Check the status of the SSH service.
+
+  - command: sudo service nginx restart
+    description: Restart the nginx service.
+
+flags:
+  []
+
+tags:
+  - linux
+  - services
+  - systemd
+  - sysvinit
+
+difficulty: beginner
+common: true
+dangerous: true

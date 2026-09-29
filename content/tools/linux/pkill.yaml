@@ -1,0 +1,32 @@
+id: linux-pkill
+tool: linux
+category: process-management
+name: pkill
+title: Send signals to processes by name
+slug: pkill
+description: Sends signals to processes based on their name or other matching criteria.
+
+syntax:
+  - pkill process_name
+  - pkill -9 process_name
+
+examples:
+  - command: pkill nginx
+    description: Send the default termination signal to matching nginx processes.
+
+  - command: pkill -9 nginx
+    description: Forcefully terminate matching nginx processes.
+
+flags:
+  - flag: "-9"
+    meaning: Send SIGKILL to matching processes.
+
+tags:
+  - linux
+  - processes
+  - signals
+  - troubleshooting
+
+difficulty: intermediate
+common: true
+dangerous: true

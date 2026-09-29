@@ -1,0 +1,36 @@
+id: linux-systemd-analyze
+tool: linux
+category: systemd
+name: systemd-analyze
+title: Analyze systemd startup
+slug: systemd-analyze
+description: Analyzes system boot performance and systemd unit dependencies.
+
+syntax:
+  - systemd-analyze
+  - systemd-analyze blame
+  - systemd-analyze critical-chain
+
+examples:
+  - command: systemd-analyze
+    description: Display the total time spent during system boot.
+
+  - command: systemd-analyze blame
+    description: Show services ordered by the time they took during startup.
+
+  - command: systemd-analyze critical-chain
+    description: Display the critical chain of units involved in boot.
+
+flags:
+  []
+
+tags:
+  - linux
+  - systemd
+  - boot
+  - performance
+  - troubleshooting
+
+difficulty: intermediate
+common: false
+dangerous: false

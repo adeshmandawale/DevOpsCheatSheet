@@ -1,0 +1,43 @@
+id: linux-curl
+tool: linux
+category: networking
+name: curl
+title: Transfer data from or to a URL
+slug: curl
+description: Transfers data using URLs and is commonly used for testing APIs, downloading resources, and troubleshooting HTTP connections.
+
+syntax:
+  - curl URL
+  - curl -I URL
+  - curl -X POST URL
+
+examples:
+  - command: curl https://example.com
+    description: Send an HTTP request and display the response.
+
+  - command: curl -I https://example.com
+    description: Display only the HTTP response headers.
+
+  - command: curl -X POST https://example.com/api
+    description: Send an HTTP POST request.
+
+flags:
+  - flag: "-I"
+    meaning: Fetch response headers without downloading the response body.
+
+  - flag: "-X"
+    meaning: Specify the HTTP request method.
+
+  - flag: "-o"
+    meaning: Write the downloaded output to a file.
+
+tags:
+  - linux
+  - networking
+  - http
+  - api
+  - devops
+
+difficulty: beginner
+common: true
+dangerous: false

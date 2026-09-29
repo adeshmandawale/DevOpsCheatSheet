@@ -1,0 +1,47 @@
+id: linux-dnf
+tool: linux
+category: package-management
+name: dnf
+title: Manage packages on Fedora and RHEL-based systems
+slug: dnf
+description: A modern package management tool used by Fedora and many RHEL-based systems.
+
+syntax:
+  - sudo dnf check-update
+  - sudo dnf install package
+  - sudo dnf update
+
+examples:
+  - command: sudo dnf install nginx
+    description: Install nginx using DNF.
+
+  - command: sudo dnf update
+    description: Update installed packages.
+
+  - command: dnf search nginx
+    description: Search for packages related to nginx.
+
+flags:
+  - flag: "install"
+    meaning: Install packages.
+
+  - flag: "update"
+    meaning: Update installed packages.
+
+  - flag: "search"
+    meaning: Search for packages.
+
+  - flag: "remove"
+    meaning: Remove packages.
+
+tags:
+  - linux
+  - dnf
+  - fedora
+  - rhel
+  - packages
+  - devops
+
+difficulty: beginner
+common: true
+dangerous: true

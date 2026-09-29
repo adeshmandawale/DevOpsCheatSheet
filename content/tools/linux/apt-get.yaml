@@ -1,0 +1,46 @@
+id: linux-apt-get
+tool: linux
+category: package-management
+name: apt-get
+title: Manage Debian packages
+slug: apt-get
+description: A lower-level command-line package management tool for Debian-based systems.
+
+syntax:
+  - sudo apt-get update
+  - sudo apt-get install package
+  - sudo apt-get upgrade
+
+examples:
+  - command: sudo apt-get update
+    description: Update the local package index.
+
+  - command: sudo apt-get install nginx
+    description: Install nginx using apt-get.
+
+  - command: sudo apt-get upgrade
+    description: Upgrade installed packages.
+
+flags:
+  - flag: "update"
+    meaning: Update the package index.
+
+  - flag: "install"
+    meaning: Install packages.
+
+  - flag: "remove"
+    meaning: Remove packages.
+
+  - flag: "upgrade"
+    meaning: Upgrade installed packages.
+
+tags:
+  - linux
+  - apt
+  - debian
+  - ubuntu
+  - packages
+
+difficulty: beginner
+common: true
+dangerous: true

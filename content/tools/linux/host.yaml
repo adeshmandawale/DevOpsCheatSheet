@@ -1,0 +1,31 @@
+id: linux-host
+tool: linux
+category: networking
+name: host
+title: Perform a simple DNS lookup
+slug: host
+description: Performs simple DNS lookups for domain names and IP addresses.
+
+syntax:
+  - host domain
+  - host IP
+
+examples:
+  - command: host example.com
+    description: Resolve a domain name to its IP address.
+
+  - command: host 8.8.8.8
+    description: Perform a reverse DNS lookup.
+
+flags:
+  []
+
+tags:
+  - linux
+  - networking
+  - dns
+  - troubleshooting
+
+difficulty: beginner
+common: true
+dangerous: false

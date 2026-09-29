@@ -1,0 +1,41 @@
+id: git-clean
+tool: git
+category: undo
+name: git clean
+title: Remove untracked files
+slug: clean
+description: Remove untracked files and directories from the working tree.
+
+syntax:
+  - git clean -n
+  - git clean -f
+  - git clean -fd
+
+examples:
+  - command: git clean -n
+    description: Preview which untracked files would be removed.
+
+  - command: git clean -f
+    description: Remove untracked files.
+
+  - command: git clean -fd
+    description: Remove untracked files and directories.
+
+flags:
+  - flag: "-n"
+    meaning: Preview what would be removed without deleting anything.
+
+  - flag: "-f"
+    meaning: Actually remove untracked files.
+
+  - flag: "-d"
+    meaning: Include untracked directories.
+
+tags:
+  - cleanup
+  - files
+  - delete
+
+difficulty: advanced
+common: false
+dangerous: true

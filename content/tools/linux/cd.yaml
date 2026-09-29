@@ -1,0 +1,38 @@
+id: linux-cd
+tool: linux
+category: file-management
+name: cd
+title: Change Directory
+slug: cd
+description: Change the current working directory.
+
+syntax:
+  - cd /path/to/directory
+  - cd ..
+  - cd ~
+  - cd -
+
+examples:
+  - command: cd /var/log
+    description: Move to the /var/log directory.
+
+  - command: cd ..
+    description: Move to the parent directory.
+
+  - command: cd ~
+    description: Move to the current user's home directory.
+
+  - command: cd -
+    description: Return to the previous directory.
+
+flags:
+  []
+
+tags:
+  - linux
+  - navigation
+  - directories
+
+difficulty: beginner
+common: true
+dangerous: false

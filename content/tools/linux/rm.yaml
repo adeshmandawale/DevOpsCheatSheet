@@ -1,0 +1,42 @@
+id: linux-rm
+tool: linux
+category: file-management
+name: rm
+title: Remove Files and Directories
+slug: rm
+description: Remove files and directories from the filesystem.
+
+syntax:
+  - rm filename
+  - rm -r directory
+  - rm -i filename
+
+examples:
+  - command: rm file.txt
+    description: Remove a file named file.txt.
+
+  - command: rm -r project
+    description: Recursively remove a directory and its contents.
+
+  - command: rm -i file.txt
+    description: Ask for confirmation before removing the file.
+
+flags:
+  - flag: "-r"
+    meaning: Remove directories recursively
+
+  - flag: "-i"
+    meaning: Ask for confirmation before removing
+
+  - flag: "-f"
+    meaning: Force removal without prompting
+
+tags:
+  - linux
+  - files
+  - directories
+  - delete
+
+difficulty: advanced
+common: true
+dangerous: true

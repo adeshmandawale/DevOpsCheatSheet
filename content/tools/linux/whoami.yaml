@@ -1,0 +1,27 @@
+id: linux-whoami
+tool: linux
+category: system-information
+name: whoami
+title: Show Current User
+slug: whoami
+description: Display the username of the current user.
+
+syntax:
+  - whoami
+
+examples:
+  - command: whoami
+    description: Display the current username.
+
+flags:
+  []
+
+tags:
+  - linux
+  - users
+  - identity
+  - system
+
+difficulty: beginner
+common: true
+dangerous: false

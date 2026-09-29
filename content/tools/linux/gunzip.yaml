@@ -1,0 +1,27 @@
+id: linux-gunzip
+tool: linux
+category: archives-compression
+name: gunzip
+title: Decompress gzip files
+slug: gunzip
+description: Decompresses files compressed with gzip.
+
+syntax:
+  - gunzip file.gz
+
+examples:
+  - command: gunzip access.log.gz
+    description: Decompress a gzip file and restore the original file.
+
+flags:
+  []
+
+tags:
+  - linux
+  - compression
+  - logs
+  - files
+
+difficulty: beginner
+common: true
+dangerous: false

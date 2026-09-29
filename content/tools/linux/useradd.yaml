@@ -1,0 +1,38 @@
+id: linux-useradd
+tool: linux
+category: user-management
+name: useradd
+title: Create a user account
+slug: useradd
+description: Creates a new user account on the Linux system.
+
+syntax:
+  - sudo useradd username
+  - sudo useradd -m username
+
+examples:
+  - command: sudo useradd -m adesh
+    description: Create a user and create a home directory for the account.
+
+  - command: sudo useradd -s /bin/bash username
+    description: Create a user and specify Bash as the login shell.
+
+flags:
+  - flag: "-m"
+    meaning: Create the user's home directory.
+
+  - flag: "-s"
+    meaning: Specify the user's login shell.
+
+  - flag: "-d"
+    meaning: Specify the user's home directory.
+
+tags:
+  - linux
+  - users
+  - accounts
+  - administration
+
+difficulty: intermediate
+common: true
+dangerous: true

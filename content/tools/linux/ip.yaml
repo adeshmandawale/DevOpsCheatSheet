@@ -1,0 +1,36 @@
+id: linux-ip
+tool: linux
+category: networking
+name: ip
+title: Manage network interfaces and routing
+slug: ip
+description: Displays and manages network interfaces, IP addresses, routes, and other network configuration.
+
+syntax:
+  - ip addr
+  - ip link
+  - ip route
+
+examples:
+  - command: ip addr
+    description: Display network interfaces and their assigned IP addresses.
+
+  - command: ip link
+    description: Display available network interfaces and their state.
+
+  - command: ip route
+    description: Display the system's routing table.
+
+flags:
+  []
+
+tags:
+  - linux
+  - networking
+  - ip
+  - interfaces
+  - routing
+
+difficulty: beginner
+common: true
+dangerous: false

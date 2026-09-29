@@ -1,0 +1,31 @@
+id: linux-hostnamectl
+tool: linux
+category: systemd
+name: hostnamectl
+title: Manage the system hostname
+slug: hostnamectl
+description: Displays and manages the system hostname and related system information.
+
+syntax:
+  - hostnamectl
+  - hostnamectl status
+
+examples:
+  - command: hostnamectl
+    description: Display the system hostname and operating system information.
+
+  - command: hostnamectl status
+    description: Display detailed hostname and system information.
+
+flags:
+  []
+
+tags:
+  - linux
+  - systemd
+  - hostname
+  - system
+
+difficulty: beginner
+common: true
+dangerous: false

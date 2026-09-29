@@ -1,0 +1,30 @@
+id: bash-export
+tool: bash
+category: variables-environment
+name: export
+title: Set environment variables
+slug: export
+description: Mark shell variables for export so child processes inherit them.
+
+syntax:
+  - export VARIABLE=value
+  - export VARIABLE
+
+examples:
+  - command: export APP_ENV=production
+    description: Create an environment variable available to child processes.
+
+  - command: export PATH="$PATH:/opt/bin"
+    description: Add a directory to the existing PATH.
+
+flags:
+  []
+
+tags:
+  - environment
+  - variables
+  - shell
+
+difficulty: beginner
+common: true
+dangerous: false

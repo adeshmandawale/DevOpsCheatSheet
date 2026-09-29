@@ -1,0 +1,38 @@
+id: linux-passwd
+tool: linux
+category: user-management
+name: passwd
+title: Change a user's password
+slug: passwd
+description: Changes or manages the password associated with a user account.
+
+syntax:
+  - passwd
+  - sudo passwd username
+
+examples:
+  - command: passwd
+    description: Change the password of the current user.
+
+  - command: sudo passwd username
+    description: Change the password of another user with administrative privileges.
+
+flags:
+  - flag: "-l"
+    meaning: Lock the password of an account.
+
+  - flag: "-u"
+    meaning: Unlock the password of an account.
+
+  - flag: "-S"
+    meaning: Display password status information.
+
+tags:
+  - linux
+  - users
+  - password
+  - security
+
+difficulty: beginner
+common: true
+dangerous: true

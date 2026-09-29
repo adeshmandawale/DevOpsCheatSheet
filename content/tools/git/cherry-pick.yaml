@@ -1,0 +1,34 @@
+id: git-cherry-pick
+tool: git
+category: advanced
+name: git cherry-pick
+title: Apply a specific commit
+slug: cherry-pick
+description: Apply the changes introduced by one or more existing commits to the current branch.
+
+syntax:
+  - git cherry-pick <commit>
+  - git cherry-pick <commit1> <commit2>
+
+examples:
+  - command: git cherry-pick abc1234
+    description: Apply a specific commit to the current branch.
+
+flags:
+  - flag: "--no-commit"
+    meaning: Apply changes without creating a commit automatically.
+
+  - flag: "--abort"
+    meaning: Cancel an in-progress cherry-pick.
+
+  - flag: "--continue"
+    meaning: Continue after resolving conflicts.
+
+tags:
+  - commit
+  - history
+  - advanced
+
+difficulty: advanced
+common: false
+dangerous: false

@@ -1,0 +1,37 @@
+id: linux-df
+tool: linux
+category: disk-filesystem
+name: df
+title: Display filesystem disk usage
+slug: df
+description: Shows available, used, and total disk space for mounted filesystems.
+
+syntax:
+  - df
+  - df -h
+  - df -h /
+
+examples:
+  - command: df -h
+    description: Display filesystem disk usage in a human-readable format.
+
+  - command: df -h /
+    description: Show disk usage for the filesystem containing the root directory.
+
+flags:
+  - flag: "-h"
+    meaning: Display sizes in a human-readable format.
+
+  - flag: "-T"
+    meaning: Display the filesystem type.
+
+tags:
+  - linux
+  - disk
+  - filesystem
+  - storage
+  - troubleshooting
+
+difficulty: beginner
+common: true
+dangerous: false

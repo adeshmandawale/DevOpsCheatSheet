@@ -1,0 +1,36 @@
+id: linux-chmod
+tool: linux
+category: permissions
+name: chmod
+title: Change File Permissions
+slug: chmod
+description: Change the permissions of files and directories.
+
+syntax:
+  - chmod permissions file
+  - chmod 755 script.sh
+  - chmod u+x script.sh
+
+examples:
+  - command: chmod 755 script.sh
+    description: Give the owner full permissions and others read and execute permissions.
+
+  - command: chmod u+x script.sh
+    description: Add execute permission for the file owner.
+
+  - command: chmod 644 config.txt
+    description: Set read/write permission for the owner and read-only permission for others.
+
+flags:
+  - flag: "-R"
+    meaning: Apply permissions recursively
+
+tags:
+  - linux
+  - permissions
+  - security
+  - files
+
+difficulty: beginner
+common: true
+dangerous: true

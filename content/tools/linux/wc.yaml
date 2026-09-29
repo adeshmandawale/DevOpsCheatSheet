@@ -1,0 +1,42 @@
+id: linux-wc
+tool: linux
+category: text-processing
+name: wc
+title: Count Lines, Words, and Bytes
+slug: wc
+description: Count lines, words, characters, or bytes in files and command output.
+
+syntax:
+  - wc file.txt
+  - wc -l file.txt
+  - wc -w file.txt
+
+examples:
+  - command: wc file.txt
+    description: Display line, word, and byte counts.
+
+  - command: wc -l file.txt
+    description: Count the number of lines in a file.
+
+  - command: ls | wc -l
+    description: Count the number of entries returned by ls.
+
+flags:
+  - flag: "-l"
+    meaning: Count lines
+
+  - flag: "-w"
+    meaning: Count words
+
+  - flag: "-c"
+    meaning: Count bytes
+
+tags:
+  - linux
+  - text
+  - counting
+  - files
+
+difficulty: beginner
+common: true
+dangerous: false

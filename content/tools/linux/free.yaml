@@ -1,0 +1,32 @@
+id: linux-free
+tool: linux
+category: system-information
+name: free
+title: Show Memory Usage
+slug: free
+description: Display information about system memory and swap usage.
+
+syntax:
+  - free
+  - free -h
+
+examples:
+  - command: free
+    description: Display memory and swap usage.
+
+  - command: free -h
+    description: Display memory values in human-readable units.
+
+flags:
+  - flag: "-h"
+    meaning: Show memory values in human-readable format
+
+tags:
+  - linux
+  - memory
+  - system
+  - monitoring
+
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,34 @@
+id: git-switch
+tool: git
+category: branching
+name: git switch
+title: Switch branches
+slug: switch
+description: Switch between branches or create and switch to a new branch.
+
+syntax:
+  - git switch <branch>
+  - git switch -c <new-branch>
+
+examples:
+  - command: git switch main
+    description: Switch to the main branch.
+
+  - command: git switch -c feature-login
+    description: Create and switch to a new branch.
+
+flags:
+  - flag: "-c"
+    meaning: Create a new branch and switch to it.
+
+  - flag: "--detach"
+    meaning: Switch to a commit without creating a branch.
+
+tags:
+  - branch
+  - switch
+  - workflow
+
+difficulty: beginner
+common: true
+dangerous: false

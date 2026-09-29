@@ -1,0 +1,30 @@
+id: git-reflog
+tool: git
+category: history
+name: git reflog
+title: View reference history
+slug: reflog
+description: Show updates to local Git references such as HEAD and branch pointers.
+
+syntax:
+  - git reflog
+  - git reflog show <branch>
+
+examples:
+  - command: git reflog
+    description: View recent movements of HEAD.
+
+  - command: git reflog show main
+    description: View reference updates for the main branch.
+
+flags:
+  []
+
+tags:
+  - history
+  - recovery
+  - debugging
+
+difficulty: advanced
+common: true
+dangerous: false

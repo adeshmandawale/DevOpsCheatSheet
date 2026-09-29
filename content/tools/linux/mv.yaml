@@ -1,0 +1,38 @@
+id: linux-mv
+tool: linux
+category: file-management
+name: mv
+title: Move or Rename Files
+slug: mv
+description: Move files and directories or rename them.
+
+syntax:
+  - mv source destination
+
+examples:
+  - command: mv old.txt new.txt
+    description: Rename old.txt to new.txt.
+
+  - command: mv file.txt /tmp/
+    description: Move file.txt into the /tmp directory.
+
+  - command: mv project backup/
+    description: Move the project directory into backup.
+
+flags:
+  - flag: "-i"
+    meaning: Ask before overwriting an existing file
+
+  - flag: "-v"
+    meaning: Display what is being moved
+
+tags:
+  - linux
+  - files
+  - directories
+  - move
+  - rename
+
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,42 @@
+id: linux-usermod
+tool: linux
+category: user-management
+name: usermod
+title: Modify a user account
+slug: usermod
+description: Modifies properties of an existing Linux user account.
+
+syntax:
+  - sudo usermod -aG group username
+  - sudo usermod -s /bin/bash username
+
+examples:
+  - command: sudo usermod -aG docker adesh
+    description: Add a user to the docker group without removing existing group memberships.
+
+  - command: sudo usermod -s /bin/bash username
+    description: Change a user's login shell to Bash.
+
+flags:
+  - flag: "-a"
+    meaning: Append the user to supplementary groups when used with -G.
+
+  - flag: "-G"
+    meaning: Specify supplementary groups for the user.
+
+  - flag: "-s"
+    meaning: Change the user's login shell.
+
+  - flag: "-d"
+    meaning: Change the user's home directory.
+
+tags:
+  - linux
+  - users
+  - groups
+  - permissions
+  - administration
+
+difficulty: intermediate
+common: true
+dangerous: true

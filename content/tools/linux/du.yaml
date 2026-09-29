@@ -1,0 +1,37 @@
+id: linux-du
+tool: linux
+category: disk-filesystem
+name: du
+title: Display directory disk usage
+slug: du
+description: Estimates the amount of disk space used by files and directories.
+
+syntax:
+  - du
+  - du -sh directory
+  - du -sh *
+
+examples:
+  - command: du -sh /var/log
+    description: Display the total size of the log directory.
+
+  - command: du -sh *
+    description: Display the size of each item in the current directory.
+
+flags:
+  - flag: "-s"
+    meaning: Display only the total for each specified item.
+
+  - flag: "-h"
+    meaning: Display sizes in a human-readable format.
+
+tags:
+  - linux
+  - disk
+  - storage
+  - files
+  - troubleshooting
+
+difficulty: beginner
+common: true
+dangerous: false

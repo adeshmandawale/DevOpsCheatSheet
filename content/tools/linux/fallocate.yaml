@@ -1,0 +1,33 @@
+id: linux-fallocate
+tool: linux
+category: disk-filesystem
+name: fallocate
+title: Allocate space for a file
+slug: fallocate
+description: Preallocates disk space for a file without necessarily writing data to every allocated block.
+
+syntax:
+  - fallocate -l 1G file.img
+  - fallocate -l 500M test.img
+
+examples:
+  - command: fallocate -l 1G disk.img
+    description: Create a file with 1 GB of allocated space.
+
+  - command: fallocate -l 500M test.img
+    description: Allocate 500 MB of space for a test file.
+
+flags:
+  - flag: "-l"
+    meaning: Specify the amount of space to allocate.
+
+tags:
+  - linux
+  - disk
+  - storage
+  - files
+  - testing
+
+difficulty: intermediate
+common: false
+dangerous: false

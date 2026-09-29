@@ -1,0 +1,46 @@
+id: linux-ls
+tool: linux
+category: file-management
+name: ls
+title: List Directory Contents
+slug: ls
+description: List files and directories in the current or specified directory.
+
+syntax:
+  - ls
+  - ls -l
+  - ls -la
+  - ls -lh
+
+examples:
+  - command: ls
+    description: List files and directories in the current directory.
+
+  - command: ls -l
+    description: Display files in a detailed long-list format.
+
+  - command: ls -la
+    description: Include hidden files in the listing.
+
+  - command: ls -lh
+    description: Display file sizes in a human-readable format.
+
+flags:
+  - flag: "-l"
+    meaning: Long listing format
+
+  - flag: "-a"
+    meaning: Include hidden files
+
+  - flag: "-h"
+    meaning: Show file sizes in human-readable format
+
+tags:
+  - linux
+  - files
+  - directories
+  - listing
+
+difficulty: beginner
+common: true
+dangerous: false

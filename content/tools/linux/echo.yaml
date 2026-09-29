@@ -1,0 +1,35 @@
+id: linux-echo
+tool: linux
+category: environment
+name: echo
+title: Display text or variable values
+slug: echo
+description: Prints text, variable values, or other supplied arguments to standard output.
+
+syntax:
+  - echo text
+  - echo $VARIABLE
+
+examples:
+  - command: echo Hello
+    description: Print text to the terminal.
+
+  - command: echo $HOME
+    description: Display the value of the HOME environment variable.
+
+flags:
+  - flag: "-n"
+    meaning: Do not output the trailing newline.
+
+  - flag: "-e"
+    meaning: Enable interpretation of backslash escape sequences in shells that support this option.
+
+tags:
+  - linux
+  - shell
+  - variables
+  - output
+
+difficulty: beginner
+common: true
+dangerous: false

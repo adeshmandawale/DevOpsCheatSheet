@@ -1,0 +1,31 @@
+id: linux-date
+tool: linux
+category: system-information
+name: date
+title: Display or format the system date
+slug: date
+description: Displays the current date and time and can format the output in different ways.
+
+syntax:
+  - date
+  - date '+%Y-%m-%d'
+
+examples:
+  - command: date
+    description: Display the current date and time.
+
+  - command: date '+%Y-%m-%d'
+    description: Display the date in YYYY-MM-DD format.
+
+flags:
+  []
+
+tags:
+  - linux
+  - date
+  - time
+  - system
+
+difficulty: beginner
+common: true
+dangerous: false

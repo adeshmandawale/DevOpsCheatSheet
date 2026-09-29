@@ -1,0 +1,43 @@
+id: linux-dpkg
+tool: linux
+category: package-management
+name: dpkg
+title: Manage Debian package files
+slug: dpkg
+description: Installs, removes, and queries Debian package files directly.
+
+syntax:
+  - sudo dpkg -i package.deb
+  - dpkg -l
+  - dpkg -L package
+
+examples:
+  - command: sudo dpkg -i package.deb
+    description: Install a local Debian package file.
+
+  - command: dpkg -l
+    description: List installed Debian packages.
+
+  - command: dpkg -L nginx
+    description: List files installed by the nginx package.
+
+flags:
+  - flag: "-i"
+    meaning: Install a Debian package file.
+
+  - flag: "-l"
+    meaning: List installed packages.
+
+  - flag: "-L"
+    meaning: List files installed by a package.
+
+tags:
+  - linux
+  - dpkg
+  - debian
+  - ubuntu
+  - packages
+
+difficulty: intermediate
+common: true
+dangerous: true

@@ -1,0 +1,32 @@
+id: linux-loginctl
+tool: linux
+category: systemd
+name: loginctl
+title: Manage user sessions
+slug: loginctl
+description: Displays and manages user login sessions and systemd-logind information.
+
+syntax:
+  - loginctl
+  - loginctl list-sessions
+  - loginctl status
+
+examples:
+  - command: loginctl list-sessions
+    description: List currently active user sessions.
+
+  - command: loginctl status
+    description: Display the status of the systemd login manager.
+
+flags:
+  []
+
+tags:
+  - linux
+  - systemd
+  - users
+  - sessions
+
+difficulty: intermediate
+common: false
+dangerous: false

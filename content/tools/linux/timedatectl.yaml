@@ -1,0 +1,33 @@
+id: linux-timedatectl
+tool: linux
+category: systemd
+name: timedatectl
+title: Manage system date and time
+slug: timedatectl
+description: Displays and manages system time, timezone, and time synchronization settings.
+
+syntax:
+  - timedatectl
+  - timedatectl status
+  - timedatectl list-timezones
+
+examples:
+  - command: timedatectl status
+    description: Display the current system time, timezone, and synchronization status.
+
+  - command: timedatectl list-timezones
+    description: List available system timezones.
+
+flags:
+  []
+
+tags:
+  - linux
+  - systemd
+  - time
+  - timezone
+  - system
+
+difficulty: beginner
+common: true
+dangerous: false

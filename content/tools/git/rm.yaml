@@ -1,0 +1,35 @@
+id: git-rm
+tool: git
+category: staging
+name: git rm
+title: Remove tracked files
+slug: rm
+description: Remove files from the working tree and stage their deletion.
+
+syntax:
+  - git rm <file>
+  - git rm -r <directory>
+  - git rm --cached <file>
+
+examples:
+  - command: git rm old-file.txt
+    description: Remove a tracked file and stage the deletion.
+
+  - command: git rm --cached .env
+    description: Stop tracking a file while keeping it in the working directory.
+
+flags:
+  - flag: "-r"
+    meaning: Recursively remove directories.
+
+  - flag: "--cached"
+    meaning: Remove files from the index while keeping them in the working tree.
+
+tags:
+  - files
+  - delete
+  - staging
+
+difficulty: intermediate
+common: true
+dangerous: true

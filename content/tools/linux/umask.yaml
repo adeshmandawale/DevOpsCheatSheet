@@ -1,0 +1,32 @@
+id: linux-umask
+tool: linux
+category: permissions
+name: umask
+title: Set default file permissions
+slug: umask
+description: Displays or modifies the permission mask used when new files and directories are created.
+
+syntax:
+  - umask
+  - umask 022
+
+examples:
+  - command: umask
+    description: Display the current default permission mask.
+
+  - command: umask 022
+    description: Set the permission mask to 022 for the current shell.
+
+flags:
+  - flag: "-S"
+    meaning: Display the current mask in symbolic form.
+
+tags:
+  - linux
+  - permissions
+  - security
+  - files
+
+difficulty: intermediate
+common: false
+dangerous: false

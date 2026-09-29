@@ -1,0 +1,33 @@
+id: linux-unzip
+tool: linux
+category: archives-compression
+name: unzip
+title: Extract ZIP archives
+slug: unzip
+description: Extracts files and directories from ZIP archives.
+
+syntax:
+  - unzip archive.zip
+  - unzip archive.zip -d directory
+
+examples:
+  - command: unzip project.zip
+    description: Extract a ZIP archive into the current directory.
+
+  - command: unzip project.zip -d project/
+    description: Extract an archive into a specific directory.
+
+flags:
+  - flag: "-d"
+    meaning: Specify the directory where files should be extracted.
+
+tags:
+  - linux
+  - zip
+  - compression
+  - archives
+  - files
+
+difficulty: beginner
+common: true
+dangerous: false

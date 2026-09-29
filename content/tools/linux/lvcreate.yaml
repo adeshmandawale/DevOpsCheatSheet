@@ -1,0 +1,38 @@
+id: lvcreate
+tool: linux
+category: volume-management
+name: lvcreate
+title: Create a Logical Volume
+slug: lvcreate
+description: Create a logical volume from available space in an LVM volume group.
+
+syntax:
+  - lvcreate -L <size> -n <name> <volume-group>
+  - lvcreate -l <extents> -n <name> <volume-group>
+
+examples:
+  - command: sudo lvcreate -L 10G -n appdata vgdata
+    description: Create a 10 GB logical volume named appdata.
+
+  - command: sudo lvcreate -l 100%FREE -n appdata vgdata
+    description: Create a logical volume using all available space in vgdata.
+
+flags:
+  - flag: "-L <size>"
+    meaning: Specify the logical volume size.
+
+  - flag: "-l <extents>"
+    meaning: Specify the logical volume size using physical extents.
+
+  - flag: "-n <name>"
+    meaning: Specify the logical volume name.
+
+tags:
+  - lvm
+  - storage
+  - logical-volume
+  - disk
+
+difficulty: intermediate
+common: true
+dangerous: true

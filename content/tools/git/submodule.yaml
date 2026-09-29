@@ -1,0 +1,38 @@
+id: git-submodule
+tool: git
+category: repository
+name: git submodule
+title: Manage nested repositories
+slug: submodule
+description: Manage another Git repository as a subdirectory of the current repository.
+
+syntax:
+  - git submodule add <repository-url> <path>
+  - git submodule update --init --recursive
+  - git submodule status
+
+examples:
+  - command: git submodule add https://github.com/user/library.git libs/library
+    description: Add another Git repository as a submodule.
+
+  - command: git submodule update --init --recursive
+    description: Initialize and update submodules, including nested submodules.
+
+flags:
+  - flag: "add"
+    meaning: Add a repository as a submodule.
+
+  - flag: "update"
+    meaning: Update submodules to their recorded commits.
+
+  - flag: "status"
+    meaning: Show the status of submodules.
+
+tags:
+  - submodule
+  - repository
+  - dependencies
+
+difficulty: advanced
+common: false
+dangerous: false

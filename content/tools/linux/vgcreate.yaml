@@ -1,0 +1,32 @@
+id: vgcreate
+tool: linux
+category: volume-management
+name: vgcreate
+title: Create a Volume Group
+slug: vgcreate
+description: Create an LVM volume group using one or more physical volumes.
+
+syntax:
+  - vgcreate <volume-group> <physical-volume>
+  - vgcreate <volume-group> <physical-volume1> <physical-volume2>
+
+examples:
+  - command: sudo vgcreate vgdata /dev/sdb
+    description: Create a volume group named vgdata using /dev/sdb.
+
+  - command: sudo vgcreate vgdata /dev/sdb /dev/sdc
+    description: Create a volume group using multiple physical volumes.
+
+flags:
+  - flag: "-s <size>"
+    meaning: Set the physical extent size for the volume group.
+
+tags:
+  - lvm
+  - storage
+  - volume-group
+  - disk
+
+difficulty: intermediate
+common: true
+dangerous: true

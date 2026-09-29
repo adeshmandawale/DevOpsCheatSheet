@@ -1,0 +1,41 @@
+id: git-config
+tool: git
+category: configuration
+name: git config
+title: Configure Git
+slug: config
+description: Set and view Git configuration values for your user, repository, or system.
+
+syntax:
+  - git config --global user.name "Your Name"
+  - git config --global user.email "you@example.com"
+  - git config --list
+
+examples:
+  - command: git config --global user.name "Adesh Mandawale"
+    description: Set the name used for your Git commits.
+
+  - command: git config --global user.email "you@example.com"
+    description: Set the email used for your Git commits.
+
+  - command: git config --list
+    description: Display the current Git configuration.
+
+flags:
+  - flag: "--global"
+    meaning: Apply the configuration to your user account.
+
+  - flag: "--local"
+    meaning: Apply the configuration to the current repository.
+
+  - flag: "--list"
+    meaning: List configuration values.
+
+tags:
+  - configuration
+  - setup
+  - user
+
+difficulty: beginner
+common: true
+dangerous: false

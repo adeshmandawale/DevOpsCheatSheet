@@ -1,0 +1,46 @@
+id: linux-ss
+tool: linux
+category: networking
+name: ss
+title: Display network sockets
+slug: ss
+description: Displays information about network sockets, listening ports, and active connections.
+
+syntax:
+  - ss
+  - ss -tuln
+  - ss -tunap
+
+examples:
+  - command: ss -tuln
+    description: Display listening TCP and UDP ports without resolving service names.
+
+  - command: ss -tunap
+    description: Display TCP and UDP connections together with process information.
+
+flags:
+  - flag: "-t"
+    meaning: Show TCP sockets.
+
+  - flag: "-u"
+    meaning: Show UDP sockets.
+
+  - flag: "-l"
+    meaning: Show listening sockets.
+
+  - flag: "-n"
+    meaning: Show numerical addresses and port numbers.
+
+  - flag: "-p"
+    meaning: Show the processes using the sockets.
+
+tags:
+  - linux
+  - networking
+  - ports
+  - sockets
+  - troubleshooting
+
+difficulty: intermediate
+common: true
+dangerous: false

@@ -1,0 +1,31 @@
+id: linux-mkdir
+tool: linux
+category: file-management
+name: mkdir
+title: Create Directories
+slug: mkdir
+description: Create new directories.
+
+syntax:
+  - mkdir directory
+  - mkdir -p path/to/directory
+
+examples:
+  - command: mkdir projects
+    description: Create a directory named projects.
+
+  - command: mkdir -p projects/devops/linux
+    description: Create nested directories if they do not already exist.
+
+flags:
+  - flag: "-p"
+    meaning: Create parent directories as needed
+
+tags:
+  - linux
+  - directories
+  - files
+
+difficulty: beginner
+common: true
+dangerous: false

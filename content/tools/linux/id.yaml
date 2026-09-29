@@ -1,0 +1,31 @@
+id: linux-id
+tool: linux
+category: system-information
+name: id
+title: Show User and Group IDs
+slug: id
+description: Display user ID, group ID, and group memberships.
+
+syntax:
+  - id
+  - id username
+
+examples:
+  - command: id
+    description: Display identity information for the current user.
+
+  - command: id adesh
+    description: Display identity information for a specific user.
+
+flags:
+  []
+
+tags:
+  - linux
+  - users
+  - groups
+  - permissions
+
+difficulty: beginner
+common: true
+dangerous: false

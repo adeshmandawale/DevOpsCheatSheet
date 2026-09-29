@@ -1,0 +1,32 @@
+id: linux-blkid
+tool: linux
+category: disk-filesystem
+name: blkid
+title: Display block device attributes
+slug: blkid
+description: Displays attributes such as UUID and filesystem type for block devices.
+
+syntax:
+  - blkid
+  - sudo blkid /dev/sda1
+
+examples:
+  - command: sudo blkid
+    description: Display UUID and filesystem information for available block devices.
+
+  - command: sudo blkid /dev/sda1
+    description: Display attributes for a specific partition.
+
+flags:
+  []
+
+tags:
+  - linux
+  - disk
+  - storage
+  - uuid
+  - filesystem
+
+difficulty: intermediate
+common: false
+dangerous: false

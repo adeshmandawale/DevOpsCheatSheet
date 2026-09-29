@@ -1,0 +1,35 @@
+id: git-fetch
+tool: git
+category: remote
+name: git fetch
+title: Download remote changes
+slug: fetch
+description: Download commits and references from a remote repository without changing your current branch.
+
+syntax:
+  - git fetch
+  - git fetch origin
+  - git fetch --all
+
+examples:
+  - command: git fetch origin
+    description: Fetch updates from the origin remote.
+
+  - command: git fetch --all
+    description: Fetch updates from all configured remotes.
+
+flags:
+  - flag: "--all"
+    meaning: Fetch from all configured remotes.
+
+  - flag: "--prune"
+    meaning: Remove remote-tracking references that no longer exist on the remote.
+
+tags:
+  - remote
+  - sync
+  - download
+
+difficulty: beginner
+common: true
+dangerous: false

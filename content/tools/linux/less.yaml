@@ -1,0 +1,32 @@
+id: linux-less
+tool: linux
+category: text-processing
+name: less
+title: View Files Page by Page
+slug: less
+description: View large files interactively without printing the entire file to the terminal.
+
+syntax:
+  - less file.txt
+  - command | less
+
+examples:
+  - command: less /var/log/syslog
+    description: Open a large log file for interactive viewing.
+
+  - command: cat app.log | less
+    description: View command output one screen at a time.
+
+flags:
+  []
+
+tags:
+  - linux
+  - files
+  - logs
+  - paging
+  - troubleshooting
+
+difficulty: beginner
+common: true
+dangerous: false

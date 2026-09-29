@@ -1,0 +1,40 @@
+id: linux-grep
+tool: linux
+category: text-processing
+name: grep
+title: Search Text
+slug: grep
+description: Search for matching text or patterns inside files and command output.
+
+syntax:
+  - grep "pattern" file
+  - grep -i "pattern" file
+  - grep -r "pattern" directory
+
+examples:
+  - command: grep "error" app.log
+    description: Search for the word error inside app.log.
+
+  - command: grep -i "error" app.log
+    description: Search without considering letter case.
+
+  - command: grep -r "TODO" .
+    description: Recursively search for TODO in the current directory.
+
+flags:
+  - flag: "-i"
+    meaning: Ignore case differences
+
+  - flag: "-r"
+    meaning: Search recursively through directories
+
+tags:
+  - linux
+  - search
+  - text
+  - logs
+  - troubleshooting
+
+difficulty: beginner
+common: true
+dangerous: false

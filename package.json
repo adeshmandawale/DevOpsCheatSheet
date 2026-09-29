@@ -6,12 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate:linux": "tsx scripts/generate-linux-content.ts",
+    "generate:git": "tsx scripts/generate-git-content.ts",
+    "generate:bash": "tsx scripts/generate-bash-content.ts"
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^13.15.1",
+    "fuse.js": "^7.5.0",
     "next": "16.3.6",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "yaml": "^2.9.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -21,6 +27,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

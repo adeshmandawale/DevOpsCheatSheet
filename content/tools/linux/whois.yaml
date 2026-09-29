@@ -1,0 +1,31 @@
+id: whois
+tool: linux
+category: networking
+name: whois
+title: Query Domain Registration Information
+slug: whois
+description: Query WHOIS services for registration and ownership information about domains and IP addresses.
+
+syntax:
+  - whois <domain>
+  - whois <ip-address>
+
+examples:
+  - command: whois example.com
+    description: Query WHOIS information for a domain.
+
+  - command: whois 8.8.8.8
+    description: Query registration information for an IP address.
+
+flags:
+  []
+
+tags:
+  - networking
+  - domain
+  - dns
+  - information
+
+difficulty: beginner
+common: true
+dangerous: false

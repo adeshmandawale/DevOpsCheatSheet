@@ -1,0 +1,27 @@
+id: linux-reboot
+tool: linux
+category: system-management
+name: reboot
+title: Restart the system
+slug: reboot
+description: Safely requests a system restart.
+
+syntax:
+  - sudo reboot
+
+examples:
+  - command: sudo reboot
+    description: Restart the Linux system.
+
+flags:
+  []
+
+tags:
+  - linux
+  - system
+  - reboot
+  - administration
+
+difficulty: beginner
+common: true
+dangerous: true

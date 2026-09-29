@@ -1,0 +1,35 @@
+id: pvcreate
+tool: linux
+category: volume-management
+name: pvcreate
+title: Create a Physical Volume
+slug: pvcreate
+description: Initialize a disk or partition for use as a physical volume in LVM.
+
+syntax:
+  - pvcreate <device>
+  - pvcreate /dev/sdb
+
+examples:
+  - command: sudo pvcreate /dev/sdb
+    description: Initialize /dev/sdb as an LVM physical volume.
+
+  - command: sudo pvcreate /dev/sdb1
+    description: Initialize a partition as an LVM physical volume.
+
+flags:
+  - flag: "--force"
+    meaning: Force creation of a physical volume when required.
+
+  - flag: "--yes"
+    meaning: Answer yes to confirmation prompts.
+
+tags:
+  - lvm
+  - storage
+  - physical-volume
+  - disk
+
+difficulty: intermediate
+common: true
+dangerous: true

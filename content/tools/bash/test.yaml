@@ -1,0 +1,40 @@
+id: bash-test
+tool: bash
+category: conditions
+name: test
+title: Evaluate conditions
+slug: test
+description: Evaluate file, string, and numeric conditions for use in shell scripts.
+
+syntax:
+  - test <condition>
+  - [ <condition> ]
+
+examples:
+  - command: [ -f "config.yaml" ]
+    description: Check whether config.yaml exists as a regular file.
+
+  - command: [ "$ENV" = "production" ]
+    description: Check whether ENV equals production.
+
+flags:
+  - flag: "-f"
+    meaning: True when a regular file exists.
+
+  - flag: "-d"
+    meaning: True when a directory exists.
+
+  - flag: "-z"
+    meaning: True when a string has zero length.
+
+  - flag: "-n"
+    meaning: True when a string is not empty.
+
+tags:
+  - conditions
+  - files
+  - scripting
+
+difficulty: beginner
+common: true
+dangerous: false

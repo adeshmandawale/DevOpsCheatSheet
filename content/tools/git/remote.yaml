@@ -1,0 +1,38 @@
+id: git-remote
+tool: git
+category: remote
+name: git remote
+title: Manage remote repositories
+slug: remote
+description: Manage connections between your local repository and remote repositories.
+
+syntax:
+  - git remote -v
+  - git remote add <name> <url>
+  - git remote remove <name>
+
+examples:
+  - command: git remote -v
+    description: List configured remote repository URLs.
+
+  - command: git remote add origin https://github.com/user/project.git
+    description: Add a remote named origin.
+
+flags:
+  - flag: "-v"
+    meaning: Show remote URLs.
+
+  - flag: "add"
+    meaning: Add a new remote repository.
+
+  - flag: "remove"
+    meaning: Remove a configured remote.
+
+tags:
+  - remote
+  - repository
+  - github
+
+difficulty: beginner
+common: true
+dangerous: false

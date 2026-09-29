@@ -1,0 +1,33 @@
+id: linux-lsblk
+tool: linux
+category: disk-filesystem
+name: lsblk
+title: List block devices
+slug: lsblk
+description: Displays information about block devices such as disks, partitions, and logical volumes.
+
+syntax:
+  - lsblk
+  - lsblk -f
+
+examples:
+  - command: lsblk
+    description: Display disks and partitions in a tree-like structure.
+
+  - command: lsblk -f
+    description: Display block devices together with filesystem information.
+
+flags:
+  - flag: "-f"
+    meaning: Display filesystem information.
+
+tags:
+  - linux
+  - disk
+  - storage
+  - filesystem
+  - devices
+
+difficulty: beginner
+common: true
+dangerous: false

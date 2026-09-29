@@ -1,0 +1,34 @@
+id: git-restore
+tool: git
+category: undo
+name: git restore
+title: Restore working tree files
+slug: restore
+description: Restore files in the working tree or remove them from the staging area.
+
+syntax:
+  - git restore <file>
+  - git restore --staged <file>
+
+examples:
+  - command: git restore index.html
+    description: Discard unstaged changes to a file.
+
+  - command: git restore --staged index.html
+    description: Remove a file from the staging area without deleting its changes.
+
+flags:
+  - flag: "--staged"
+    meaning: Restore the index instead of the working tree.
+
+  - flag: "--source <tree>"
+    meaning: Restore content from a specific commit or branch.
+
+tags:
+  - undo
+  - restore
+  - staging
+
+difficulty: intermediate
+common: true
+dangerous: true

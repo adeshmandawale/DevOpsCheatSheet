@@ -1,0 +1,50 @@
+id: linux-rpm
+tool: linux
+category: package-management
+name: rpm
+title: Manage RPM packages
+slug: rpm
+description: Installs, removes, verifies, and queries RPM packages on RPM-based Linux systems.
+
+syntax:
+  - rpm -qa
+  - sudo rpm -ivh package.rpm
+  - rpm -q package
+
+examples:
+  - command: rpm -qa
+    description: List installed RPM packages.
+
+  - command: sudo rpm -ivh package.rpm
+    description: Install an RPM package file.
+
+  - command: rpm -q nginx
+    description: Check whether nginx is installed.
+
+flags:
+  - flag: "-q"
+    meaning: Query package information.
+
+  - flag: "-a"
+    meaning: Query all installed packages when used with -q.
+
+  - flag: "-i"
+    meaning: Install an RPM package.
+
+  - flag: "-v"
+    meaning: Display verbose output.
+
+  - flag: "-h"
+    meaning: Display progress indicators during installation.
+
+tags:
+  - linux
+  - rpm
+  - rhel
+  - centos
+  - fedora
+  - packages
+
+difficulty: intermediate
+common: true
+dangerous: true

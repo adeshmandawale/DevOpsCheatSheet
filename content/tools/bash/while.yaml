@@ -1,0 +1,29 @@
+id: bash-while
+tool: bash
+category: loops
+name: while
+title: Repeat while a condition succeeds
+slug: while
+description: Repeatedly execute commands while a condition returns success.
+
+syntax:
+  - while <condition>; do <commands>; done
+
+examples:
+  - command: while read -r line; do echo "$line"; done < input.txt
+    description: Read and process a file line by line.
+
+  - command: while [ "$count" -lt 5 ]; do echo "$count"; count=$((count + 1)); done
+    description: Repeat a block while a numeric condition is true.
+
+flags:
+  []
+
+tags:
+  - loops
+  - scripting
+  - automation
+
+difficulty: intermediate
+common: true
+dangerous: false

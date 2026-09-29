@@ -1,0 +1,39 @@
+id: linux-nc
+tool: linux
+category: networking
+name: nc
+title: Test network connections
+slug: nc
+description: Creates TCP or UDP network connections and is commonly used for testing ports and basic network communication.
+
+syntax:
+  - nc -zv host port
+  - nc -l port
+
+examples:
+  - command: nc -zv example.com 443
+    description: Test whether TCP port 443 is reachable on a host.
+
+  - command: nc -l 8080
+    description: Listen for incoming connections on port 8080.
+
+flags:
+  - flag: "-z"
+    meaning: Scan for listening services without sending data.
+
+  - flag: "-v"
+    meaning: Enable verbose output.
+
+  - flag: "-l"
+    meaning: Listen for incoming connections.
+
+tags:
+  - linux
+  - networking
+  - ports
+  - troubleshooting
+  - tcp
+
+difficulty: intermediate
+common: true
+dangerous: false

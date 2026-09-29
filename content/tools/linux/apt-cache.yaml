@@ -1,0 +1,37 @@
+id: linux-apt-cache
+tool: linux
+category: package-management
+name: apt-cache
+title: Query the APT package cache
+slug: apt-cache
+description: Searches and displays information about packages available through APT.
+
+syntax:
+  - apt-cache search keyword
+  - apt-cache show package
+  - apt-cache policy package
+
+examples:
+  - command: apt-cache search nginx
+    description: Search for packages related to nginx.
+
+  - command: apt-cache show nginx
+    description: Display detailed information about the nginx package.
+
+  - command: apt-cache policy nginx
+    description: Display installed and available versions of nginx.
+
+flags:
+  []
+
+tags:
+  - linux
+  - apt
+  - debian
+  - ubuntu
+  - packages
+  - search
+
+difficulty: beginner
+common: true
+dangerous: false

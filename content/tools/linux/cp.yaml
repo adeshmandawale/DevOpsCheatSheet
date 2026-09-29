@@ -1,0 +1,38 @@
+id: linux-cp
+tool: linux
+category: file-management
+name: cp
+title: Copy Files and Directories
+slug: cp
+description: Copy files or directories from one location to another.
+
+syntax:
+  - cp source destination
+  - cp -r source-directory destination-directory
+
+examples:
+  - command: cp file.txt backup.txt
+    description: Copy file.txt to backup.txt.
+
+  - command: cp file.txt /tmp/
+    description: Copy file.txt into the /tmp directory.
+
+  - command: cp -r project backup
+    description: Recursively copy the project directory.
+
+flags:
+  - flag: "-r"
+    meaning: Copy directories recursively
+
+  - flag: "-i"
+    meaning: Ask before overwriting an existing file
+
+tags:
+  - linux
+  - files
+  - directories
+  - copy
+
+difficulty: beginner
+common: true
+dangerous: false

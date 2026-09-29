@@ -1,0 +1,29 @@
+id: bash-input-redirection
+tool: <
+category: redirection
+name: <
+title: Redirect file input
+slug: input-redirection
+description: Use the contents of a file as standard input for a command.
+
+syntax:
+  - command < file
+
+examples:
+  - command: wc -l < access.log
+    description: Count lines using the file as standard input.
+
+  - command: sort < names.txt
+    description: Sort the contents of a file through standard input.
+
+flags:
+  []
+
+tags:
+  - redirection
+  - input
+  - files
+
+difficulty: beginner
+common: true
+dangerous: false

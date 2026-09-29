@@ -1,0 +1,33 @@
+id: linux-su
+tool: linux
+category: user-management
+name: su
+title: Switch to another user
+slug: su
+description: Switches to another user account and starts a shell with that user's identity.
+
+syntax:
+  - su username
+  - su - username
+
+examples:
+  - command: su root
+    description: Switch to the root user.
+
+  - command: su - adesh
+    description: Switch to a user and load that user's login environment.
+
+flags:
+  - flag: "-"
+    meaning: Start a login shell and load the target user's environment.
+
+tags:
+  - linux
+  - users
+  - root
+  - permissions
+  - security
+
+difficulty: beginner
+common: true
+dangerous: true

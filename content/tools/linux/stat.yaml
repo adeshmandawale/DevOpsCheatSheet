@@ -1,0 +1,36 @@
+id: linux-stat
+tool: linux
+category: disk-filesystem
+name: stat
+title: Display file metadata
+slug: stat
+description: Displays detailed information about a file or filesystem, including permissions, ownership, size, and timestamps.
+
+syntax:
+  - stat file
+  - stat directory
+
+examples:
+  - command: stat app.log
+    description: Display detailed metadata for a file.
+
+  - command: stat /var/log
+    description: Display metadata for a directory.
+
+flags:
+  - flag: "-c"
+    meaning: Specify a custom output format.
+
+  - flag: "-f"
+    meaning: Display filesystem status instead of file status.
+
+tags:
+  - linux
+  - files
+  - filesystem
+  - metadata
+  - permissions
+
+difficulty: beginner
+common: true
+dangerous: false

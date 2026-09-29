@@ -1,0 +1,32 @@
+id: linux-zcat
+tool: linux
+category: archives-compression
+name: zcat
+title: View gzip-compressed files
+slug: zcat
+description: Displays the contents of gzip-compressed files without manually extracting them first.
+
+syntax:
+  - zcat file.gz
+  - zcat file.gz | less
+
+examples:
+  - command: zcat access.log.gz
+    description: Print the contents of a compressed log file.
+
+  - command: zcat access.log.gz | less
+    description: View a compressed log file page by page.
+
+flags:
+  []
+
+tags:
+  - linux
+  - compression
+  - logs
+  - files
+  - troubleshooting
+
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,30 @@
+id: bash-background
+tool: &
+category: jobs-processes
+name: &
+title: Run commands in the background
+slug: background
+description: Start a command as a background job so the shell can continue accepting commands.
+
+syntax:
+  - command &
+  - command > output.log 2>&1 &
+
+examples:
+  - command: npm run dev &
+    description: Start a development process in the background.
+
+  - command: long-task > task.log 2>&1 &
+    description: Run a long task in the background and redirect its output.
+
+flags:
+  []
+
+tags:
+  - processes
+  - jobs
+  - background
+
+difficulty: beginner
+common: true
+dangerous: false

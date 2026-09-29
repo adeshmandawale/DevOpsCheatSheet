@@ -1,0 +1,39 @@
+id: git-grep
+tool: git
+category: inspection
+name: git grep
+title: Search tracked files
+slug: grep
+description: Search for text patterns in files tracked by Git.
+
+syntax:
+  - git grep <pattern>
+  - git grep -n <pattern>
+  - git grep <pattern> -- <path>
+
+examples:
+  - command: git grep TODO
+    description: Search tracked files for TODO.
+
+  - command: git grep -n "function login" -- src/
+    description: Search for a pattern under the src directory and show line numbers.
+
+flags:
+  - flag: "-n"
+    meaning: Show line numbers for matching lines.
+
+  - flag: "-i"
+    meaning: Ignore case when searching.
+
+  - flag: "-l"
+    meaning: Show only the names of files containing matches.
+
+tags:
+  - search
+  - files
+  - inspection
+  - text
+
+difficulty: intermediate
+common: true
+dangerous: false

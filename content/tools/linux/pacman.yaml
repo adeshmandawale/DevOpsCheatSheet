@@ -1,0 +1,45 @@
+id: linux-pacman
+tool: linux
+category: package-management
+name: pacman
+title: Manage Arch Linux packages
+slug: pacman
+description: The primary package management utility for Arch Linux and Arch-based distributions.
+
+syntax:
+  - sudo pacman -S package
+  - sudo pacman -Syu
+  - pacman -Q
+
+examples:
+  - command: sudo pacman -S nginx
+    description: Install nginx on an Arch-based system.
+
+  - command: sudo pacman -Syu
+    description: Synchronize package databases and upgrade the system.
+
+  - command: pacman -Q
+    description: List installed packages.
+
+flags:
+  - flag: "-S"
+    meaning: Synchronize and install packages.
+
+  - flag: "-y"
+    meaning: Refresh package databases.
+
+  - flag: "-u"
+    meaning: Upgrade outdated packages.
+
+  - flag: "-Q"
+    meaning: Query installed packages.
+
+tags:
+  - linux
+  - pacman
+  - arch
+  - packages
+
+difficulty: intermediate
+common: true
+dangerous: true

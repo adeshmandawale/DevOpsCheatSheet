@@ -1,0 +1,32 @@
+id: linux-chgrp
+tool: linux
+category: permissions
+name: chgrp
+title: Change File Group
+slug: chgrp
+description: Change the group ownership of files and directories.
+
+syntax:
+  - chgrp group file
+  - chgrp -R group directory
+
+examples:
+  - command: chgrp devops project.txt
+    description: Change the group ownership of project.txt.
+
+  - command: chgrp -R devops project/
+    description: Recursively change the group of a directory.
+
+flags:
+  - flag: "-R"
+    meaning: Apply the group change recursively
+
+tags:
+  - linux
+  - permissions
+  - groups
+  - security
+
+difficulty: beginner
+common: false
+dangerous: true

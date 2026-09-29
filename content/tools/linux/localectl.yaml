@@ -1,0 +1,29 @@
+id: linux-localectl
+tool: linux
+category: systemd
+name: localectl
+title: Manage system locale
+slug: localectl
+description: Displays and manages system locale and keyboard layout settings.
+
+syntax:
+  - localectl
+  - localectl status
+
+examples:
+  - command: localectl status
+    description: Display the current locale and keyboard configuration.
+
+flags:
+  []
+
+tags:
+  - linux
+  - systemd
+  - locale
+  - keyboard
+  - system
+
+difficulty: intermediate
+common: false
+dangerous: false

@@ -1,0 +1,31 @@
+id: bash-pipeline
+tool: |
+category: redirection
+name: |
+title: Pipe command output
+slug: pipe
+description: Send the standard output of one command to the standard input of another command.
+
+syntax:
+  - command1 | command2
+  - command1 | command2 | command3
+
+examples:
+  - command: ps aux | grep nginx
+    description: Search process output for nginx.
+
+  - command: cat access.log | grep 404 | wc -l
+    description: Count lines containing HTTP 404 responses.
+
+flags:
+  []
+
+tags:
+  - pipe
+  - redirection
+  - shell
+  - commands
+
+difficulty: beginner
+common: true
+dangerous: false

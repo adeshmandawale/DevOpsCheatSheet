@@ -1,0 +1,28 @@
+id: linux-groupadd
+tool: linux
+category: group-management
+name: groupadd
+title: Create a group
+slug: groupadd
+description: Creates a new group on the Linux system.
+
+syntax:
+  - sudo groupadd groupname
+
+examples:
+  - command: sudo groupadd developers
+    description: Create a group named developers.
+
+flags:
+  - flag: "-g"
+    meaning: Specify a particular numeric group ID.
+
+tags:
+  - linux
+  - groups
+  - users
+  - permissions
+
+difficulty: beginner
+common: true
+dangerous: true

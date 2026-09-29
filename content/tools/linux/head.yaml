@@ -1,0 +1,35 @@
+id: linux-head
+tool: linux
+category: text-processing
+name: head
+title: Show Beginning of File
+slug: head
+description: Display the beginning lines of a file or command output.
+
+syntax:
+  - head file.txt
+  - head -n 20 file.txt
+
+examples:
+  - command: head file.txt
+    description: Display the first 10 lines of the file.
+
+  - command: head -n 20 file.txt
+    description: Display the first 20 lines.
+
+  - command: ps aux | head
+    description: Display the first lines of the process list.
+
+flags:
+  - flag: "-n"
+    meaning: Specify the number of lines to display
+
+tags:
+  - linux
+  - text
+  - files
+  - logs
+
+difficulty: beginner
+common: true
+dangerous: false

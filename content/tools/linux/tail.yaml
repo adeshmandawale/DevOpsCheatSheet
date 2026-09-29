@@ -1,0 +1,40 @@
+id: linux-tail
+tool: linux
+category: text-processing
+name: tail
+title: Show End of File
+slug: tail
+description: Display the last lines of a file or command output.
+
+syntax:
+  - tail file.txt
+  - tail -n 20 file.txt
+  - tail -f app.log
+
+examples:
+  - command: tail file.txt
+    description: Display the last 10 lines of the file.
+
+  - command: tail -n 20 file.txt
+    description: Display the last 20 lines.
+
+  - command: tail -f app.log
+    description: Continuously follow new lines added to a log file.
+
+flags:
+  - flag: "-n"
+    meaning: Specify the number of lines to display
+
+  - flag: "-f"
+    meaning: Follow the file as new content is added
+
+tags:
+  - linux
+  - text
+  - files
+  - logs
+  - troubleshooting
+
+difficulty: beginner
+common: true
+dangerous: false

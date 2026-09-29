@@ -1,0 +1,31 @@
+id: linux-cal
+tool: linux
+category: system-information
+name: cal
+title: Display a calendar
+slug: cal
+description: Displays a calendar in the terminal.
+
+syntax:
+  - cal
+  - cal 2026
+
+examples:
+  - command: cal
+    description: Display the calendar for the current month.
+
+  - command: cal 2026
+    description: Display the calendar for an entire year.
+
+flags:
+  []
+
+tags:
+  - linux
+  - calendar
+  - date
+  - time
+
+difficulty: beginner
+common: false
+dangerous: false

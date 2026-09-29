@@ -1,0 +1,27 @@
+id: linux-sync
+tool: linux
+category: disk-filesystem
+name: sync
+title: Flush filesystem buffers
+slug: sync
+description: Forces pending filesystem data and metadata to be written to storage.
+
+syntax:
+  - sync
+
+examples:
+  - command: sync
+    description: Flush pending filesystem writes to storage.
+
+flags:
+  []
+
+tags:
+  - linux
+  - disk
+  - filesystem
+  - storage
+
+difficulty: beginner
+common: false
+dangerous: false

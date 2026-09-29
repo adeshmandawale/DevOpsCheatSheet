@@ -1,0 +1,34 @@
+id: git-show
+tool: git
+category: inspection
+name: git show
+title: Show commit details
+slug: show
+description: Display information and changes introduced by a commit or other Git object.
+
+syntax:
+  - git show
+  - git show <commit>
+
+examples:
+  - command: git show
+    description: Show details of the latest commit.
+
+  - command: git show HEAD~1
+    description: Show the commit before the current HEAD.
+
+flags:
+  - flag: "--stat"
+    meaning: Show a summary of changed files instead of the full patch.
+
+  - flag: "--name-only"
+    meaning: Show only the names of changed files.
+
+tags:
+  - history
+  - commit
+  - inspection
+
+difficulty: beginner
+common: true
+dangerous: false

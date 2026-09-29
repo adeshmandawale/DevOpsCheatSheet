@@ -1,0 +1,27 @@
+id: linux-runlevel
+tool: linux
+category: systemd
+name: runlevel
+title: Display the current runlevel
+slug: runlevel
+description: Displays the previous and current SysV runlevel, where supported.
+
+syntax:
+  - runlevel
+
+examples:
+  - command: runlevel
+    description: Display the current runlevel information.
+
+flags:
+  []
+
+tags:
+  - linux
+  - systemd
+  - runlevel
+  - sysvinit
+
+difficulty: intermediate
+common: false
+dangerous: false

@@ -1,0 +1,38 @@
+id: git-diff
+tool: git
+category: inspection
+name: git diff
+title: Compare changes
+slug: diff
+description: Show differences between working tree, staging area, commits, or branches.
+
+syntax:
+  - git diff
+  - git diff --staged
+  - git diff <branch1> <branch2>
+
+examples:
+  - command: git diff
+    description: Show unstaged changes.
+
+  - command: git diff --staged
+    description: Show changes currently staged for commit.
+
+  - command: git diff main feature
+    description: Compare two branches.
+
+flags:
+  - flag: "--staged"
+    meaning: Show changes staged for the next commit.
+
+  - flag: "--stat"
+    meaning: Show a summary of changed files.
+
+tags:
+  - diff
+  - changes
+  - comparison
+
+difficulty: beginner
+common: true
+dangerous: false

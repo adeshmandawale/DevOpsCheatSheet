@@ -1,0 +1,31 @@
+id: bash-alias
+tool: bash
+category: shell
+name: alias
+title: Create command shortcuts
+slug: alias
+description: Define or display shell aliases that expand into commands.
+
+syntax:
+  - alias
+  - alias <name>='<command>'
+  - unalias <name>
+
+examples:
+  - command: alias ll='ls -lah'
+    description: Create a shortcut named ll.
+
+  - command: alias gs='git status'
+    description: Create a shortcut for git status.
+
+flags:
+  []
+
+tags:
+  - shell
+  - alias
+  - shortcuts
+
+difficulty: beginner
+common: true
+dangerous: false

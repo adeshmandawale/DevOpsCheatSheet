@@ -1,0 +1,35 @@
+id: linux-xz
+tool: linux
+category: archives-compression
+name: xz
+title: Compress files using xz
+slug: xz
+description: Compresses files using the xz compression format, which provides high compression ratios.
+
+syntax:
+  - xz file.txt
+  - xz -k file.txt
+
+examples:
+  - command: xz large.log
+    description: Compress a file into large.log.xz.
+
+  - command: xz -k large.log
+    description: Compress the file while keeping the original.
+
+flags:
+  - flag: "-k"
+    meaning: Keep the original file.
+
+  - flag: "-d"
+    meaning: Decompress an xz file.
+
+tags:
+  - linux
+  - compression
+  - files
+  - archives
+
+difficulty: intermediate
+common: false
+dangerous: false

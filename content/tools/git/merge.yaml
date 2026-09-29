@@ -1,0 +1,34 @@
+id: git-merge
+tool: git
+category: branching
+name: git merge
+title: Merge branches
+slug: merge
+description: Join the changes from one branch into another branch.
+
+syntax:
+  - git merge <branch>
+  - git merge --no-ff <branch>
+
+examples:
+  - command: git switch main && git merge feature-login
+    description: Merge feature-login into main.
+
+  - command: git merge --no-ff feature-login
+    description: Create a merge commit even when a fast-forward is possible.
+
+flags:
+  - flag: "--no-ff"
+    meaning: Always create a merge commit.
+
+  - flag: "--abort"
+    meaning: Abort an in-progress merge.
+
+tags:
+  - branch
+  - merge
+  - integration
+
+difficulty: intermediate
+common: true
+dangerous: false

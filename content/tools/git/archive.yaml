@@ -1,0 +1,34 @@
+id: git-archive
+tool: git
+category: repository
+name: git archive
+title: Create a source archive
+slug: archive
+description: Create an archive of files from a Git tree, commit, or branch.
+
+syntax:
+  - git archive <tree-ish>
+  - git archive --format=tar.gz -o <file> <tree-ish>
+
+examples:
+  - command: git archive --format=tar.gz -o project.tar.gz main
+    description: Create a compressed archive of the main branch.
+
+  - command: git archive -o project.zip HEAD
+    description: Create a ZIP archive from the current commit.
+
+flags:
+  - flag: "--format=<format>"
+    meaning: Specify the archive format.
+
+  - flag: "-o <file>"
+    meaning: Write the archive to the specified file.
+
+tags:
+  - archive
+  - release
+  - repository
+
+difficulty: intermediate
+common: false
+dangerous: false

@@ -1,0 +1,30 @@
+id: bash-bg
+tool: bg
+category: jobs-processes
+name: bg
+title: Resume a job in the background
+slug: bg
+description: Resume a suspended job while keeping it running in the background.
+
+syntax:
+  - bg
+  - bg %<job>
+
+examples:
+  - command: bg
+    description: Resume the most recently suspended job in the background.
+
+  - command: bg %1
+    description: Resume job number 1 in the background.
+
+flags:
+  []
+
+tags:
+  - jobs
+  - processes
+  - background
+
+difficulty: beginner
+common: true
+dangerous: false

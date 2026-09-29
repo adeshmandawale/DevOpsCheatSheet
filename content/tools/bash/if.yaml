@@ -1,0 +1,30 @@
+id: bash-if
+tool: bash
+category: control-flow
+name: if
+title: Run commands conditionally
+slug: if
+description: Execute different commands depending on whether a condition succeeds.
+
+syntax:
+  - if <condition>; then <commands>; fi
+  - if <condition>; then <commands>; else <commands>; fi
+
+examples:
+  - command: if [ -f "config.yaml" ]; then echo "Found"; fi
+    description: Run a command when a file exists.
+
+  - command: if [ "$ENV" = "production" ]; then echo "Production"; else echo "Other"; fi
+    description: Choose between two branches based on a variable.
+
+flags:
+  []
+
+tags:
+  - conditions
+  - control-flow
+  - scripting
+
+difficulty: beginner
+common: true
+dangerous: false

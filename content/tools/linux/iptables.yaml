@@ -1,0 +1,41 @@
+id: iptables
+tool: linux
+category: networking
+name: iptables
+title: Manage Firewall Rules
+slug: iptables
+description: Configure and inspect packet filtering rules in the Linux kernel's netfilter framework.
+
+syntax:
+  - sudo iptables -L
+  - sudo iptables -A <chain> <rule>
+
+examples:
+  - command: sudo iptables -L -n -v
+    description: List firewall rules with numeric addresses and packet counters.
+
+  - command: sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+    description: Add a rule allowing incoming TCP traffic on port 22.
+
+flags:
+  - flag: "-L"
+    meaning: List rules in a chain or all chains.
+
+  - flag: "-A"
+    meaning: Append a rule to a chain.
+
+  - flag: "-D"
+    meaning: Delete a rule from a chain.
+
+  - flag: "-n"
+    meaning: Display numeric addresses and ports without name resolution.
+
+tags:
+  - networking
+  - firewall
+  - security
+  - netfilter
+
+difficulty: advanced
+common: true
+dangerous: true

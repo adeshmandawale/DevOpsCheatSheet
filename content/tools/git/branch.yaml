@@ -1,0 +1,44 @@
+id: git-branch
+tool: git
+category: branching
+name: git branch
+title: Manage branches
+slug: branch
+description: List, create, rename, or delete branches.
+
+syntax:
+  - git branch
+  - git branch <branch>
+  - git branch -d <branch>
+
+examples:
+  - command: git branch
+    description: List local branches.
+
+  - command: git branch feature-login
+    description: Create a new branch.
+
+  - command: git branch -d feature-login
+    description: Delete a fully merged branch.
+
+flags:
+  - flag: "-a"
+    meaning: List local and remote-tracking branches.
+
+  - flag: "-d"
+    meaning: Delete a fully merged branch.
+
+  - flag: "-D"
+    meaning: Force-delete a branch.
+
+  - flag: "-m"
+    meaning: Rename a branch.
+
+tags:
+  - branch
+  - branching
+  - workflow
+
+difficulty: beginner
+common: true
+dangerous: false

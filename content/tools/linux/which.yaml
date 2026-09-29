@@ -1,0 +1,30 @@
+id: linux-which
+tool: linux
+category: system-information
+name: which
+title: Locate a command
+slug: which
+description: Shows the path of the executable that would be used when a command is run.
+
+syntax:
+  - which command
+
+examples:
+  - command: which python
+    description: Show the path of the Python executable found in PATH.
+
+  - command: which git
+    description: Show the location of the Git executable.
+
+flags:
+  []
+
+tags:
+  - linux
+  - commands
+  - path
+  - troubleshooting
+
+difficulty: beginner
+common: true
+dangerous: false

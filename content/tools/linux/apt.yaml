@@ -1,0 +1,47 @@
+id: linux-apt
+tool: linux
+category: package-management
+name: apt
+title: Manage packages on Debian-based systems
+slug: apt
+description: A high-level package management command used on Debian and Ubuntu systems.
+
+syntax:
+  - sudo apt update
+  - sudo apt install package
+  - sudo apt remove package
+
+examples:
+  - command: sudo apt update
+    description: Refresh the local package index.
+
+  - command: sudo apt install nginx
+    description: Install the nginx package.
+
+  - command: sudo apt remove nginx
+    description: Remove the nginx package.
+
+flags:
+  - flag: "update"
+    meaning: Download the latest package information.
+
+  - flag: "install"
+    meaning: Install one or more packages.
+
+  - flag: "remove"
+    meaning: Remove installed packages.
+
+  - flag: "upgrade"
+    meaning: Upgrade installed packages.
+
+tags:
+  - linux
+  - apt
+  - debian
+  - ubuntu
+  - packages
+  - devops
+
+difficulty: beginner
+common: true
+dangerous: true

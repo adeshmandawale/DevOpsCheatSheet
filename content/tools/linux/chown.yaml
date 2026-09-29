@@ -1,0 +1,36 @@
+id: linux-chown
+tool: linux
+category: permissions
+name: chown
+title: Change File Owner
+slug: chown
+description: Change the owner and optionally the group of files and directories.
+
+syntax:
+  - chown user file
+  - chown user:group file
+  - chown -R user:group directory
+
+examples:
+  - command: chown adesh file.txt
+    description: Change the owner of file.txt.
+
+  - command: chown adesh:devops file.txt
+    description: Change both the owner and group.
+
+  - command: chown -R adesh:devops project/
+    description: Recursively change ownership of a directory.
+
+flags:
+  - flag: "-R"
+    meaning: Apply ownership changes recursively
+
+tags:
+  - linux
+  - permissions
+  - ownership
+  - security
+
+difficulty: beginner
+common: true
+dangerous: true

@@ -1,0 +1,40 @@
+id: linux-uniq
+tool: linux
+category: text-processing
+name: uniq
+title: Filter Repeated Lines
+slug: uniq
+description: Report or remove consecutive repeated lines from text.
+
+syntax:
+  - uniq file.txt
+  - sort file.txt | uniq
+  - sort file.txt | uniq -c
+
+examples:
+  - command: uniq file.txt
+    description: Remove consecutive duplicate lines.
+
+  - command: sort names.txt | uniq
+    description: Sort the lines and remove duplicate values.
+
+  - command: sort names.txt | uniq -c
+    description: Count occurrences of each unique line.
+
+flags:
+  - flag: "-c"
+    meaning: Prefix lines with their number of occurrences
+
+  - flag: "-d"
+    meaning: Display only duplicated lines
+
+tags:
+  - linux
+  - text
+  - duplicates
+  - sorting
+  - files
+
+difficulty: beginner
+common: true
+dangerous: false

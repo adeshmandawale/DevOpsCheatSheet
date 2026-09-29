@@ -1,0 +1,35 @@
+id: git-pull
+tool: git
+category: remote
+name: git pull
+title: Fetch and integrate remote changes
+slug: pull
+description: Fetch changes from a remote repository and integrate them into the current branch.
+
+syntax:
+  - git pull
+  - git pull origin main
+  - git pull --rebase
+
+examples:
+  - command: git pull origin main
+    description: Fetch and integrate changes from the main branch on origin.
+
+  - command: git pull --rebase
+    description: Fetch and rebase local commits onto the updated remote branch.
+
+flags:
+  - flag: "--rebase"
+    meaning: Rebase local commits instead of merging.
+
+  - flag: "--ff-only"
+    meaning: Only update when the pull can be completed as a fast-forward.
+
+tags:
+  - remote
+  - sync
+  - update
+
+difficulty: beginner
+common: true
+dangerous: false

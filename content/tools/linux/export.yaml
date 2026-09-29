@@ -1,0 +1,32 @@
+id: linux-export
+tool: linux
+category: environment
+name: export
+title: Set environment variables
+slug: export
+description: Sets shell variables as environment variables that can be inherited by processes started from the shell.
+
+syntax:
+  - export VARIABLE=value
+  - export PATH=$PATH:/new/path
+
+examples:
+  - command: export APP_ENV=production
+    description: Set an environment variable for the current shell and its child processes.
+
+  - command: export PATH=$PATH:/opt/tools
+    description: Add a directory to the existing PATH.
+
+flags:
+  []
+
+tags:
+  - linux
+  - environment
+  - variables
+  - shell
+  - devops
+
+difficulty: beginner
+common: true
+dangerous: false

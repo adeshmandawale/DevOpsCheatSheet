@@ -1,0 +1,39 @@
+id: git-ls-files
+tool: git
+category: inspection
+name: git ls-files
+title: List tracked files
+slug: ls-files
+description: Show files tracked by Git and inspect the contents of the index.
+
+syntax:
+  - git ls-files
+  - git ls-files <path>
+  - git ls-files --cached
+
+examples:
+  - command: git ls-files
+    description: List all files currently tracked by Git.
+
+  - command: git ls-files src/
+    description: List tracked files under the src directory.
+
+flags:
+  - flag: "--cached"
+    meaning: Show files tracked in the index.
+
+  - flag: "--others"
+    meaning: Show untracked files.
+
+  - flag: "--ignored"
+    meaning: Show ignored files.
+
+tags:
+  - inspection
+  - files
+  - staging
+  - index
+
+difficulty: intermediate
+common: false
+dangerous: false

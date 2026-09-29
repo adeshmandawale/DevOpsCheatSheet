@@ -1,0 +1,49 @@
+id: linux-tar
+tool: linux
+category: archives-compression
+name: tar
+title: Create and extract archives
+slug: tar
+description: Creates, lists, and extracts files from tar archives and is commonly used for packaging files and directories.
+
+syntax:
+  - tar -cf archive.tar directory
+  - tar -xf archive.tar
+  - tar -tf archive.tar
+
+examples:
+  - command: tar -cf backup.tar project/
+    description: Create a tar archive containing the project directory.
+
+  - command: tar -xf backup.tar
+    description: Extract the contents of a tar archive.
+
+  - command: tar -tf backup.tar
+    description: List the files stored inside an archive.
+
+flags:
+  - flag: "-c"
+    meaning: Create a new archive.
+
+  - flag: "-x"
+    meaning: Extract files from an archive.
+
+  - flag: "-f"
+    meaning: Specify the archive filename.
+
+  - flag: "-t"
+    meaning: List the contents of an archive.
+
+  - flag: "-v"
+    meaning: Show detailed output while processing files.
+
+tags:
+  - linux
+  - archives
+  - backup
+  - files
+  - devops
+
+difficulty: beginner
+common: true
+dangerous: false

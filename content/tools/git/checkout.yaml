@@ -1,0 +1,38 @@
+id: git-checkout
+tool: git
+category: branching
+name: git checkout
+title: Switch branches or restore files
+slug: checkout
+description: Switch branches or restore files from a commit. Git switch and git restore are preferred for many modern workflows.
+
+syntax:
+  - git checkout <branch>
+  - git checkout -b <new-branch>
+  - git checkout <commit> -- <file>
+
+examples:
+  - command: git checkout main
+    description: Switch to the main branch.
+
+  - command: git checkout -b feature-login
+    description: Create and switch to a new branch.
+
+  - command: git checkout HEAD -- index.html
+    description: Restore a file from the current commit.
+
+flags:
+  - flag: "-b"
+    meaning: Create a new branch and switch to it.
+
+  - flag: "--"
+    meaning: Separate branch or commit references from file paths.
+
+tags:
+  - branch
+  - restore
+  - legacy
+
+difficulty: intermediate
+common: true
+dangerous: false

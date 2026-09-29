@@ -1,0 +1,31 @@
+id: linux-groups
+tool: linux
+category: group-management
+name: groups
+title: Display user group memberships
+slug: groups
+description: Displays the groups to which a user belongs.
+
+syntax:
+  - groups
+  - groups username
+
+examples:
+  - command: groups
+    description: Display the groups of the current user.
+
+  - command: groups adesh
+    description: Display the groups associated with a specified user.
+
+flags:
+  []
+
+tags:
+  - linux
+  - groups
+  - users
+  - permissions
+
+difficulty: beginner
+common: true
+dangerous: false

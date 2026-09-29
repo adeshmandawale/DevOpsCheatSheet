@@ -1,0 +1,37 @@
+id: git-rebase
+tool: git
+category: branching
+name: git rebase
+title: Reapply commits onto another base
+slug: rebase
+description: Move or replay commits onto a different base commit.
+
+syntax:
+  - git rebase <branch>
+  - git rebase -i HEAD~3
+
+examples:
+  - command: git rebase main
+    description: Rebase the current branch onto main.
+
+  - command: git rebase -i HEAD~3
+    description: Interactively edit the last three commits.
+
+flags:
+  - flag: "-i"
+    meaning: Open an interactive rebase session.
+
+  - flag: "--continue"
+    meaning: Continue after resolving conflicts.
+
+  - flag: "--abort"
+    meaning: Cancel the current rebase.
+
+tags:
+  - branch
+  - rebase
+  - history
+
+difficulty: advanced
+common: true
+dangerous: true

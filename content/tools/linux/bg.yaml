@@ -1,0 +1,31 @@
+id: linux-bg
+tool: linux
+category: process-management
+name: bg
+title: Resume a stopped job in the background
+slug: bg
+description: Resumes a stopped shell job and runs it in the background.
+
+syntax:
+  - bg
+  - bg %1
+
+examples:
+  - command: bg
+    description: Resume the most recently stopped job in the background.
+
+  - command: bg %1
+    description: Resume job number 1 in the background.
+
+flags:
+  []
+
+tags:
+  - linux
+  - processes
+  - jobs
+  - shell
+
+difficulty: beginner
+common: true
+dangerous: false

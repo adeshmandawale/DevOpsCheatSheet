@@ -1,0 +1,30 @@
+id: git-mv
+tool: git
+category: staging
+name: git mv
+title: Move or rename files
+slug: mv
+description: Move or rename a file while automatically staging the change.
+
+syntax:
+  - git mv <old-name> <new-name>
+  - git mv <file> <directory>
+
+examples:
+  - command: git mv old-name.txt new-name.txt
+    description: Rename a tracked file.
+
+  - command: git mv app.js src/app.js
+    description: Move a tracked file into another directory.
+
+flags:
+  []
+
+tags:
+  - files
+  - rename
+  - move
+
+difficulty: beginner
+common: true
+dangerous: false

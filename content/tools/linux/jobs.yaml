@@ -1,0 +1,32 @@
+id: linux-jobs
+tool: linux
+category: process-management
+name: jobs
+title: List shell jobs
+slug: jobs
+description: Displays jobs started from the current shell, including background and stopped jobs.
+
+syntax:
+  - jobs
+  - jobs -l
+
+examples:
+  - command: jobs
+    description: List background and stopped jobs in the current shell.
+
+  - command: jobs -l
+    description: Display jobs together with their process IDs.
+
+flags:
+  - flag: "-l"
+    meaning: List process IDs in addition to normal job information.
+
+tags:
+  - linux
+  - processes
+  - jobs
+  - shell
+
+difficulty: beginner
+common: true
+dangerous: false

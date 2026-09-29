@@ -1,0 +1,37 @@
+id: linux-mount
+tool: linux
+category: disk-filesystem
+name: mount
+title: Mount a filesystem
+slug: mount
+description: Attaches a filesystem to a directory in the Linux filesystem hierarchy.
+
+syntax:
+  - mount
+  - sudo mount /dev/sdb1 /mnt
+  - mount -t filesystem device directory
+
+examples:
+  - command: mount
+    description: Display currently mounted filesystems.
+
+  - command: sudo mount /dev/sdb1 /mnt
+    description: Mount a partition at the /mnt directory.
+
+flags:
+  - flag: "-t"
+    meaning: Specify the filesystem type.
+
+  - flag: "-a"
+    meaning: Mount all filesystems listed in /etc/fstab.
+
+tags:
+  - linux
+  - disk
+  - filesystem
+  - mount
+  - storage
+
+difficulty: intermediate
+common: true
+dangerous: true

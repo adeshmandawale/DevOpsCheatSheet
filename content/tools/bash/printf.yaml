@@ -1,0 +1,30 @@
+id: bash-printf
+tool: bash
+category: output
+name: printf
+title: Format and print output
+slug: printf
+description: Print formatted text using format strings and arguments.
+
+syntax:
+  - printf "<format>" <arguments>
+  - printf "%s\n" "$VARIABLE"
+
+examples:
+  - command: printf "Hello %s\n" "Adesh"
+    description: Print formatted text with a string argument.
+
+  - command: printf "Count: %d\n" 10
+    description: Print an integer using a numeric format.
+
+flags:
+  []
+
+tags:
+  - output
+  - formatting
+  - shell
+
+difficulty: beginner
+common: true
+dangerous: false

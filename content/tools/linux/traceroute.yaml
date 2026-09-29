@@ -1,0 +1,28 @@
+id: linux-traceroute
+tool: linux
+category: networking
+name: traceroute
+title: Trace the network path to a host
+slug: traceroute
+description: Shows the network hops taken by packets while traveling to a destination.
+
+syntax:
+  - traceroute hostname
+  - traceroute IP
+
+examples:
+  - command: traceroute example.com
+    description: Display the network path between the local system and a destination.
+
+flags:
+  []
+
+tags:
+  - linux
+  - networking
+  - routing
+  - troubleshooting
+
+difficulty: intermediate
+common: true
+dangerous: false

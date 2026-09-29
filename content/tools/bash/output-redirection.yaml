@@ -1,0 +1,30 @@
+id: bash-output-redirection
+tool: >
+category: redirection
+name: > / >>
+title: Redirect command output
+slug: output-redirection
+description: Write or append command output to files instead of displaying it on the terminal.
+
+syntax:
+  - command > file
+  - command >> file
+
+examples:
+  - command: echo "hello" > output.txt
+    description: Write output to a file, replacing existing contents.
+
+  - command: echo "another line" >> output.txt
+    description: Append output to an existing file.
+
+flags:
+  []
+
+tags:
+  - redirection
+  - files
+  - output
+
+difficulty: beginner
+common: true
+dangerous: true

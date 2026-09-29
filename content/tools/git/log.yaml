@@ -1,0 +1,44 @@
+id: git-log
+tool: git
+category: history
+name: git log
+title: View commit history
+slug: log
+description: Display the commit history of a repository.
+
+syntax:
+  - git log
+  - git log --oneline
+  - git log --graph --oneline --decorate
+
+examples:
+  - command: git log
+    description: Show detailed commit history.
+
+  - command: git log --oneline
+    description: Show commits in a compact one-line format.
+
+  - command: git log --graph --oneline --decorate
+    description: Display a compact graphical history with branch references.
+
+flags:
+  - flag: "--oneline"
+    meaning: Show each commit on a single line.
+
+  - flag: "--graph"
+    meaning: Display branch history using an ASCII graph.
+
+  - flag: "--decorate"
+    meaning: Show branch and tag references.
+
+  - flag: "-n <number>"
+    meaning: Limit the number of commits shown.
+
+tags:
+  - history
+  - commits
+  - branches
+
+difficulty: beginner
+common: true
+dangerous: false

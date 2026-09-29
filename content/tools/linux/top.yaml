@@ -1,0 +1,33 @@
+id: linux-top
+tool: linux
+category: process-management
+name: top
+title: Monitor processes in real time
+slug: top
+description: Provides a real-time view of running processes and system resource usage.
+
+syntax:
+  - top
+  - top -u username
+
+examples:
+  - command: top
+    description: Monitor CPU, memory, load average, and running processes in real time.
+
+  - command: top -u username
+    description: Display processes belonging to a specific user.
+
+flags:
+  - flag: "-u"
+    meaning: Show processes belonging to a specific user.
+
+tags:
+  - linux
+  - processes
+  - monitoring
+  - cpu
+  - memory
+
+difficulty: beginner
+common: true
+dangerous: false

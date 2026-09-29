@@ -1,0 +1,32 @@
+id: linux-nice
+tool: linux
+category: process-management
+name: nice
+title: Run a command with a modified priority
+slug: nice
+description: Starts a command with a specified process scheduling priority.
+
+syntax:
+  - nice command
+  - nice -n 10 command
+
+examples:
+  - command: nice sleep 100
+    description: Run a command with the default nice adjustment.
+
+  - command: nice -n 10 backup.sh
+    description: Start a backup script with a lower CPU scheduling priority.
+
+flags:
+  - flag: "-n"
+    meaning: Specify the nice value to apply to the command.
+
+tags:
+  - linux
+  - processes
+  - priority
+  - performance
+
+difficulty: intermediate
+common: false
+dangerous: false

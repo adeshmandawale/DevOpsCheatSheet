@@ -1,0 +1,33 @@
+id: linux-zip
+tool: linux
+category: archives-compression
+name: zip
+title: Create ZIP archives
+slug: zip
+description: Creates compressed ZIP archives containing files and directories.
+
+syntax:
+  - zip archive.zip file.txt
+  - zip -r archive.zip directory/
+
+examples:
+  - command: zip backup.zip config.txt
+    description: Create a ZIP archive containing a file.
+
+  - command: zip -r project.zip project/
+    description: Recursively create a ZIP archive containing a directory.
+
+flags:
+  - flag: "-r"
+    meaning: Recursively include directories and their contents.
+
+tags:
+  - linux
+  - zip
+  - compression
+  - archives
+  - files
+
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,34 @@
+id: git-status
+tool: git
+category: inspection
+name: git status
+title: Show repository status
+slug: status
+description: Display the state of the working tree and staging area.
+
+syntax:
+  - git status
+  - git status --short
+
+examples:
+  - command: git status
+    description: Show detailed information about changed and untracked files.
+
+  - command: git status --short
+    description: Show a compact status summary.
+
+flags:
+  - flag: "--short"
+    meaning: Use a compact output format.
+
+  - flag: "--branch"
+    meaning: Show branch information in short status output.
+
+tags:
+  - status
+  - working-tree
+  - staging
+
+difficulty: beginner
+common: true
+dangerous: false

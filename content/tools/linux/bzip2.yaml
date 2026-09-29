@@ -1,0 +1,35 @@
+id: linux-bzip2
+tool: linux
+category: archives-compression
+name: bzip2
+title: Compress files using bzip2
+slug: bzip2
+description: Compresses files using the bzip2 compression algorithm.
+
+syntax:
+  - bzip2 file.txt
+  - bzip2 -k file.txt
+
+examples:
+  - command: bzip2 large.log
+    description: Compress a file into large.log.bz2.
+
+  - command: bzip2 -k large.log
+    description: Compress a file while keeping the original.
+
+flags:
+  - flag: "-k"
+    meaning: Keep the original file.
+
+  - flag: "-d"
+    meaning: Decompress a bzip2 file.
+
+tags:
+  - linux
+  - compression
+  - files
+  - archives
+
+difficulty: beginner
+common: false
+dangerous: false

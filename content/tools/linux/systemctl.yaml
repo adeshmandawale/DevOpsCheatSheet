@@ -1,0 +1,53 @@
+id: linux-systemctl
+tool: linux
+category: systemd
+name: systemctl
+title: Manage systemd services
+slug: systemctl
+description: Controls and inspects services and other units managed by systemd.
+
+syntax:
+  - systemctl status service
+  - sudo systemctl start service
+  - sudo systemctl stop service
+  - sudo systemctl restart service
+
+examples:
+  - command: systemctl status ssh
+    description: Check the current status of the SSH service.
+
+  - command: sudo systemctl restart nginx
+    description: Restart the nginx service.
+
+  - command: sudo systemctl enable nginx
+    description: Configure nginx to start automatically during boot.
+
+flags:
+  - flag: "status"
+    meaning: Display the current status of a unit.
+
+  - flag: "start"
+    meaning: Start a unit.
+
+  - flag: "stop"
+    meaning: Stop a unit.
+
+  - flag: "restart"
+    meaning: Stop and start a unit again.
+
+  - flag: "enable"
+    meaning: Configure a unit to start automatically at boot.
+
+  - flag: "disable"
+    meaning: Prevent a unit from starting automatically at boot.
+
+tags:
+  - linux
+  - systemd
+  - services
+  - processes
+  - devops
+
+difficulty: beginner
+common: true
+dangerous: true

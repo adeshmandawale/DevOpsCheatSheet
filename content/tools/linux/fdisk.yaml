@@ -1,0 +1,33 @@
+id: linux-fdisk
+tool: linux
+category: disk-filesystem
+name: fdisk
+title: Manage disk partitions
+slug: fdisk
+description: Interactive utility for viewing and modifying partition tables on disks.
+
+syntax:
+  - sudo fdisk -l
+  - sudo fdisk /dev/sdb
+
+examples:
+  - command: sudo fdisk -l
+    description: List partition tables for available disks.
+
+  - command: sudo fdisk /dev/sdb
+    description: Open the interactive partition editor for a disk.
+
+flags:
+  - flag: "-l"
+    meaning: List partition tables instead of opening the interactive editor.
+
+tags:
+  - linux
+  - disk
+  - partitions
+  - storage
+  - administration
+
+difficulty: advanced
+common: false
+dangerous: true

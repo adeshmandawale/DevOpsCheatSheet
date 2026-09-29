@@ -1,0 +1,29 @@
+id: bash-or-operator
+tool: ||
+category: control-flow
+name: ||
+title: Run the next command on failure
+slug: or-operator
+description: Execute the next command only when the previous command fails.
+
+syntax:
+  - command1 || command2
+
+examples:
+  - command: test -f config.yaml || echo 'Missing config'
+    description: Display a message when the file does not exist.
+
+  - command: systemctl is-active nginx || echo 'Nginx is not running'
+    description: Run a fallback command when the service check fails.
+
+flags:
+  []
+
+tags:
+  - control-flow
+  - commands
+  - error-handling
+
+difficulty: beginner
+common: true
+dangerous: false

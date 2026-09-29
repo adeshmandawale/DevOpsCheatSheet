@@ -1,0 +1,32 @@
+id: linux-pgrep
+tool: linux
+category: process-management
+name: pgrep
+title: Find processes by name
+slug: pgrep
+description: Searches for running processes based on their name or other attributes.
+
+syntax:
+  - pgrep process_name
+  - pgrep -a process_name
+
+examples:
+  - command: pgrep nginx
+    description: Find process IDs for processes named nginx.
+
+  - command: pgrep -a nginx
+    description: Show matching process IDs together with their command lines.
+
+flags:
+  - flag: "-a"
+    meaning: List the process ID and the full process name.
+
+tags:
+  - linux
+  - processes
+  - search
+  - troubleshooting
+
+difficulty: intermediate
+common: true
+dangerous: false

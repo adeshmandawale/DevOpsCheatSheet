@@ -1,0 +1,31 @@
+id: linux-history
+tool: linux
+category: environment
+name: history
+title: View command history
+slug: history
+description: Displays commands previously entered in the current shell session or stored shell history.
+
+syntax:
+  - history
+  - history 20
+
+examples:
+  - command: history
+    description: Display the shell command history.
+
+  - command: history 20
+    description: Display the most recent 20 commands.
+
+flags:
+  []
+
+tags:
+  - linux
+  - shell
+  - history
+  - commands
+
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,29 @@
+id: git-init
+tool: git
+category: repository
+name: git init
+title: Initialize a repository
+slug: init
+description: Create a new Git repository in the current directory.
+
+syntax:
+  - git init
+
+examples:
+  - command: git init
+    description: Initialize the current directory as a Git repository.
+
+  - command: git init my-project
+    description: Create a directory and initialize it as a Git repository.
+
+flags:
+  []
+
+tags:
+  - repository
+  - setup
+  - initialize
+
+difficulty: beginner
+common: true
+dangerous: false

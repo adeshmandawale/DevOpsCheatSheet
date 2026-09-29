@@ -1,0 +1,37 @@
+id: bash-read
+tool: bash
+category: input
+name: read
+title: Read user input
+slug: read
+description: Read a line of input from standard input and store it in a variable.
+
+syntax:
+  - read <variable>
+  - read -p "Prompt: " <variable>
+
+examples:
+  - command: read -p "Enter your name: " name
+    description: Prompt the user and store the response in name.
+
+  - command: read username
+    description: Read input into the username variable.
+
+flags:
+  - flag: "-p <prompt>"
+    meaning: Display a prompt before reading input.
+
+  - flag: "-r"
+    meaning: Prevent backslashes from escaping characters.
+
+  - flag: "-s"
+    meaning: Do not echo input characters to the terminal.
+
+tags:
+  - input
+  - variables
+  - scripting
+
+difficulty: beginner
+common: true
+dangerous: false

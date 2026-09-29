@@ -1,0 +1,41 @@
+id: git-stash
+tool: git
+category: undo
+name: git stash
+title: Temporarily save changes
+slug: stash
+description: Temporarily store uncommitted changes so you can work on a clean working tree.
+
+syntax:
+  - git stash
+  - git stash pop
+  - git stash list
+
+examples:
+  - command: git stash
+    description: Save current uncommitted changes.
+
+  - command: git stash pop
+    description: Apply the most recent stash and remove it from the stash list.
+
+  - command: git stash list
+    description: List saved stashes.
+
+flags:
+  - flag: "pop"
+    meaning: Apply the latest stash and remove it from the stash list.
+
+  - flag: "list"
+    meaning: List available stashes.
+
+  - flag: "apply"
+    meaning: Apply a stash without removing it.
+
+tags:
+  - stash
+  - temporary
+  - changes
+
+difficulty: intermediate
+common: true
+dangerous: false

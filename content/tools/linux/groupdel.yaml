@@ -1,0 +1,27 @@
+id: linux-groupdel
+tool: linux
+category: group-management
+name: groupdel
+title: Delete a group
+slug: groupdel
+description: Deletes an existing group from the Linux system.
+
+syntax:
+  - sudo groupdel groupname
+
+examples:
+  - command: sudo groupdel developers
+    description: Delete the developers group.
+
+flags:
+  []
+
+tags:
+  - linux
+  - groups
+  - users
+  - permissions
+
+difficulty: intermediate
+common: false
+dangerous: true

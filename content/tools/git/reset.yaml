@@ -1,0 +1,41 @@
+id: git-reset
+tool: git
+category: undo
+name: git reset
+title: Reset repository state
+slug: reset
+description: Move the current branch reference and optionally modify the staging area or working tree.
+
+syntax:
+  - git reset <file>
+  - git reset --soft HEAD~1
+  - git reset --hard HEAD~1
+
+examples:
+  - command: git reset HEAD~1
+    description: Move HEAD back one commit while keeping changes in the working tree.
+
+  - command: git reset --soft HEAD~1
+    description: Move HEAD back one commit while keeping changes staged.
+
+  - command: git reset --hard HEAD~1
+    description: Move HEAD back one commit and reset the working tree to match.
+
+flags:
+  - flag: "--soft"
+    meaning: Move HEAD while leaving the index and working tree unchanged.
+
+  - flag: "--mixed"
+    meaning: Move HEAD and reset the staging area while keeping working-tree changes.
+
+  - flag: "--hard"
+    meaning: Reset HEAD, staging area, and working tree. Uncommitted changes can be lost.
+
+tags:
+  - undo
+  - history
+  - reset
+
+difficulty: advanced
+common: true
+dangerous: true

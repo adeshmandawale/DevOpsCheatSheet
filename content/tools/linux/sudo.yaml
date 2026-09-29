@@ -1,0 +1,33 @@
+id: linux-sudo
+tool: linux
+category: user-management
+name: sudo
+title: Run commands with elevated privileges
+slug: sudo
+description: Runs a command with the privileges of another user, commonly the root user.
+
+syntax:
+  - sudo command
+  - sudo -u username command
+
+examples:
+  - command: sudo apt update
+    description: Run a package-management command with elevated privileges.
+
+  - command: sudo -u username command
+    description: Run a command as a specified user.
+
+flags:
+  - flag: "-u"
+    meaning: Run the command as the specified user.
+
+tags:
+  - linux
+  - sudo
+  - permissions
+  - root
+  - security
+
+difficulty: beginner
+common: true
+dangerous: true

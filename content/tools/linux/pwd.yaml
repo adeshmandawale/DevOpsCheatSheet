@@ -1,0 +1,26 @@
+id: linux-pwd
+tool: linux
+category: file-management
+name: pwd
+title: Print Working Directory
+slug: pwd
+description: Display the absolute path of the current working directory.
+
+syntax:
+  - pwd
+
+examples:
+  - command: pwd
+    description: Show the absolute path of the current directory.
+
+flags:
+  []
+
+tags:
+  - linux
+  - navigation
+  - directories
+
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,27 @@
+id: linux-uptime
+tool: linux
+category: system-information
+name: uptime
+title: Show System Uptime
+slug: uptime
+description: Display how long the system has been running and basic load information.
+
+syntax:
+  - uptime
+
+examples:
+  - command: uptime
+    description: Show system uptime, logged-in users, and load averages.
+
+flags:
+  []
+
+tags:
+  - linux
+  - system
+  - monitoring
+  - performance
+
+difficulty: beginner
+common: true
+dangerous: false

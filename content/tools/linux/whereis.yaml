@@ -1,0 +1,32 @@
+id: linux-whereis
+tool: linux
+category: system-information
+name: whereis
+title: Locate binaries and documentation
+slug: whereis
+description: Locates the binary, source, and manual page files associated with a command.
+
+syntax:
+  - whereis command
+  - whereis -b command
+
+examples:
+  - command: whereis git
+    description: Find the binary and related files for Git.
+
+  - command: whereis -b python
+    description: Search specifically for the binary location of Python.
+
+flags:
+  - flag: "-b"
+    meaning: Search only for binary files.
+
+tags:
+  - linux
+  - commands
+  - path
+  - man-pages
+
+difficulty: beginner
+common: false
+dangerous: false

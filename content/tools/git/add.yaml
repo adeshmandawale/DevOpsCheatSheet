@@ -1,0 +1,38 @@
+id: git-add
+tool: git
+category: staging
+name: git add
+title: Stage changes
+slug: add
+description: Add file changes to the staging area for the next commit.
+
+syntax:
+  - git add <file>
+  - git add .
+  - git add -A
+
+examples:
+  - command: git add index.html
+    description: Stage a specific file.
+
+  - command: git add .
+    description: Stage changes in the current directory.
+
+  - command: git add -A
+    description: Stage all changes in the repository.
+
+flags:
+  - flag: "-A"
+    meaning: Stage all additions, modifications, and deletions.
+
+  - flag: "-p"
+    meaning: Interactively choose which parts of changes to stage.
+
+tags:
+  - staging
+  - files
+  - commit
+
+difficulty: beginner
+common: true
+dangerous: false
