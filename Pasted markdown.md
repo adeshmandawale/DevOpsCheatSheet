@@ -878,9 +878,6 @@ The Bash dataset covers:
 ### Output
 
 ```
-```
-
-```
 echo
 printf
 ```
@@ -888,16 +885,10 @@ printf
 ### Input
 
 ```
-```
-
-```
 read
 ```
 
 ### Variables/environment
-
-```
-```
 
 ```
 variables
@@ -909,18 +900,12 @@ script-arguments
 ### Shell
 
 ```
-```
-
-```
 source
 alias
 history
 ```
 
 ### Command discovery
-
-```
-```
 
 ```
 command
@@ -931,17 +916,11 @@ which
 ### Navigation
 
 ```
-```
-
-```
 pwd
 cd
 ```
 
 ### Conditions
-
-```
-```
 
 ```
 test
@@ -953,9 +932,6 @@ exit-status
 ### Loops
 
 ```
-```
-
-```
 for
 while
 ```
@@ -963,16 +939,10 @@ while
 ### Functions
 
 ```
-```
-
-```
 function
 ```
 
 ### Pipes/redirection
-
-```
-```
 
 ```
 pipe
@@ -987,18 +957,12 @@ tee
 ### Expansion
 
 ```
-```
-
-```
 command-substitution
 globbing
 quotes
 ```
 
 ### Scripts
-
-```
-```
 
 ```
 exit
@@ -1009,16 +973,10 @@ trap
 ### Timing
 
 ```
-```
-
-```
 sleep
 ```
 
 ### Processes/job control
-
-```
-```
 
 ```
 background
@@ -1285,9 +1243,6 @@ Expected Bash page:
 -  links to: 
 
 ```
-```
-
-```
 /command/bash/[slug]
 ```
 
@@ -1339,19 +1294,19 @@ The Bash cheatsheet page has now been successfully implemented and integrated.
 
 Route:
 
-`/bash`
+```/bash```
 
 Bash content is generated using:
 
-`scripts/data/bash-commands.ts`
+```scripts/data/bash-commands.ts```
 
 Generator:
 
-`scripts/generate-bash-content.ts`
+```scripts/generate-bash-content.ts```
 
 Generated YAML files:
 
-`content/tools/bash/*.yaml`
+```content/tools/bash/*.yaml```
 
 Package script:
 
