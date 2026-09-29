@@ -1492,3 +1492,178 @@ Do NOT:
 -  manually create Bash YAML files 
 
 The next logical step is to **verify `/search` parses the Bash content**, then build the Bash page using the same established Linux/Git design.
+
+## Bash Page — Completed
+
+The Bash cheatsheet page has now been successfully implemented and integrated.
+
+### Bash Implementation
+
+Route:
+
+`/bash`
+
+Bash content is generated using:
+
+`scripts/data/bash-commands.ts`
+
+Generator:
+
+`scripts/generate-bash-content.ts`
+
+Generated YAML files:
+
+`content/tools/bash/*.yaml`
+
+Package script:
+
+```json
+"generate:bash": "tsx scripts/generate-bash-content.ts"
+Bash Coverage
+
+The Bash page currently contains 41 commands/features covering:
+
+Output
+echo
+printf
+Input
+read
+Variables & Environment
+variables
+env
+export
+script arguments
+Shell
+source
+alias
+history
+Command Discovery
+command
+type
+which
+Navigation
+pwd
+cd
+Conditions
+test
+if
+case
+exit status / $?
+Loops
+for
+while
+Functions
+function
+Pipes & Redirection
+|
+>
+>>
+2>
+<<
+<<<
+tee
+Expansion
+command substitution
+globbing
+quotes
+Scripts
+exit
+set
+trap
+Timing
+sleep
+Processes & Job Control
+background processes
+jobs
+fg
+bg
+disown
+Bash UI
+
+The /bash page follows the same UI architecture as /linux and /git.
+
+It includes:
+
+Category filtering
+Compact command cards
+Command names linking to the shared command detail page
+Difficulty badges
+Dangerous-command warnings
+Example boxes
+Copy buttons
+Search integration
+Responsive layout
+
+The shared command detail route works automatically:
+
+/command/bash/[slug]
+
+Bash Fixes
+
+Two YAML tool field issues were corrected:
+
+cd.yaml was changed from tool: "Bash" to tool: "bash"
+exit-status / $? was changed from an incorrect tool value to tool: "bash"
+
+The >> append-redirection search/parsing issue was also fixed and verified.
+
+Verification command:
+
+Get-ChildItem content\tools\bash\*.yaml | Select-Object -ExpandProperty Name
+
+This confirms all 41 Bash YAML files are present.
+
+Search Integration
+
+Bash commands are automatically included in global search because the search system uses:
+
+getAllCommands()
+
+Therefore, no separate Bash search implementation is required.
+
+Bash commands can be found through:
+
+/search
+
+and link to:
+
+/command/bash/[slug]
+
+Current Project Totals
+Tool	Commands
+Linux	110
+Git	35
+Bash	41
+Total	186
+Current Completion Status
+Linux → ✅ Complete
+Git → ✅ Complete
+Bash → ✅ Complete
+Docker → ⏳ Next
+Kubernetes → ⏳ Planned
+Jenkins → ⏳ Planned
+Ansible → ⏳ Planned
+Terraform → ⏳ Planned
+Next Implementation — Docker
+
+The next tool to implement is Docker.
+
+Before starting Docker:
+
+Inspect the actual repository/current state.
+Confirm Docker does not already exist.
+Reuse the existing Linux/Git/Bash architecture.
+Create scripts/data/docker-commands.ts.
+Create scripts/generate-docker-content.ts.
+Add the generate:docker npm script.
+Generate YAML files under content/tools/docker/.
+Create app/docker/page.tsx.
+Reuse the shared /command/[tool]/[slug] route.
+Verify Docker commands appear in global search.
+Test /docker, command detail pages, and /search.
+Update this project context after Docker is complete.
+
+Do not rewrite the existing Linux, Git, or Bash implementations unless a regression is discovered.
+
+
+**Important:** You don't need to replace the whole existing `Pasted markdown.md`. Just append this section to it. This will make the file accurately reflect the current state: **186 total commands/features, Bash complete, Docker next.**
