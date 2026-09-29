@@ -25,15 +25,13 @@ The project is inspired by Devhints but should be more interactive and practical
 
 # Environment
 
-OS:
+OS
 
 ```
 Windows
 ```
 
-Shell:
-```
-```
+Shell
 
 ```
 PowerShell
@@ -42,16 +40,10 @@ PowerShell
 Project location:
 
 ```
-```
-
-```
 C:\Users\adesh\devops-cheatsheet
 ```
 
 Node:
-
-```
-```
 
 ```
 v24.21.0
@@ -60,16 +52,10 @@ v24.21.0
 Git:
 
 ```
-```
-
-```
 2.55.0.windows.3
 ```
 
 Next.js:
-
-```
-```
 
 ```
 16.3.6
@@ -83,17 +69,11 @@ Package manager:
 Examples:
 
 ```
-```
-
-```
 npm.cmd run dev
 npm.cmd run generate:linux
 ```
 
 Dev server:
-
-```
-```
 
 ```
 http://localhost:3000
@@ -104,9 +84,6 @@ http://localhost:3000
 # Project architecture
 
 Current structure:
-
-```
-```
 
 ```
 devops-cheatsheet/
@@ -127,9 +104,6 @@ devops-cheatsheet/
 ```
 
 Created directories:
-
-```
-```
 
 ```
 components/
@@ -182,25 +156,16 @@ Important architecture decision:
 Technical content should live in:
 
 ```
-```
-
-```
 content/tools/
 ```
 
 and be generated from TypeScript datasets in:
 
 ```
-```
-
-```
 scripts/data/
 ```
 
 For example:
-
-```
-```
 
 ```
 scripts/data/bash-commands.ts
@@ -255,9 +220,6 @@ Landing page:
 Used package:
 
 ```
-```
-
-```
 @icons-pack/react-simple-icons
 ```
 
@@ -268,9 +230,6 @@ Future tools should follow the same visual system.
 # Header
 
 Current `components/ui/Header.tsx`:
-
-```
-```
 
 ```
 "use client";
@@ -324,9 +283,6 @@ The `⚡ DevOps` brand is clickable and goes to `/`.
 Current `components/layout/AppShell.tsx`:
 
 ```
-```
-
-```
 import Header from "@/components/ui/Header";
 
 interface AppShellProps {
@@ -355,9 +311,6 @@ There is currently no sidebar.
 # Copy button
 
 Current `components/ui/CopyButton.tsx`:
-
-```
-```
 
 ```
 "use client";
@@ -399,9 +352,6 @@ export default function CopyButton({ text }: CopyButtonProps) {
 Search uses Fuse.js.
 
 Current `components/search/SearchButton.tsx`:
-
-```
-```
 
 ```
 "use client";
@@ -446,9 +396,6 @@ export default function SearchButton() {
 ```
 
 Current `components/search/SearchClient.tsx`:
-
-```
-```
 
 ```
 "use client";
@@ -573,9 +520,6 @@ Search currently works wonderfully.
 Search uses:
 
 ```
-```
-
-```
 getAllCommands()
 ```
 
@@ -586,9 +530,6 @@ Therefore once Bash YAML is generated, Bash commands automatically become search
 # Shared command loader
 
 Current `lib/content/commands.ts`:
-
-```
-```
 
 ```
 import fs from "fs";
@@ -681,16 +622,10 @@ Linux content is complete for the current stage.
 Linux has:
 
 ```
-```
-
-```
 110 commands
 ```
 
 Categories:
-
-```
-```
 
 ```
 archives-compression
@@ -711,9 +646,6 @@ volume-management
 ```
 
 Recently added:
-
-```
-```
 
 ```
 lvm
@@ -740,9 +672,6 @@ Linux page design:
 Dangerous warning:
 
 ```
-```
-
-```
 ⚠
 Use with caution
 This command can modify, delete, or affect system resources.
@@ -760,9 +689,6 @@ Git initially had 28 commands.
 Then added:
 
 ```
-```
-
-```
 git blame
 git bisect
 git worktree
@@ -775,16 +701,10 @@ git grep
 Current Git total:
 
 ```
-```
-
-```
 35 commands
 ```
 
 Git YAML files include:
-
-```
-```
 
 ```
 add.yaml
@@ -829,9 +749,6 @@ Git page works.
 Git categories:
 
 ```
-```
-
-```
 const categoryLabels: Record<string, string> = {
   configuration: "Configuration",
   repository: "Repository",
@@ -856,18 +773,12 @@ Git uses the same design system as Linux.
 Path:
 
 ```
-```
-
-```
 app/command/[tool]/[slug]/page.tsx
 ```
 
 This is shared by Linux, Git, Bash, and future tools.
 
 It imports:
-
-```
-```
 
 ```
 import Link from "next/link";
@@ -881,9 +792,6 @@ import {
 ```
 
 It uses:
-
-```
-```
 
 ```
 const commands = getCommands(tool);
@@ -903,9 +811,6 @@ Features:
 -  back-to-tool link 
 
 Back link:
-
-```
-```
 
 ```
 <Link
@@ -929,9 +834,6 @@ We are currently adding Bash.
 Created:
 
 ```
-```
-
-```
 scripts/data/bash-commands.ts
 ```
 
@@ -942,9 +844,6 @@ Important correction that was made before saving:
 Every Bash entry must have:
 
 ```
-```
-
-```
 tool: "bash",
 ```
 
@@ -953,16 +852,10 @@ Two specific mistakes were corrected:
 The `cd` entry originally had:
 
 ```
-```
-
-```
 tool: "Bash",
 ```
 
 It was changed to:
-
-```
-```
 
 ```
 tool: "bash",
@@ -971,16 +864,10 @@ tool: "bash",
 The `$?` / exit status entry originally had:
 
 ```
-```
-
-```
 tool: "$?",
 ```
 
 It was changed to:
-
-```
-```
 
 ```
 tool: "bash",
@@ -1148,16 +1035,10 @@ disown
 Created:
 
 ```
-```
-
-```
 scripts/generate-bash-content.ts
 ```
 
 Current generator:
-
-```
-```
 
 ```
 import fs from "fs";
@@ -1245,9 +1126,6 @@ console.log(
 Currently these scripts were added:
 
 ```
-```
-
-```
 "generate:linux": "tsx scripts/generate-linux-content.ts",
 "generate:git": "tsx scripts/generate-git-content.ts",
 "generate:bash": "tsx scripts/generate-bash-content.ts"
@@ -1256,16 +1134,10 @@ Currently these scripts were added:
 Bash was generated with:
 
 ```
-```
-
-```
 npm.cmd run generate:bash
 ```
 
 The generator reported:
-
-```
-```
 
 ```
 Generated 41 Bash command(s).
@@ -1278,9 +1150,6 @@ This is correct.
 # Bash YAML files currently generated
 
 The following **41 files exist**:
-
-```
-```
 
 ```
 alias.yaml
@@ -1329,9 +1198,6 @@ while.yaml
 The user verified this with:
 
 ```
-```
-
-```
 Get-ChildItem content\tools\bash\*.yaml | Select-Object -ExpandProperty Name
 ```
 
@@ -1344,9 +1210,6 @@ Everything generated successfully.
 The current generator manually constructs YAML strings.
 
 Some Bash dataset examples contain multi-line shell syntax such as:
-
-```
-```
 
 ```
 cat <<EOF
@@ -1372,25 +1235,16 @@ The last instruction to the user was:
 Run:
 
 ```
-```
-
-```
 npm.cmd run dev
 ```
 
 Then open:
 
 ```
-```
-
-```
 http://localhost:3000/search
 ```
 
 Because `/search` calls:
-
-```
-```
 
 ```
 getAllCommands()
@@ -1401,9 +1255,6 @@ this will test whether all Linux + Git + Bash YAML can be parsed together.
 If search loads normally, tell me:
 
 ```
-```
-
-```
 search works
 ```
 
@@ -1412,9 +1263,6 @@ Then the next task is:
 ## Build the Bash page
 
 Path:
-
-```
-```
 
 ```
 app/bash/page.tsx
@@ -1446,9 +1294,6 @@ Expected Bash page:
 It should use:
 
 ```
-```
-
-```
 getCommands("bash")
 ```
 
@@ -1459,9 +1304,6 @@ and therefore automatically read the 41 generated Bash YAML files.
 # Current command totals
 
 Current content:
-
-```
-```
 
 ```
 Linux = 110
