@@ -26,8 +26,6 @@ The project is inspired by Devhints but should be more interactive and practical
 # Environment
 
 OS:
-```
-```
 
 ```
 Windows
