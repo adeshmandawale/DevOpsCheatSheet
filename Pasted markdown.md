@@ -1294,22 +1294,30 @@ The Bash cheatsheet page has now been successfully implemented and integrated.
 
 Route:
 
-```/bash```
+```
+/bash
+```
 
 Bash content is generated using:
 
-```scripts/data/bash-commands.ts```
+```
+scripts/data/bash-commands.ts
+```
 
 Generator:
 
-```scripts/generate-bash-content.ts```
+```
+scripts/generate-bash-content.ts
+```
 
 Generated YAML files:
 
-```content/tools/bash/*.yaml```
+```
+content/tools/bash/*.yaml
+```
 
 Package script:
 
 ```
-"generate:bash": "tsx scripts/generate-bash-content.ts"
+generate:bash": "tsx scripts/generate-bash-content.ts
 ```
