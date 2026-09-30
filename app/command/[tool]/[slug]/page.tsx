@@ -33,7 +33,13 @@ const toolColors: Record<
     text: "text-sky-400",
   },
   kubernetes: {
-    text: "text-violet-400",
+    text: "text-indigo-400",
+  },
+  jenkins: {
+    text: "text-red-400",
+  },
+  ansible: {
+    text: "text-rose-400",
   },
 };
 

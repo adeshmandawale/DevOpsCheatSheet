@@ -12,7 +12,8 @@
     "generate:bash": "tsx scripts/generate-bash-content.ts",
     "generate:docker": "tsx scripts/generate-docker-content.ts",
     "generate:kubernetes": "tsx scripts/generate-kubernetes-content.ts",
-    "generate:jenkins": "tsx scripts/generate-jenkins-content.ts"
+    "generate:jenkins": "tsx scripts/generate-jenkins-content.ts",
+    "generate:ansible": "tsx scripts/generate-ansible-content.ts"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^13.15.1",

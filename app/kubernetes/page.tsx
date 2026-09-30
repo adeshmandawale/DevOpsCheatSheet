@@ -53,7 +53,7 @@ export default function KubernetesPage() {
   return (
     <AppShell>
       <section>
-        <p className="text-sm font-medium text-violet-400">
+        <p className="text-sm font-medium text-indigo-400">
           KUBERNETES
         </p>
 
@@ -77,7 +77,7 @@ export default function KubernetesPage() {
             <a
               key={category}
               href={`#${category}`}
-              className="rounded-full border border-zinc-700/80 bg-zinc-950/60 px-3 py-1.5 text-xs font-medium text-zinc-400 transition-all duration-200 hover:border-violet-500/50 hover:bg-violet-500/10 hover:text-violet-300"
+              className="rounded-full border border-zinc-700/80 bg-zinc-950/60 px-3 py-1.5 text-xs font-medium text-zinc-400 transition-all duration-200 hover:border-indigo-500/50 hover:bg-indigo-500/10 hover:text-indigo-300"
             >
               {formatCategory(category)}
             </a>
@@ -117,7 +117,7 @@ export default function KubernetesPage() {
                     <div>
                       <Link
                         href={`/command/kubernetes/${command.slug}`}
-                        className="font-mono text-lg font-semibold text-violet-400 transition hover:text-violet-300"
+                        className="font-mono text-lg font-semibold text-indigo-400 transition hover:text-indigo-300"
                       >
                         {command.name}
                       </Link>
