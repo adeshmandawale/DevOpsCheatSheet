@@ -1,0 +1,21 @@
+id: docker-attach
+tool: docker
+category: containers
+name: docker attach
+title: Attach to a running container
+slug: docker-attach
+description: Attaches the terminal to a running container's standard input,
+  output, and error streams.
+syntax:
+  - docker attach <container>
+examples:
+  - command: docker attach my-container
+    description: Attaches the current terminal to the container.
+flags: []
+tags:
+  - container
+  - terminal
+  - debugging
+difficulty: intermediate
+common: true
+dangerous: false

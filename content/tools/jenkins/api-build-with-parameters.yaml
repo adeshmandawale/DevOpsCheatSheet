@@ -1,0 +1,26 @@
+id: jenkins-api-build-with-parameters
+tool: jenkins
+category: rest-api
+name: api-build-with-parameters
+title: Trigger Parameterized Build via REST API
+slug: api-build-with-parameters
+description: Trigger a Jenkins job with build parameters through the REST API.
+  Authentication and CSRF protection may be required depending on Jenkins
+  security configuration.
+syntax:
+  - curl -X POST <jenkins-url>/job/<job>/buildWithParameters --data KEY=value
+examples:
+  - command: curl -X POST https://jenkins.example.com/job/deploy/buildWithParameters
+      --data ENV=staging
+    description: Trigger the deploy job with the ENV parameter set to staging.
+flags:
+  - flag: --data
+    meaning: Send build parameters in the request body.
+tags:
+  - rest-api
+  - build
+  - parameters
+  - curl
+difficulty: intermediate
+common: true
+dangerous: false

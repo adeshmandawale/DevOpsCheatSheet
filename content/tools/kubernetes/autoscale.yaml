@@ -1,0 +1,22 @@
+id: kubectl-autoscale
+tool: kubernetes
+category: workloads
+name: kubectl autoscale
+title: Configure horizontal pod autoscaling
+slug: autoscale
+description: Creates a HorizontalPodAutoscaler for a supported workload.
+syntax:
+  - kubectl autoscale deployment <name> --min=<min> --max=<max>
+    --cpu-percent=<percent>
+examples:
+  - command: kubectl autoscale deployment web --min=2 --max=10 --cpu-percent=70
+    description: Creates an autoscaler that maintains between two and ten replicas
+      based on CPU usage.
+flags: []
+tags:
+  - autoscaling
+  - hpa
+  - deployment
+difficulty: intermediate
+common: true
+dangerous: false

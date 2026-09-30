@@ -1,0 +1,23 @@
+id: kubernetes-set-image
+tool: kubernetes
+category: deployments
+name: kubectl set image
+title: Update a container image
+slug: set-image
+description: Update the container image used by a Kubernetes workload.
+syntax:
+  - kubectl set image deployment/<name> <container>=<image>
+examples:
+  - command: kubectl set image deployment/nginx nginx=nginx:1.27
+    description: Update the nginx container image.
+flags:
+  - flag: --record
+    meaning: Record the command as an annotation when supported.
+tags:
+  - kubectl
+  - image
+  - deployment
+  - release
+difficulty: intermediate
+common: true
+dangerous: true

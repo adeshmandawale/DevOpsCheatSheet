@@ -1,0 +1,21 @@
+id: kubernetes-cordon
+tool: kubernetes
+category: nodes
+name: kubectl cordon
+title: Mark a node unschedulable
+slug: cordon
+description: Mark a Kubernetes node as unschedulable so new pods are not placed on it.
+syntax:
+  - kubectl cordon <node>
+examples:
+  - command: kubectl cordon worker-1
+    description: Prevent new pods from being scheduled on worker-1.
+flags: []
+tags:
+  - kubectl
+  - nodes
+  - scheduling
+  - maintenance
+difficulty: intermediate
+common: true
+dangerous: true

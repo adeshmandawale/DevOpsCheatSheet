@@ -1,0 +1,21 @@
+id: jenkins-create-job
+tool: jenkins
+category: cli
+name: create-job
+title: Create Jenkins Job
+slug: create-job
+description: Create a Jenkins job using an XML configuration file.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> create-job <job> < config.xml
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com create-job
+      my-app < config.xml
+    description: Create the my-app job from config.xml.
+flags: []
+tags:
+  - cli
+  - job
+  - configuration
+difficulty: intermediate
+common: false
+dangerous: true

@@ -1,0 +1,20 @@
+id: docker-network-disconnect
+tool: docker
+category: networking
+name: docker network disconnect
+title: Disconnect a container from a network
+slug: docker-network-disconnect
+description: Disconnects a container from a Docker network.
+syntax:
+  - docker network disconnect <network> <container>
+examples:
+  - command: docker network disconnect app-network web
+    description: Removes the web container from the app-network network.
+flags: []
+tags:
+  - network
+  - container
+  - networking
+difficulty: intermediate
+common: false
+dangerous: true

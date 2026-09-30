@@ -1,0 +1,20 @@
+id: kubectl-get-contexts
+tool: kubernetes
+category: configuration
+name: kubectl config get-contexts
+title: List Kubernetes contexts
+slug: config-get-contexts
+description: Lists the Kubernetes contexts configured in the local kubeconfig file.
+syntax:
+  - kubectl config get-contexts
+examples:
+  - command: kubectl config get-contexts
+    description: Lists available Kubernetes contexts and shows the current context.
+flags: []
+tags:
+  - config
+  - context
+  - kubeconfig
+difficulty: beginner
+common: true
+dangerous: false

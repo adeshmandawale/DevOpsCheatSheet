@@ -1,0 +1,32 @@
+id: jenkins-build
+tool: jenkins
+category: cli
+name: build
+title: Build Jenkins Job
+slug: build
+description: Trigger a Jenkins job from the Jenkins CLI.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> build <job>
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com build my-app
+    description: Trigger the my-app Jenkins job.
+flags:
+  - flag: -p
+    meaning: Pass build parameters.
+  - flag: -s
+    meaning: Wait for the build to finish.
+  - flag: -v
+    meaning: Print console output while waiting.
+  - flag: -w
+    meaning: Wait until the build starts.
+  - flag: -f
+    meaning: Follow build progress without passing interrupts.
+  - flag: -c
+    meaning: Build only when SCM changes are detected.
+tags:
+  - cli
+  - build
+  - job
+difficulty: beginner
+common: true
+dangerous: false

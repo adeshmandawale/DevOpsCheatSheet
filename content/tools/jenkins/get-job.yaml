@@ -1,0 +1,20 @@
+id: jenkins-get-job
+tool: jenkins
+category: cli
+name: get-job
+title: Get Jenkins Job Configuration
+slug: get-job
+description: Retrieve the XML configuration of a Jenkins job using the CLI.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> get-job <job>
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com get-job my-app
+    description: Print the configuration of the my-app job.
+flags: []
+tags:
+  - cli
+  - job
+  - configuration
+difficulty: intermediate
+common: true
+dangerous: false

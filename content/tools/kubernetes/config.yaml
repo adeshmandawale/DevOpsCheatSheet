@@ -1,0 +1,33 @@
+id: kubernetes-config
+tool: kubernetes
+category: configuration
+name: kubectl config
+title: Manage kubeconfig settings
+slug: config
+description: View and modify Kubernetes cluster, context, and user configuration.
+syntax:
+  - kubectl config get-contexts
+  - kubectl config current-context
+  - kubectl config use-context <context>
+examples:
+  - command: kubectl config get-contexts
+    description: List configured Kubernetes contexts.
+  - command: kubectl config current-context
+    description: Show the currently selected context.
+  - command: kubectl config use-context production
+    description: Switch to the production context.
+flags:
+  - flag: get-contexts
+    meaning: List available contexts.
+  - flag: current-context
+    meaning: Show the active context.
+  - flag: use-context
+    meaning: Switch to another context.
+tags:
+  - kubectl
+  - kubeconfig
+  - context
+  - cluster
+difficulty: beginner
+common: true
+dangerous: true

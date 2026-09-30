@@ -1,0 +1,23 @@
+id: jenkins-docker-agent
+tool: jenkins
+category: pipeline
+name: docker-agent
+title: Jenkins Docker Agent
+slug: docker-agent
+description: Run Jenkins Pipeline stages inside Docker containers. Docker-based
+  agents require the Jenkins Docker Pipeline plugin.
+syntax:
+  - agent { docker 'image:tag' }
+  - agent { dockerfile true }
+examples:
+  - command: agent { docker 'maven:3.9.9-eclipse-temurin-21' }
+    description: Run the Pipeline using a Maven Docker image.
+flags: []
+tags:
+  - pipeline
+  - docker
+  - agent
+  - container
+difficulty: intermediate
+common: true
+dangerous: false

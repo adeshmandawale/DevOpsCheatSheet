@@ -1,0 +1,27 @@
+id: kubernetes-port-forward
+tool: kubernetes
+category: networking
+name: kubectl port-forward
+title: Forward local ports to a pod
+slug: port-forward
+description: Forward a local port to a port on a pod or another supported
+  Kubernetes resource.
+syntax:
+  - kubectl port-forward pod/<name> <local-port>:<remote-port>
+  - kubectl port-forward service/<name> <local-port>:<remote-port>
+examples:
+  - command: kubectl port-forward pod/nginx 8080:80
+    description: Forward local port 8080 to port 80 on the nginx pod.
+  - command: kubectl port-forward service/api 8080:80
+    description: Access the API service through local port 8080.
+flags:
+  - flag: --address
+    meaning: Specify the local addresses to listen on.
+tags:
+  - kubectl
+  - networking
+  - debugging
+  - port-forward
+difficulty: beginner
+common: true
+dangerous: false

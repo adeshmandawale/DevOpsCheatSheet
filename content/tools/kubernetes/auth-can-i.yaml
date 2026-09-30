@@ -1,0 +1,23 @@
+id: kubectl-auth-can-i
+tool: kubernetes
+category: rbac
+name: kubectl auth can-i
+title: Check authorization
+slug: auth-can-i
+description: Checks whether the current user or a specified identity is
+  authorized to perform an action.
+syntax:
+  - kubectl auth can-i <verb> <resource>
+examples:
+  - command: kubectl auth can-i get pods
+    description: Checks whether the current identity can list or get pods.
+  - command: kubectl auth can-i create deployments
+    description: Checks whether the current identity can create deployments.
+flags: []
+tags:
+  - rbac
+  - authorization
+  - security
+difficulty: beginner
+common: true
+dangerous: false

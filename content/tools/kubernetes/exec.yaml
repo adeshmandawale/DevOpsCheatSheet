@@ -1,0 +1,31 @@
+id: kubernetes-exec
+tool: kubernetes
+category: debugging
+name: kubectl exec
+title: Execute a command inside a container
+slug: exec
+description: Run a command inside a container in a Kubernetes pod.
+syntax:
+  - kubectl exec <pod> -- <command>
+  - kubectl exec -it <pod> -- <command>
+  - kubectl exec -it <pod> -c <container> -- <command>
+examples:
+  - command: kubectl exec nginx -- ls
+    description: List files inside the nginx container.
+  - command: kubectl exec -it nginx -- /bin/sh
+    description: Open an interactive shell inside the container.
+flags:
+  - flag: -i, --stdin
+    meaning: Pass standard input to the container.
+  - flag: -t, --tty
+    meaning: Allocate a terminal.
+  - flag: -c, --container
+    meaning: Specify the container.
+tags:
+  - kubectl
+  - exec
+  - shell
+  - debugging
+difficulty: beginner
+common: true
+dangerous: true

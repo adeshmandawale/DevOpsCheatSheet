@@ -1,0 +1,21 @@
+id: kubectl-expose
+tool: kubernetes
+category: networking
+name: kubectl expose
+title: Expose a workload as a Service
+slug: expose
+description: Creates a Service that exposes a workload such as a deployment,
+  replica set, or pod.
+syntax:
+  - kubectl expose deployment <name> --port=<port> --target-port=<port>
+examples:
+  - command: kubectl expose deployment web --port=80 --target-port=8080
+    description: Creates a Service exposing port 80 and forwarding traffic to port 8080.
+flags: []
+tags:
+  - service
+  - networking
+  - deployment
+difficulty: beginner
+common: true
+dangerous: false

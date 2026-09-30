@@ -14,6 +14,29 @@ interface CommandPageProps {
   }>;
 }
 
+const toolColors: Record<
+  string,
+  {
+    text: string;
+  }
+> = {
+  linux: {
+    text: "text-emerald-400",
+  },
+  git: {
+    text: "text-orange-400",
+  },
+  bash: {
+    text: "text-teal-400",
+  },
+  docker: {
+    text: "text-sky-400",
+  },
+  kubernetes: {
+    text: "text-violet-400",
+  },
+};
+
 export default async function CommandPage({
   params,
 }: CommandPageProps) {
@@ -24,6 +47,8 @@ export default async function CommandPage({
   if (!command) {
     notFound();
   }
+
+  const colors = toolColors[command.tool] ?? toolColors.linux;
 
   const commands = getCommands(tool);
 
@@ -70,7 +95,7 @@ export default async function CommandPage({
         </div>
 
         <div className="mt-6">
-          <code className="font-mono text-4xl font-bold text-emerald-400">
+          <code className={`font-mono text-4xl font-bold ${colors.text}`}>
             {command.name}
           </code>
 
@@ -113,7 +138,7 @@ export default async function CommandPage({
                 key={syntax}
                 className="flex items-center justify-between gap-4 rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5"
               >
-                <code className="min-w-0 truncate font-mono text-sm text-emerald-400">
+                <code className={`min-w-0 truncate font-mono text-sm ${colors.text}`}>
                   $ {syntax}
                 </code>
             
@@ -135,7 +160,7 @@ export default async function CommandPage({
                 className="overflow-hidden rounded-xl border border-zinc-800"
               >
                 <div className="flex items-center justify-between gap-4 bg-zinc-950 px-5 py-3">
-                  <code className="min-w-0 truncate font-mono text-sm text-emerald-400">
+                  <code className={`min-w-0 truncate font-mono text-sm ${colors.text}`}>
                     $ {example.command}
                   </code>
 

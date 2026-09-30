@@ -1,0 +1,20 @@
+id: kubectl-delete-pods
+tool: kubernetes
+category: workloads
+name: kubectl delete pods
+title: Delete pods
+slug: delete-pods
+description: Deletes one or more Kubernetes pods.
+syntax:
+  - kubectl delete pods <pod>
+examples:
+  - command: kubectl delete pod web-7d8f9c6b7d-abcde
+    description: Deletes the specified pod.
+flags: []
+tags:
+  - pods
+  - delete
+  - workloads
+difficulty: beginner
+common: true
+dangerous: true

@@ -1,0 +1,20 @@
+id: jenkins-who-am-i
+tool: jenkins
+category: cli
+name: who-am-i
+title: Jenkins CLI Who Am I
+slug: who-am-i
+description: Display the Jenkins user associated with the current CLI authentication.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> who-am-i
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com who-am-i
+    description: Display the currently authenticated Jenkins user.
+flags: []
+tags:
+  - cli
+  - authentication
+  - user
+difficulty: beginner
+common: true
+dangerous: false

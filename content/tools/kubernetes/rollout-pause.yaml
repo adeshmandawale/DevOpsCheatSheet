@@ -1,0 +1,20 @@
+id: kubectl-rollout-pause
+tool: kubernetes
+category: deployments
+name: kubectl rollout pause
+title: Pause a rollout
+slug: rollout-pause
+description: Pauses a deployment rollout so further changes can be grouped before resuming.
+syntax:
+  - kubectl rollout pause deployment/<name>
+examples:
+  - command: kubectl rollout pause deployment/web
+    description: Pauses the web deployment rollout.
+flags: []
+tags:
+  - deployment
+  - rollout
+  - pause
+difficulty: intermediate
+common: false
+dangerous: false

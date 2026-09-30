@@ -1,0 +1,19 @@
+id: docker-wait
+tool: docker
+category: containers
+name: docker wait
+title: Wait for a container to stop
+slug: docker-wait
+description: Blocks until a container stops and then prints its exit code.
+syntax:
+  - docker wait <container>
+examples:
+  - command: docker wait my-container
+    description: Waits for the container to stop and prints its exit status.
+flags: []
+tags:
+  - container
+  - exit-code
+difficulty: intermediate
+common: false
+dangerous: false

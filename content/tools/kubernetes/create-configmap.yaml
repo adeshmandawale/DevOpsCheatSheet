@@ -1,0 +1,20 @@
+id: kubectl-create-configmap
+tool: kubernetes
+category: configuration
+name: kubectl create configmap
+title: Create a ConfigMap
+slug: create-configmap
+description: Creates a ConfigMap from literals, files, directories, or environment files.
+syntax:
+  - kubectl create configmap <name> --from-literal=<key>=<value>
+examples:
+  - command: kubectl create configmap app-config --from-literal=APP_ENV=production
+    description: Creates a ConfigMap containing an application environment value.
+flags: []
+tags:
+  - configmap
+  - configuration
+  - config
+difficulty: beginner
+common: true
+dangerous: false

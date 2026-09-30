@@ -1,0 +1,22 @@
+id: jenkins-reload-configuration
+tool: jenkins
+category: administration
+name: reload-configuration
+title: Reload Jenkins Configuration
+slug: reload-configuration
+description: Reload Jenkins configuration from disk without restarting the
+  Jenkins controller.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> reload-configuration
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com
+      reload-configuration
+    description: Reload Jenkins configuration from disk.
+flags: []
+tags:
+  - cli
+  - administration
+  - configuration
+difficulty: intermediate
+common: false
+dangerous: true

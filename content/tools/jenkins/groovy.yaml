@@ -1,0 +1,23 @@
+id: jenkins-groovy
+tool: jenkins
+category: administration
+name: groovy
+title: Run Jenkins Groovy Script
+slug: groovy
+description: Execute a Groovy script through the Jenkins CLI. This can perform
+  powerful administrative operations.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> groovy < script.groovy
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com groovy <
+      script.groovy
+    description: Execute a Groovy script on Jenkins.
+flags: []
+tags:
+  - cli
+  - groovy
+  - administration
+  - script
+difficulty: advanced
+common: false
+dangerous: true

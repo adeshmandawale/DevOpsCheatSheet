@@ -1,0 +1,20 @@
+id: kubectl-run
+tool: kubernetes
+category: workloads
+name: kubectl run
+title: Create a pod from the command line
+slug: run
+description: Creates and runs a pod from a container image.
+syntax:
+  - kubectl run <name> --image=<image>
+examples:
+  - command: kubectl run nginx --image=nginx
+    description: Creates a pod named nginx using the nginx image.
+flags: []
+tags:
+  - pods
+  - create
+  - workloads
+difficulty: beginner
+common: true
+dangerous: false

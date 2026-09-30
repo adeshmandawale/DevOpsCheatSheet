@@ -1,0 +1,34 @@
+id: jenkins-stages
+tool: jenkins
+category: pipeline
+name: stages
+title: Jenkins Pipeline Stages
+slug: stages
+description: Define the collection of stages that make up a Jenkins Declarative Pipeline.
+syntax:
+  - |-
+    stages {
+        stage('Build') {
+            steps {
+                ...
+            }
+        }
+    }
+examples:
+  - command: |-
+      stages {
+          stage('Build') {
+              steps {
+                  sh 'make build'
+              }
+          }
+      }
+    description: Define the stages section of a Declarative Pipeline.
+flags: []
+tags:
+  - pipeline
+  - stages
+  - jenkinsfile
+difficulty: beginner
+common: true
+dangerous: false

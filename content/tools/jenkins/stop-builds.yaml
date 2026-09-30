@@ -1,0 +1,20 @@
+id: jenkins-stop-builds
+tool: jenkins
+category: cli
+name: stop-builds
+title: Stop Jenkins Builds
+slug: stop-builds
+description: Stop all currently running builds of a Jenkins job.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> stop-builds <job>
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com stop-builds my-app
+    description: Stop running builds for my-app.
+flags: []
+tags:
+  - cli
+  - build
+  - stop
+difficulty: intermediate
+common: false
+dangerous: true

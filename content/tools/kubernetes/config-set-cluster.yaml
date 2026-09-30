@@ -1,0 +1,20 @@
+id: kubectl-set-cluster
+tool: kubernetes
+category: configuration
+name: kubectl config set-cluster
+title: Configure a Kubernetes cluster
+slug: config-set-cluster
+description: Creates or modifies a cluster entry in the kubeconfig file.
+syntax:
+  - kubectl config set-cluster <cluster> --server=<server>
+examples:
+  - command: kubectl config set-cluster dev --server=https://kubernetes.example.com
+    description: Creates or updates a cluster entry with the specified API server.
+flags: []
+tags:
+  - config
+  - cluster
+  - kubeconfig
+difficulty: intermediate
+common: false
+dangerous: false

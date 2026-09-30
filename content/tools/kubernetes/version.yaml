@@ -1,0 +1,23 @@
+id: kubernetes-version
+tool: kubernetes
+category: cluster
+name: kubectl version
+title: Display Kubernetes client and server versions
+slug: version
+description: Show version information for the kubectl client and Kubernetes server.
+syntax:
+  - kubectl version
+  - kubectl version --short
+examples:
+  - command: kubectl version
+    description: Display client and server version information.
+flags:
+  - flag: --short
+    meaning: Display a shorter version output when supported.
+tags:
+  - kubectl
+  - version
+  - cluster
+difficulty: beginner
+common: true
+dangerous: false

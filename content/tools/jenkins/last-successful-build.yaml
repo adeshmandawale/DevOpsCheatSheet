@@ -1,0 +1,21 @@
+id: jenkins-last-successful-build
+tool: jenkins
+category: rest-api
+name: last-successful-build
+title: Jenkins Last Successful Build API
+slug: last-successful-build
+description: Retrieve information about the most recent successful build of a Jenkins job.
+syntax:
+  - curl <jenkins-url>/job/<job>/lastSuccessfulBuild/api/json
+examples:
+  - command: curl https://jenkins.example.com/job/my-app/lastSuccessfulBuild/api/json
+    description: Retrieve information about the latest successful build.
+flags: []
+tags:
+  - rest-api
+  - build
+  - success
+  - json
+difficulty: beginner
+common: true
+dangerous: false

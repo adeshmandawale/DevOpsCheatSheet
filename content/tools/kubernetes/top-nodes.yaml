@@ -1,0 +1,22 @@
+id: kubectl-top-nodes
+tool: kubernetes
+category: monitoring
+name: kubectl top nodes
+title: View node resource usage
+slug: top-nodes
+description: Displays CPU and memory usage for Kubernetes nodes when the Metrics
+  API is available.
+syntax:
+  - kubectl top nodes
+examples:
+  - command: kubectl top nodes
+    description: Displays CPU and memory usage across cluster nodes.
+flags: []
+tags:
+  - monitoring
+  - nodes
+  - cpu
+  - memory
+difficulty: beginner
+common: true
+dangerous: false

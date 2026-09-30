@@ -1,0 +1,20 @@
+id: jenkins-safe-restart
+tool: jenkins
+category: administration
+name: safe-restart
+title: Safely Restart Jenkins
+slug: safe-restart
+description: Restart Jenkins after running builds have completed.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> safe-restart
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com safe-restart
+    description: Request a safe Jenkins restart.
+flags: []
+tags:
+  - cli
+  - administration
+  - restart
+difficulty: intermediate
+common: false
+dangerous: true

@@ -1,0 +1,50 @@
+id: jenkins-parallel
+tool: jenkins
+category: pipeline
+name: parallel
+title: Jenkins Parallel Stages
+slug: parallel
+description: Run multiple Jenkins Pipeline stages concurrently to reduce overall
+  execution time.
+syntax:
+  - |-
+    stage('Tests') {
+        parallel {
+            stage('Linux') {
+                steps {
+                    sh './test-linux.sh'
+                }
+            }
+            stage('Windows') {
+                steps {
+                    bat 'test-windows.bat'
+                }
+            }
+        }
+    }
+examples:
+  - command: |-
+      stage('Tests') {
+          parallel {
+              stage('Linux') {
+                  steps {
+                      sh './test-linux.sh'
+                  }
+              }
+              stage('Windows') {
+                  steps {
+                      bat 'test-windows.bat'
+                  }
+              }
+          }
+      }
+    description: Run Linux and Windows tests concurrently inside the Tests stage.
+flags: []
+tags:
+  - pipeline
+  - parallel
+  - stages
+  - concurrency
+difficulty: advanced
+common: true
+dangerous: false

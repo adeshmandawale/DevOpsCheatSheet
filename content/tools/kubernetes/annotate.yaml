@@ -1,0 +1,23 @@
+id: kubernetes-annotate
+tool: kubernetes
+category: resources
+name: kubectl annotate
+title: Add or update resource annotations
+slug: annotate
+description: Add, update, or remove annotations on Kubernetes resources.
+syntax:
+  - kubectl annotate <resource> <name> <key>=<value>
+  - kubectl annotate <resource> <name> <key>-
+examples:
+  - command: kubectl annotate deployment nginx description="web server"
+    description: Add an annotation to the nginx deployment.
+flags:
+  - flag: --overwrite
+    meaning: Allow an existing annotation value to be replaced.
+tags:
+  - kubectl
+  - annotations
+  - resources
+difficulty: beginner
+common: true
+dangerous: true

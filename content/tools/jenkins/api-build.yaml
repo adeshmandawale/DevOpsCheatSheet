@@ -1,0 +1,23 @@
+id: jenkins-api-build
+tool: jenkins
+category: rest-api
+name: api-build
+title: Trigger Jenkins Build via REST API
+slug: api-build
+description: Trigger a Jenkins job through the REST API. Authentication and CSRF
+  protection may be required depending on Jenkins security configuration.
+syntax:
+  - curl -X POST <jenkins-url>/job/<job>/build
+examples:
+  - command: curl -X POST https://jenkins.example.com/job/my-app/build
+    description: Trigger a Jenkins build using the REST API.
+flags:
+  - flag: -X POST
+    meaning: Send the request using the HTTP POST method.
+tags:
+  - rest-api
+  - build
+  - curl
+difficulty: intermediate
+common: true
+dangerous: false

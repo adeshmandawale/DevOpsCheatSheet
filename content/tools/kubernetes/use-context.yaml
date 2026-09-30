@@ -1,0 +1,20 @@
+id: kubernetes-context
+tool: kubernetes
+category: configuration
+name: kubectl config use-context
+title: Switch Kubernetes context
+slug: use-context
+description: Switch kubectl to a different configured Kubernetes cluster and user context.
+syntax:
+  - kubectl config use-context <context>
+examples:
+  - command: kubectl config use-context staging
+    description: Switch kubectl to the staging context.
+flags: []
+tags:
+  - kubectl
+  - context
+  - cluster
+difficulty: beginner
+common: true
+dangerous: true

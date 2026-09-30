@@ -1,0 +1,26 @@
+id: jenkins-sh
+tool: jenkins
+category: pipeline
+name: sh
+title: Jenkins sh Step
+slug: sh
+description: Run a Unix shell command from a Jenkins Pipeline.
+syntax:
+  - sh 'command'
+  - |-
+    sh '''
+    command 1
+    command 2
+    '''
+examples:
+  - command: sh 'docker build -t my-app .'
+    description: Build a Docker image from a Jenkins Pipeline.
+flags: []
+tags:
+  - pipeline
+  - shell
+  - linux
+  - unix
+difficulty: beginner
+common: true
+dangerous: false

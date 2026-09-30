@@ -1,0 +1,22 @@
+id: jenkins-get-node
+tool: jenkins
+category: cli
+name: get-node
+title: Get Jenkins Node Configuration
+slug: get-node
+description: Retrieve the XML configuration of a Jenkins node.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> get-node <node>
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com get-node
+      linux-agent
+    description: Print the configuration of the linux-agent node.
+flags: []
+tags:
+  - cli
+  - node
+  - agent
+  - configuration
+difficulty: intermediate
+common: false
+dangerous: false

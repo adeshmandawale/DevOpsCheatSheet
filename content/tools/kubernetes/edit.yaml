@@ -1,0 +1,23 @@
+id: kubernetes-edit
+tool: kubernetes
+category: resources
+name: kubectl edit
+title: Edit a live Kubernetes resource
+slug: edit
+description: Open a Kubernetes resource in an editor and apply changes directly
+  to the live cluster.
+syntax:
+  - kubectl edit <resource> <name>
+examples:
+  - command: kubectl edit deployment nginx
+    description: Edit the live nginx deployment configuration.
+flags:
+  - flag: -n, --namespace
+    meaning: Specify the namespace.
+tags:
+  - kubectl
+  - edit
+  - resources
+difficulty: intermediate
+common: true
+dangerous: true

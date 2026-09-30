@@ -1,0 +1,25 @@
+id: kubernetes-explain
+tool: kubernetes
+category: documentation
+name: kubectl explain
+title: View Kubernetes resource documentation
+slug: explain
+description: Display documentation for Kubernetes resources and their fields.
+syntax:
+  - kubectl explain <resource>
+  - kubectl explain <resource>.<field>
+examples:
+  - command: kubectl explain deployment
+    description: Show documentation for Deployment resources.
+  - command: kubectl explain deployment.spec.template
+    description: Show documentation for a specific Deployment field.
+flags:
+  - flag: --recursive
+    meaning: Display documentation recursively for nested fields.
+tags:
+  - kubectl
+  - documentation
+  - resources
+difficulty: beginner
+common: true
+dangerous: false

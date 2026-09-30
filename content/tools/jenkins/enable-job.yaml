@@ -1,0 +1,20 @@
+id: jenkins-enable-job
+tool: jenkins
+category: cli
+name: enable-job
+title: Enable Jenkins Job
+slug: enable-job
+description: Enable a previously disabled Jenkins job.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> enable-job <job>
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com enable-job my-app
+    description: Enable the my-app Jenkins job.
+flags: []
+tags:
+  - cli
+  - job
+  - enable
+difficulty: beginner
+common: false
+dangerous: false

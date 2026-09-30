@@ -1,0 +1,21 @@
+id: jenkins-shared-library
+tool: jenkins
+category: pipeline
+name: shared-library
+title: Jenkins Shared Library
+slug: shared-library
+description: Load reusable Pipeline code from a Jenkins Shared Library.
+syntax:
+  - "@Library('my-shared-library') _"
+  - "@Library('my-shared-library@main') _"
+examples:
+  - command: "@Library('my-shared-library@main') _"
+    description: Load the main branch of a Jenkins Shared Library.
+flags: []
+tags:
+  - pipeline
+  - shared-library
+  - reusability
+difficulty: advanced
+common: true
+dangerous: false

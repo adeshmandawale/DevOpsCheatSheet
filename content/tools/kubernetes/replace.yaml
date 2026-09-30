@@ -1,0 +1,21 @@
+id: kubectl-replace
+tool: kubernetes
+category: resources
+name: kubectl replace
+title: Replace a Kubernetes resource
+slug: replace
+description: Replaces an existing resource with the configuration provided in a
+  file or standard input.
+syntax:
+  - kubectl replace -f <file.yaml>
+examples:
+  - command: kubectl replace -f deployment.yaml
+    description: Replaces the existing resource using the supplied manifest.
+flags: []
+tags:
+  - resources
+  - manifest
+  - update
+difficulty: intermediate
+common: false
+dangerous: true

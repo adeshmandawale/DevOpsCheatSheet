@@ -1,0 +1,20 @@
+id: kubectl-set-env
+tool: kubernetes
+category: configuration
+name: kubectl set env
+title: Set environment variables
+slug: set-env
+description: Updates environment variables on a Kubernetes workload.
+syntax:
+  - kubectl set env deployment/<name> KEY=value
+examples:
+  - command: kubectl set env deployment/web APP_ENV=production
+    description: Sets APP_ENV to production on the web deployment.
+flags: []
+tags:
+  - environment
+  - configuration
+  - deployment
+difficulty: beginner
+common: true
+dangerous: false

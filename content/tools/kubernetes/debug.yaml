@@ -1,0 +1,21 @@
+id: kubectl-debug
+tool: kubernetes
+category: debugging
+name: kubectl debug
+title: Create a debugging container
+slug: debug
+description: Creates a debugging session for a pod or node using an ephemeral or
+  temporary container.
+syntax:
+  - kubectl debug <pod> -it --image=<image>
+examples:
+  - command: kubectl debug web -it --image=busybox
+    description: Starts an interactive debugging session using a temporary container.
+flags: []
+tags:
+  - debugging
+  - pods
+  - troubleshooting
+difficulty: advanced
+common: true
+dangerous: false

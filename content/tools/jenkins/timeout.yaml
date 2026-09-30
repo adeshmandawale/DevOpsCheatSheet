@@ -1,0 +1,24 @@
+id: jenkins-timeout
+tool: jenkins
+category: pipeline
+name: timeout
+title: Jenkins Pipeline Timeout
+slug: timeout
+description: Limit how long a Jenkins Pipeline or a block of Pipeline steps can run.
+syntax:
+  - "options { timeout(time: 30, unit: 'MINUTES') }"
+  - "timeout(time: 10, unit: 'MINUTES') { ... }"
+examples:
+  - command: |-
+      options {
+          timeout(time: 30, unit: 'MINUTES')
+      }
+    description: Limit the entire Pipeline to 30 minutes.
+flags: []
+tags:
+  - pipeline
+  - timeout
+  - reliability
+difficulty: intermediate
+common: true
+dangerous: false

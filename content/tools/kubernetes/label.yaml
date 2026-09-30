@@ -1,0 +1,23 @@
+id: kubernetes-label
+tool: kubernetes
+category: resources
+name: kubectl label
+title: Add or update resource labels
+slug: label
+description: Add, update, or remove labels on Kubernetes resources.
+syntax:
+  - kubectl label <resource> <name> <key>=<value>
+  - kubectl label <resource> <name> <key>-
+examples:
+  - command: kubectl label pod nginx environment=dev
+    description: Add an environment label to the nginx pod.
+flags:
+  - flag: --overwrite
+    meaning: Allow an existing label value to be replaced.
+tags:
+  - kubectl
+  - labels
+  - resources
+difficulty: beginner
+common: true
+dangerous: true

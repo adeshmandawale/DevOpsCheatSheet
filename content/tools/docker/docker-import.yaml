@@ -1,0 +1,20 @@
+id: docker-import
+tool: docker
+category: images
+name: docker import
+title: Create an image from an archive
+slug: docker-import
+description: Creates a Docker image from a filesystem archive.
+syntax:
+  - docker import <file.tar> <image>:<tag>
+examples:
+  - command: docker import container.tar my-app:imported
+    description: Creates an image from the exported filesystem archive.
+flags: []
+tags:
+  - image
+  - import
+  - archive
+difficulty: intermediate
+common: false
+dangerous: false

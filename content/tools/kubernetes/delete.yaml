@@ -1,0 +1,31 @@
+id: kubernetes-delete
+tool: kubernetes
+category: workloads
+name: kubectl delete
+title: Delete Kubernetes resources
+slug: delete
+description: Delete Kubernetes resources such as pods, deployments, services,
+  and namespaces.
+syntax:
+  - kubectl delete <resource> <name>
+  - kubectl delete -f <file>
+  - kubectl delete <resource> --all
+examples:
+  - command: kubectl delete pod nginx
+    description: Delete the nginx pod.
+  - command: kubectl delete -f deployment.yaml
+    description: Delete resources defined in a manifest.
+flags:
+  - flag: -f, --filename
+    meaning: Delete resources defined in a manifest.
+  - flag: --all
+    meaning: Delete all resources of the specified type.
+  - flag: -n, --namespace
+    meaning: Specify the namespace.
+tags:
+  - kubectl
+  - delete
+  - cleanup
+difficulty: beginner
+common: true
+dangerous: true

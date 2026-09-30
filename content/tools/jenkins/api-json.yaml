@@ -1,0 +1,20 @@
+id: jenkins-api-json
+tool: jenkins
+category: rest-api
+name: api-json
+title: Jenkins JSON API
+slug: api-json
+description: Retrieve Jenkins information in JSON format through the REST API.
+syntax:
+  - curl <jenkins-url>/api/json
+examples:
+  - command: curl https://jenkins.example.com/api/json
+    description: Retrieve Jenkins information as JSON.
+flags: []
+tags:
+  - rest-api
+  - json
+  - api
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,25 @@
+id: jenkins-bat
+tool: jenkins
+category: pipeline
+name: bat
+title: Jenkins bat Step
+slug: bat
+description: Run a Windows batch command from a Jenkins Pipeline.
+syntax:
+  - bat 'command'
+  - |-
+    bat '''
+    command 1
+    command 2
+    '''
+examples:
+  - command: bat 'dir'
+    description: Run the Windows dir command on a Windows agent.
+flags: []
+tags:
+  - pipeline
+  - windows
+  - batch
+difficulty: beginner
+common: false
+dangerous: false

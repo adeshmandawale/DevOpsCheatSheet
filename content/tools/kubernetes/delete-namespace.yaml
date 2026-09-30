@@ -1,0 +1,20 @@
+id: kubectl-delete-namespace
+tool: kubernetes
+category: namespaces
+name: kubectl delete namespace
+title: Delete a namespace
+slug: delete-namespace
+description: Deletes a Kubernetes namespace and the resources contained within it.
+syntax:
+  - kubectl delete namespace <name>
+examples:
+  - command: kubectl delete namespace development
+    description: Deletes the development namespace and its resources.
+flags: []
+tags:
+  - namespace
+  - delete
+  - resources
+difficulty: beginner
+common: true
+dangerous: true

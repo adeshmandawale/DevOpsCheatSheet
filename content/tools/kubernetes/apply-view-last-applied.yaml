@@ -1,0 +1,20 @@
+id: kubectl-view-last-applied
+tool: kubernetes
+category: resources
+name: kubectl apply view-last-applied
+title: View last applied configuration
+slug: apply-view-last-applied
+description: Displays the last-applied configuration stored for a resource.
+syntax:
+  - kubectl apply view-last-applied deployment/<name>
+examples:
+  - command: kubectl apply view-last-applied deployment/web
+    description: Displays the configuration last applied to the web deployment.
+flags: []
+tags:
+  - apply
+  - configuration
+  - deployment
+difficulty: intermediate
+common: false
+dangerous: false

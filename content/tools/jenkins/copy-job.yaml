@@ -1,0 +1,21 @@
+id: jenkins-copy-job
+tool: jenkins
+category: cli
+name: copy-job
+title: Copy Jenkins Job
+slug: copy-job
+description: Create a new Jenkins job by copying an existing job.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> copy-job <from> <to>
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com copy-job
+      app-template app-staging
+    description: Create app-staging by copying app-template.
+flags: []
+tags:
+  - cli
+  - job
+  - copy
+difficulty: intermediate
+common: false
+dangerous: false

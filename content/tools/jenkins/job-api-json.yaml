@@ -1,0 +1,20 @@
+id: jenkins-job-api-json
+tool: jenkins
+category: rest-api
+name: job-api-json
+title: Jenkins Job JSON API
+slug: job-api-json
+description: Retrieve information about a Jenkins job through its JSON API endpoint.
+syntax:
+  - curl <jenkins-url>/job/<job>/api/json
+examples:
+  - command: curl https://jenkins.example.com/job/my-app/api/json
+    description: Retrieve metadata and build information for my-app.
+flags: []
+tags:
+  - rest-api
+  - job
+  - json
+difficulty: beginner
+common: true
+dangerous: false

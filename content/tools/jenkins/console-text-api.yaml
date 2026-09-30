@@ -1,0 +1,21 @@
+id: jenkins-console-text-api
+tool: jenkins
+category: rest-api
+name: console-text-api
+title: Jenkins Console Text API
+slug: console-text-api
+description: Retrieve the plain-text console output of a Jenkins build through the REST API.
+syntax:
+  - curl <jenkins-url>/job/<job>/<build>/consoleText
+examples:
+  - command: curl https://jenkins.example.com/job/my-app/42/consoleText
+    description: Retrieve console output for build 42.
+flags: []
+tags:
+  - rest-api
+  - console
+  - logs
+  - build
+difficulty: beginner
+common: true
+dangerous: false

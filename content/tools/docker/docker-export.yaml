@@ -1,0 +1,20 @@
+id: docker-export
+tool: docker
+category: images
+name: docker export
+title: Export a container filesystem
+slug: docker-export
+description: Exports a container filesystem as a tar archive.
+syntax:
+  - docker export <container> -o <file.tar>
+examples:
+  - command: docker export my-container -o container.tar
+    description: Exports the container filesystem into a tar archive.
+flags: []
+tags:
+  - container
+  - export
+  - backup
+difficulty: intermediate
+common: false
+dangerous: false

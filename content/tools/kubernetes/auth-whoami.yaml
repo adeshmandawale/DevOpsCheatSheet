@@ -1,0 +1,20 @@
+id: kubectl-auth-whoami
+tool: kubernetes
+category: rbac
+name: kubectl auth whoami
+title: Show the current Kubernetes identity
+slug: auth-whoami
+description: Displays information about the identity used for authentication.
+syntax:
+  - kubectl auth whoami
+examples:
+  - command: kubectl auth whoami
+    description: Shows the identity associated with the current kubectl credentials.
+flags: []
+tags:
+  - rbac
+  - identity
+  - security
+difficulty: beginner
+common: true
+dangerous: false

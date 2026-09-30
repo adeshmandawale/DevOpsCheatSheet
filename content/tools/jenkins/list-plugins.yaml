@@ -1,0 +1,20 @@
+id: jenkins-list-plugins
+tool: jenkins
+category: administration
+name: list-plugins
+title: List Jenkins Plugins
+slug: list-plugins
+description: List installed Jenkins plugins and their versions.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> list-plugins
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com list-plugins
+    description: Display installed Jenkins plugins.
+flags: []
+tags:
+  - cli
+  - plugins
+  - administration
+difficulty: beginner
+common: true
+dangerous: false

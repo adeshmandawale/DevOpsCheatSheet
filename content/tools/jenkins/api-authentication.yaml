@@ -1,0 +1,25 @@
+id: jenkins-api-authentication
+tool: jenkins
+category: rest-api
+name: api-authentication
+title: Jenkins REST API Authentication
+slug: api-authentication
+description: Authenticate Jenkins REST API requests using a username and API token.
+syntax:
+  - curl --user <username>:<api-token> <jenkins-url>/api/json
+examples:
+  - command: curl --user $JENKINS_USER:$JENKINS_API_TOKEN
+      https://jenkins.example.com/api/json
+    description: Authenticate to Jenkins using environment variables containing the
+      username and API token.
+flags:
+  - flag: --user
+    meaning: Provide the username and API token for authentication.
+tags:
+  - rest-api
+  - authentication
+  - api-token
+  - curl
+difficulty: intermediate
+common: true
+dangerous: false

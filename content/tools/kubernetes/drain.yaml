@@ -1,0 +1,28 @@
+id: kubernetes-drain
+tool: kubernetes
+category: nodes
+name: kubectl drain
+title: Safely evict pods from a node
+slug: drain
+description: Evict workloads from a node so it can be taken out of service for maintenance.
+syntax:
+  - kubectl drain <node>
+  - kubectl drain <node> --ignore-daemonsets
+examples:
+  - command: kubectl drain worker-1 --ignore-daemonsets
+    description: Drain worker-1 while ignoring DaemonSet-managed pods.
+flags:
+  - flag: --ignore-daemonsets
+    meaning: Ignore DaemonSet-managed pods during the drain.
+  - flag: --delete-emptydir-data
+    meaning: Allow deletion of pods using emptyDir data.
+  - flag: --force
+    meaning: Force eviction of pods that are not managed by a controller.
+tags:
+  - kubectl
+  - nodes
+  - maintenance
+  - eviction
+difficulty: advanced
+common: true
+dangerous: true

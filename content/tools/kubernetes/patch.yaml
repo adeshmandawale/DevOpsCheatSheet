@@ -1,0 +1,20 @@
+id: kubectl-patch
+tool: kubernetes
+category: workloads
+name: kubectl patch
+title: Update a resource with a patch
+slug: patch
+description: Updates fields of an existing Kubernetes resource using a patch.
+syntax:
+  - kubectl patch deployment <name> -p '<patch>'
+examples:
+  - command: kubectl patch deployment web -p '{"spec":{"replicas":3}}'
+    description: Patches the web deployment to use three replicas.
+flags: []
+tags:
+  - patch
+  - update
+  - resources
+difficulty: advanced
+common: true
+dangerous: true

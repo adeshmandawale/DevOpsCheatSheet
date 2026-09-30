@@ -1,0 +1,20 @@
+id: jenkins-computer-api
+tool: jenkins
+category: rest-api
+name: computer-api
+title: Jenkins Computer API
+slug: computer-api
+description: Retrieve Jenkins computer and executor information through the REST API.
+syntax:
+  - curl <jenkins-url>/computer/api/json
+examples:
+  - command: curl https://jenkins.example.com/computer/api/json
+    description: Retrieve information about Jenkins computers and executors.
+flags: []
+tags:
+  - rest-api
+  - nodes
+  - executors
+difficulty: intermediate
+common: true
+dangerous: false

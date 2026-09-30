@@ -1,0 +1,19 @@
+id: docker-restart
+tool: docker
+category: containers
+name: docker restart
+title: Restart containers
+slug: docker-restart
+description: Stops and then starts one or more containers.
+syntax:
+  - docker restart <container>
+examples:
+  - command: docker restart nginx
+    description: Restarts the nginx container.
+flags: []
+tags:
+  - container
+  - restart
+difficulty: beginner
+common: true
+dangerous: false

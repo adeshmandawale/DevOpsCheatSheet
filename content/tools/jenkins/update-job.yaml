@@ -1,0 +1,21 @@
+id: jenkins-update-job
+tool: jenkins
+category: cli
+name: update-job
+title: Update Jenkins Job
+slug: update-job
+description: Replace the XML configuration of an existing Jenkins job.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> update-job <job> < config.xml
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com update-job
+      my-app < config.xml
+    description: Update the my-app job using config.xml.
+flags: []
+tags:
+  - cli
+  - job
+  - configuration
+difficulty: intermediate
+common: false
+dangerous: true

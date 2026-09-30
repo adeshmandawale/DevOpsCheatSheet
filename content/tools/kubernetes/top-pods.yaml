@@ -1,0 +1,21 @@
+id: kubectl-top-pods
+tool: kubernetes
+category: monitoring
+name: kubectl top pods
+title: View pod resource usage
+slug: top-pods
+description: Displays CPU and memory usage for pods when the Metrics API is available.
+syntax:
+  - kubectl top pods
+examples:
+  - command: kubectl top pods
+    description: Displays CPU and memory usage for pods in the current namespace.
+flags: []
+tags:
+  - monitoring
+  - pods
+  - cpu
+  - memory
+difficulty: beginner
+common: true
+dangerous: false

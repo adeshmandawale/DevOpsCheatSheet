@@ -1,0 +1,22 @@
+id: kubectl-cp
+tool: kubernetes
+category: debugging
+name: kubectl cp
+title: Copy files to or from a pod
+slug: cp
+description: Copies files and directories between a local filesystem and a
+  container in a pod.
+syntax:
+  - kubectl cp <namespace>/<pod>:<path> <local-path>
+  - kubectl cp <local-path> <namespace>/<pod>:<path>
+examples:
+  - command: kubectl cp default/web:/app/logs/app.log ./app.log
+    description: Copies a log file from a pod to the local machine.
+flags: []
+tags:
+  - pods
+  - files
+  - debugging
+difficulty: beginner
+common: true
+dangerous: false

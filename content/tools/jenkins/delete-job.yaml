@@ -1,0 +1,20 @@
+id: jenkins-delete-job
+tool: jenkins
+category: cli
+name: delete-job
+title: Delete Jenkins Job
+slug: delete-job
+description: Permanently delete a Jenkins job using the Jenkins CLI.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> delete-job <job>
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com delete-job old-app
+    description: Delete the old-app Jenkins job.
+flags: []
+tags:
+  - cli
+  - job
+  - delete
+difficulty: intermediate
+common: false
+dangerous: true

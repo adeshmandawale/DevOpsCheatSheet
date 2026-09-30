@@ -1,0 +1,20 @@
+id: kubectl-rollout-undo
+tool: kubernetes
+category: deployments
+name: kubectl rollout undo
+title: Rollback a deployment
+slug: rollout-undo
+description: Rolls a deployment back to a previous revision.
+syntax:
+  - kubectl rollout undo deployment/<name>
+examples:
+  - command: kubectl rollout undo deployment/web
+    description: Rolls the web deployment back to its previous revision.
+flags: []
+tags:
+  - deployment
+  - rollout
+  - rollback
+difficulty: intermediate
+common: true
+dangerous: true

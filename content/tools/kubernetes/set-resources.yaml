@@ -1,0 +1,23 @@
+id: kubectl-set-resources
+tool: kubernetes
+category: resources
+name: kubectl set resources
+title: Set resource requests and limits
+slug: set-resources
+description: Updates CPU and memory resource requests and limits on a workload.
+syntax:
+  - kubectl set resources deployment/<name> --requests=cpu=<cpu>,memory=<memory>
+    --limits=cpu=<cpu>,memory=<memory>
+examples:
+  - command: kubectl set resources deployment/web --requests=cpu=100m,memory=128Mi
+      --limits=cpu=500m,memory=512Mi
+    description: Sets CPU and memory requests and limits for the web deployment.
+flags: []
+tags:
+  - resources
+  - cpu
+  - memory
+  - deployment
+difficulty: intermediate
+common: true
+dangerous: false

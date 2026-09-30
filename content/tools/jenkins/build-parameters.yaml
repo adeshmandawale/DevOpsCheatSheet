@@ -1,0 +1,23 @@
+id: jenkins-build-parameters
+tool: jenkins
+category: cli
+name: build-parameters
+title: Build Jenkins Job with Parameters
+slug: build-parameters
+description: Trigger a Jenkins job from the CLI while passing build parameters.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> build <job> -p KEY=value
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com build deploy
+      -p ENV=staging
+    description: Trigger the deploy job with ENV set to staging.
+flags:
+  - flag: -p
+    meaning: Pass a build parameter as KEY=value.
+tags:
+  - cli
+  - build
+  - parameters
+difficulty: beginner
+common: true
+dangerous: false

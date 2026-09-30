@@ -1,0 +1,20 @@
+id: jenkins-list-nodes
+tool: jenkins
+category: cli
+name: list-nodes
+title: List Jenkins Nodes
+slug: list-nodes
+description: List Jenkins nodes and agents available to the controller.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> list-nodes
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com list-nodes
+    description: List Jenkins nodes and agents.
+flags: []
+tags:
+  - cli
+  - nodes
+  - agents
+difficulty: beginner
+common: true
+dangerous: false

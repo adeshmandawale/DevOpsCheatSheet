@@ -1,0 +1,21 @@
+id: docker-network-inspect
+tool: docker
+category: networking
+name: docker network inspect
+title: Inspect a Docker network
+slug: docker-network-inspect
+description: Displays detailed information about a Docker network and its
+  connected containers.
+syntax:
+  - docker network inspect <network>
+examples:
+  - command: docker network inspect app-network
+    description: Displays configuration, IPAM information, and connected containers.
+flags: []
+tags:
+  - network
+  - inspection
+  - debugging
+difficulty: beginner
+common: true
+dangerous: false

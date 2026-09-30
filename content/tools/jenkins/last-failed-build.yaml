@@ -1,0 +1,21 @@
+id: jenkins-last-failed-build
+tool: jenkins
+category: rest-api
+name: last-failed-build
+title: Jenkins Last Failed Build API
+slug: last-failed-build
+description: Retrieve information about the most recent failed build of a Jenkins job.
+syntax:
+  - curl <jenkins-url>/job/<job>/lastFailedBuild/api/json
+examples:
+  - command: curl https://jenkins.example.com/job/my-app/lastFailedBuild/api/json
+    description: Retrieve information about the latest failed build.
+flags: []
+tags:
+  - rest-api
+  - build
+  - failure
+  - json
+difficulty: beginner
+common: true
+dangerous: false

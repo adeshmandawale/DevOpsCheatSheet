@@ -1,0 +1,20 @@
+id: jenkins-queue-api
+tool: jenkins
+category: rest-api
+name: queue-api
+title: Jenkins Queue API
+slug: queue-api
+description: Retrieve Jenkins build queue information through the REST API.
+syntax:
+  - curl <jenkins-url>/queue/api/json
+examples:
+  - command: curl https://jenkins.example.com/queue/api/json
+    description: Retrieve queued Jenkins builds.
+flags: []
+tags:
+  - rest-api
+  - queue
+  - build
+difficulty: intermediate
+common: true
+dangerous: false

@@ -1,0 +1,21 @@
+id: docker-save
+tool: docker
+category: images
+name: docker save
+title: Save images to an archive
+slug: docker-save
+description: Saves one or more Docker images into a tar archive that can be
+  transferred or backed up.
+syntax:
+  - docker save -o <file.tar> <image>:<tag>
+examples:
+  - command: docker save -o nginx.tar nginx:latest
+    description: Saves the nginx image into a tar archive.
+flags: []
+tags:
+  - image
+  - backup
+  - export
+difficulty: beginner
+common: true
+dangerous: false

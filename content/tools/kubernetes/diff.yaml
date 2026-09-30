@@ -1,0 +1,21 @@
+id: kubectl-diff
+tool: kubernetes
+category: resources
+name: kubectl diff
+title: Preview manifest changes
+slug: diff
+description: Shows the differences between the current live configuration and
+  the configuration that would be applied.
+syntax:
+  - kubectl diff -f <file.yaml>
+examples:
+  - command: kubectl diff -f deployment.yaml
+    description: Shows the changes that applying the deployment manifest would make.
+flags: []
+tags:
+  - diff
+  - manifest
+  - apply
+difficulty: intermediate
+common: true
+dangerous: false

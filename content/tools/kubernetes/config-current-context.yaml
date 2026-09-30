@@ -1,0 +1,20 @@
+id: kubectl-current-context
+tool: kubernetes
+category: configuration
+name: kubectl config current-context
+title: Show the current context
+slug: config-current-context
+description: Displays the Kubernetes context currently selected by kubectl.
+syntax:
+  - kubectl config current-context
+examples:
+  - command: kubectl config current-context
+    description: Shows which Kubernetes cluster kubectl is currently configured to use.
+flags: []
+tags:
+  - config
+  - context
+  - cluster
+difficulty: beginner
+common: true
+dangerous: false

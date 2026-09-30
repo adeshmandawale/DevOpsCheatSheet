@@ -1,0 +1,33 @@
+id: kubernetes-rollout
+tool: kubernetes
+category: deployments
+name: kubectl rollout
+title: Manage deployment rollouts
+slug: rollout
+description: Inspect, pause, resume, restart, or undo Kubernetes deployment rollouts.
+syntax:
+  - kubectl rollout status deployment/<name>
+  - kubectl rollout restart deployment/<name>
+  - kubectl rollout undo deployment/<name>
+examples:
+  - command: kubectl rollout status deployment/nginx
+    description: Wait for the nginx deployment rollout to complete.
+  - command: kubectl rollout restart deployment/nginx
+    description: Restart all pods managed by the deployment.
+  - command: kubectl rollout undo deployment/nginx
+    description: Roll the deployment back to its previous revision.
+flags:
+  - flag: status
+    meaning: Show rollout status.
+  - flag: restart
+    meaning: Restart the resources managed by the workload.
+  - flag: undo
+    meaning: Roll back to a previous revision.
+tags:
+  - kubectl
+  - deployment
+  - rollout
+  - rollback
+difficulty: intermediate
+common: true
+dangerous: true

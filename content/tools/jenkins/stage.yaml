@@ -1,0 +1,30 @@
+id: jenkins-stage
+tool: jenkins
+category: pipeline
+name: stage
+title: Jenkins Pipeline Stage
+slug: stage
+description: Group related Pipeline steps into a named stage.
+syntax:
+  - |-
+    stage('Build') {
+        steps {
+            ...
+        }
+    }
+examples:
+  - command: |-
+      stage('Build') {
+          steps {
+              sh 'make build'
+          }
+      }
+    description: Create a Build stage containing a shell command.
+flags: []
+tags:
+  - pipeline
+  - stage
+  - jenkinsfile
+difficulty: beginner
+common: true
+dangerous: false

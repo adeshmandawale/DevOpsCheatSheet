@@ -1,0 +1,26 @@
+id: jenkins-when
+tool: jenkins
+category: pipeline
+name: when
+title: Jenkins Pipeline Conditions
+slug: when
+description: Conditionally execute a Declarative Pipeline stage based on branch,
+  environment, or other conditions.
+syntax:
+  - when { branch 'main' }
+  - "when { environment name: 'DEPLOY', value: 'true' }"
+examples:
+  - command: |-
+      when {
+          branch 'main'
+      }
+    description: Run a stage only when the current branch is main.
+flags: []
+tags:
+  - pipeline
+  - when
+  - conditions
+  - branch
+difficulty: intermediate
+common: true
+dangerous: false

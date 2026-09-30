@@ -1,0 +1,20 @@
+id: docker-commit
+tool: docker
+category: images
+name: docker commit
+title: Create an image from a container
+slug: docker-commit
+description: Creates a new Docker image from the current state of a container.
+syntax:
+  - docker commit <container> <image>:<tag>
+examples:
+  - command: docker commit my-container my-app:debug
+    description: Creates an image from the current state of the container.
+flags: []
+tags:
+  - image
+  - container
+  - snapshot
+difficulty: intermediate
+common: false
+dangerous: false

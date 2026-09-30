@@ -1,0 +1,25 @@
+id: docker-cp
+tool: docker
+category: containers
+name: docker cp
+title: Copy files between containers and host
+slug: docker-cp
+description: Copies files or directories between a Docker container and the
+  local filesystem.
+syntax:
+  - docker cp <container>:<path> <host-path>
+  - docker cp <host-path> <container>:<path>
+examples:
+  - command: docker cp nginx:/etc/nginx/nginx.conf ./nginx.conf
+    description: Copies the nginx configuration file from a running container to the
+      current directory.
+  - command: docker cp ./config.json my-container:/app/config.json
+    description: Copies a local configuration file into a container.
+flags: []
+tags:
+  - copy
+  - files
+  - container
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,20 @@
+id: kubectl-set-context
+tool: kubernetes
+category: configuration
+name: kubectl config set-context
+title: Configure a Kubernetes context
+slug: config-set-context
+description: Creates or modifies a Kubernetes context in the kubeconfig file.
+syntax:
+  - kubectl config set-context <context> --cluster=<cluster> --user=<user>
+examples:
+  - command: kubectl config set-context dev --cluster=dev-cluster --user=dev-user
+    description: Creates or updates a context using the specified cluster and user.
+flags: []
+tags:
+  - config
+  - context
+  - kubeconfig
+difficulty: intermediate
+common: true
+dangerous: false

@@ -1,0 +1,22 @@
+id: jenkins-input
+tool: jenkins
+category: pipeline
+name: input
+title: Jenkins Pipeline Input
+slug: input
+description: Pause a Pipeline and request manual input or approval before
+  continuing. The input step is commonly used for deployment approvals.
+syntax:
+  - "input message: 'Deploy to production?'"
+examples:
+  - command: "input message: 'Deploy to production?'"
+    description: Pause the Pipeline and wait for a user to approve the deployment.
+flags: []
+tags:
+  - pipeline
+  - approval
+  - input
+  - deployment
+difficulty: intermediate
+common: true
+dangerous: false

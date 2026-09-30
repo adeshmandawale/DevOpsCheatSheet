@@ -1,0 +1,25 @@
+id: jenkins-options
+tool: jenkins
+category: pipeline
+name: options
+title: Jenkins Pipeline Options
+slug: options
+description: Configure Pipeline-level execution options such as timeouts and
+  build timestamps.
+syntax:
+  - options { ... }
+examples:
+  - command: |-
+      options {
+          timeout(time: 30, unit: 'MINUTES')
+          timestamps()
+      }
+    description: Set a Pipeline timeout and enable timestamps in console output.
+flags: []
+tags:
+  - pipeline
+  - options
+  - timeout
+difficulty: intermediate
+common: true
+dangerous: false

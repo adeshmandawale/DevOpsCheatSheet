@@ -1,0 +1,20 @@
+id: docker-kill
+tool: docker
+category: containers
+name: docker kill
+title: Force stop a container
+slug: docker-kill
+description: Sends a signal to terminate one or more running containers.
+syntax:
+  - docker kill <container>
+examples:
+  - command: docker kill my-container
+    description: Immediately sends the default termination signal to the container.
+flags: []
+tags:
+  - container
+  - process
+  - stop
+difficulty: beginner
+common: true
+dangerous: true

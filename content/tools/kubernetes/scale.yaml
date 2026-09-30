@@ -1,0 +1,26 @@
+id: kubernetes-scale
+tool: kubernetes
+category: deployments
+name: kubectl scale
+title: Scale workloads
+slug: scale
+description: Change the number of replicas for a Kubernetes workload.
+syntax:
+  - kubectl scale deployment <name> --replicas=<count>
+  - kubectl scale deployment/<name> --replicas=<count>
+examples:
+  - command: kubectl scale deployment nginx --replicas=3
+    description: Scale the nginx deployment to three replicas.
+  - command: kubectl scale deployment api --replicas=0
+    description: Scale the API deployment down to zero replicas.
+flags:
+  - flag: --replicas
+    meaning: Set the desired number of replicas.
+tags:
+  - kubectl
+  - scaling
+  - deployment
+  - replicas
+difficulty: beginner
+common: true
+dangerous: true

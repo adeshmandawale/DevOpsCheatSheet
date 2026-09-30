@@ -1,0 +1,20 @@
+id: kubectl-rollout-status
+tool: kubernetes
+category: deployments
+name: kubectl rollout status
+title: Watch rollout progress
+slug: rollout-status
+description: Displays the rollout status of a deployment or other supported workload.
+syntax:
+  - kubectl rollout status deployment/<name>
+examples:
+  - command: kubectl rollout status deployment/web
+    description: Waits for the web deployment rollout to complete.
+flags: []
+tags:
+  - deployment
+  - rollout
+  - status
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,19 @@
+id: docker-rename
+tool: docker
+category: containers
+name: docker rename
+title: Rename a container
+slug: docker-rename
+description: Changes the name of an existing Docker container.
+syntax:
+  - docker rename <old-name> <new-name>
+examples:
+  - command: docker rename web-old web-app
+    description: Renames the container from web-old to web-app.
+flags: []
+tags:
+  - container
+  - rename
+difficulty: beginner
+common: true
+dangerous: false

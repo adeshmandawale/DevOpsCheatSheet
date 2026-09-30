@@ -1,0 +1,21 @@
+id: kubernetes-uncordon
+tool: kubernetes
+category: nodes
+name: kubectl uncordon
+title: Mark a node schedulable
+slug: uncordon
+description: Allow new pods to be scheduled on a previously cordoned node.
+syntax:
+  - kubectl uncordon <node>
+examples:
+  - command: kubectl uncordon worker-1
+    description: Allow pods to be scheduled on worker-1 again.
+flags: []
+tags:
+  - kubectl
+  - nodes
+  - scheduling
+  - maintenance
+difficulty: intermediate
+common: true
+dangerous: true

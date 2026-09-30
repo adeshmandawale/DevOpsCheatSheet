@@ -1,0 +1,20 @@
+id: jenkins-list-jobs
+tool: jenkins
+category: cli
+name: list-jobs
+title: List Jenkins Jobs
+slug: list-jobs
+description: List Jenkins jobs accessible to the current CLI user.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> list-jobs
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com list-jobs
+    description: List Jenkins jobs.
+flags: []
+tags:
+  - cli
+  - jobs
+  - list
+difficulty: beginner
+common: true
+dangerous: false

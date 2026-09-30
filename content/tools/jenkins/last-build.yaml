@@ -1,0 +1,20 @@
+id: jenkins-last-build
+tool: jenkins
+category: rest-api
+name: last-build
+title: Jenkins Last Build API
+slug: last-build
+description: Retrieve information about the most recent build of a Jenkins job.
+syntax:
+  - curl <jenkins-url>/job/<job>/lastBuild/api/json
+examples:
+  - command: curl https://jenkins.example.com/job/my-app/lastBuild/api/json
+    description: Retrieve information about the latest build.
+flags: []
+tags:
+  - rest-api
+  - build
+  - json
+difficulty: beginner
+common: true
+dangerous: false

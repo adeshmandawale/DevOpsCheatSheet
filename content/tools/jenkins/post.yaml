@@ -1,0 +1,41 @@
+id: jenkins-post
+tool: jenkins
+category: pipeline
+name: post
+title: Jenkins Pipeline Post Actions
+slug: post
+description: Define actions that run after a Pipeline or stage based on its
+  execution result.
+syntax:
+  - |-
+    post {
+        always {
+            ...
+        }
+    }
+  - |-
+    post {
+        success {
+            ...
+        }
+        failure {
+            ...
+        }
+    }
+examples:
+  - command: |-
+      post {
+          always {
+              echo 'Pipeline finished'
+          }
+      }
+    description: Run an action after the Pipeline completes regardless of the result.
+flags: []
+tags:
+  - pipeline
+  - post
+  - cleanup
+  - notifications
+difficulty: intermediate
+common: true
+dangerous: false

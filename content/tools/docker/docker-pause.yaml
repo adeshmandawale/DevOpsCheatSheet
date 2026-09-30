@@ -1,0 +1,20 @@
+id: docker-pause
+tool: docker
+category: containers
+name: docker pause
+title: Pause container processes
+slug: docker-pause
+description: Pauses all processes inside one or more containers.
+syntax:
+  - docker pause <container>
+examples:
+  - command: docker pause my-container
+    description: Pauses all processes running inside the container.
+flags: []
+tags:
+  - container
+  - process
+  - pause
+difficulty: beginner
+common: false
+dangerous: true

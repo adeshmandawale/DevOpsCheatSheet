@@ -1,0 +1,40 @@
+id: jenkins-pipeline
+tool: jenkins
+category: pipeline
+name: pipeline
+title: Jenkins Declarative Pipeline
+slug: pipeline
+description: Define a Jenkins Declarative Pipeline using the pipeline block.
+syntax:
+  - |-
+    pipeline {
+        agent any
+        stages {
+            stage('Build') {
+                steps {
+                    sh 'make build'
+                }
+            }
+        }
+    }
+examples:
+  - command: |-
+      pipeline {
+          agent any
+          stages {
+              stage('Build') {
+                  steps {
+                      sh 'make build'
+                  }
+              }
+          }
+      }
+    description: Define a basic Declarative Pipeline with a Build stage.
+flags: []
+tags:
+  - pipeline
+  - jenkinsfile
+  - declarative
+difficulty: beginner
+common: true
+dangerous: false

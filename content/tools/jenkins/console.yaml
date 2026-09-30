@@ -1,0 +1,26 @@
+id: jenkins-console
+tool: jenkins
+category: cli
+name: console
+title: View Jenkins Build Console
+slug: console
+description: Display Jenkins build console output from the Jenkins CLI.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> console <job>
+  - java -jar jenkins-cli.jar -s <jenkins-url> console <job> <build>
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com console my-app 42
+    description: Display console output for build 42.
+flags:
+  - flag: -f
+    meaning: Follow console output.
+  - flag: -n <N>
+    meaning: Show the last N lines of console output.
+tags:
+  - cli
+  - console
+  - logs
+  - build
+difficulty: beginner
+common: true
+dangerous: false

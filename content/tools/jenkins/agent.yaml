@@ -1,0 +1,23 @@
+id: jenkins-pipeline-agent
+tool: jenkins
+category: pipeline
+name: agent
+title: Jenkins Pipeline Agent
+slug: agent
+description: Defines where a Jenkins Pipeline or stage should execute.
+syntax:
+  - agent any
+  - agent none
+  - agent { label 'linux' }
+  - agent { docker 'maven:3.9.9-eclipse-temurin-21' }
+examples:
+  - command: agent { label 'linux' }
+    description: Run the Pipeline or stage on an agent labeled linux.
+flags: []
+tags:
+  - pipeline
+  - agent
+  - executor
+difficulty: beginner
+common: true
+dangerous: false

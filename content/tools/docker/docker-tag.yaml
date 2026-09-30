@@ -1,0 +1,20 @@
+id: docker-tag
+tool: docker
+category: images
+name: docker tag
+title: Tag a Docker image
+slug: docker-tag
+description: Creates another tag that refers to an existing Docker image.
+syntax:
+  - docker tag <source-image> <target-image>
+examples:
+  - command: docker tag my-app:latest username/my-app:v1
+    description: Adds a registry-compatible tag to the existing image.
+flags: []
+tags:
+  - image
+  - tag
+  - registry
+difficulty: beginner
+common: true
+dangerous: false

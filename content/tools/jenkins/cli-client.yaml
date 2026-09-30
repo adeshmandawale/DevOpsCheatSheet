@@ -1,0 +1,30 @@
+id: jenkins-cli-client
+tool: jenkins
+category: cli
+name: cli-client
+title: Jenkins CLI Client
+slug: cli-client
+description: Use the Jenkins CLI client to execute commands against a Jenkins server.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> <command>
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com help
+    description: Display Jenkins CLI help.
+flags:
+  - flag: -s <url>
+    meaning: Specify the Jenkins server URL.
+  - flag: -auth <user:api-token>
+    meaning: Authenticate using a username and API token.
+  - flag: -webSocket
+    meaning: Use WebSocket transport.
+  - flag: -http
+    meaning: Use HTTP transport.
+  - flag: -ssh
+    meaning: Use SSH transport.
+tags:
+  - cli
+  - client
+  - authentication
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,21 @@
+id: jenkins-safe-shutdown
+tool: jenkins
+category: administration
+name: safe-shutdown
+title: Safely Shut Down Jenkins
+slug: safe-shutdown
+description: Stop accepting new builds and shut down Jenkins after running
+  builds have completed.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> safe-shutdown
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com safe-shutdown
+    description: Request a safe Jenkins shutdown.
+flags: []
+tags:
+  - cli
+  - administration
+  - shutdown
+difficulty: intermediate
+common: false
+dangerous: true

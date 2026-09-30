@@ -1,0 +1,27 @@
+id: kubernetes-describe
+tool: kubernetes
+category: inspection
+name: kubectl describe
+title: Show detailed resource information
+slug: describe
+description: Display detailed information about a Kubernetes resource, including
+  events and configuration.
+syntax:
+  - kubectl describe <resource> <name>
+  - kubectl describe pod <pod-name>
+examples:
+  - command: kubectl describe pod nginx
+    description: Show detailed information about the nginx pod.
+  - command: kubectl describe deployment nginx
+    description: Inspect a deployment and its recent events.
+flags:
+  - flag: -n, --namespace
+    meaning: Specify the namespace.
+tags:
+  - kubectl
+  - debugging
+  - inspection
+  - events
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,26 @@
+id: jenkins-steps
+tool: jenkins
+category: pipeline
+name: steps
+title: Jenkins Pipeline Steps
+slug: steps
+description: Define the executable steps inside a Jenkins Declarative Pipeline stage.
+syntax:
+  - |-
+    steps {
+        ...
+    }
+examples:
+  - command: |-
+      steps {
+          sh 'echo Hello Jenkins'
+      }
+    description: Run a shell command inside a stage.
+flags: []
+tags:
+  - pipeline
+  - steps
+  - jenkinsfile
+difficulty: beginner
+common: true
+dangerous: false

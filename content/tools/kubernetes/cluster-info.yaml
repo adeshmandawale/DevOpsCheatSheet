@@ -1,0 +1,21 @@
+id: kubernetes-cluster-info
+tool: kubernetes
+category: cluster
+name: kubectl cluster-info
+title: Display cluster information
+slug: cluster-info
+description: Display the addresses of the Kubernetes control plane and cluster services.
+syntax:
+  - kubectl cluster-info
+  - kubectl cluster-info dump
+examples:
+  - command: kubectl cluster-info
+    description: Show the Kubernetes control plane and service endpoints.
+flags: []
+tags:
+  - kubectl
+  - cluster
+  - control-plane
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,21 @@
+id: kubectl-wait
+tool: kubernetes
+category: debugging
+name: kubectl wait
+title: Wait for a resource condition
+slug: wait
+description: Waits until a specified condition is satisfied on one or more
+  Kubernetes resources.
+syntax:
+  - kubectl wait --for=condition=<condition> <resource>/<name>
+examples:
+  - command: kubectl wait --for=condition=available deployment/web
+    description: Waits until the web deployment becomes available.
+flags: []
+tags:
+  - wait
+  - debugging
+  - conditions
+difficulty: intermediate
+common: true
+dangerous: false

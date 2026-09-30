@@ -1,0 +1,20 @@
+id: docker-unpause
+tool: docker
+category: containers
+name: docker unpause
+title: Resume paused containers
+slug: docker-unpause
+description: Resumes all processes that were previously paused in a container.
+syntax:
+  - docker unpause <container>
+examples:
+  - command: docker unpause my-container
+    description: Resumes processes inside the paused container.
+flags: []
+tags:
+  - container
+  - process
+  - resume
+difficulty: beginner
+common: false
+dangerous: false

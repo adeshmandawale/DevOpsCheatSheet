@@ -1,0 +1,20 @@
+id: docker-network-connect
+tool: docker
+category: networking
+name: docker network connect
+title: Connect a container to a network
+slug: docker-network-connect
+description: Connects an existing container to a Docker network.
+syntax:
+  - docker network connect <network> <container>
+examples:
+  - command: docker network connect app-network web
+    description: Connects the web container to the app-network network.
+flags: []
+tags:
+  - network
+  - container
+  - networking
+difficulty: intermediate
+common: true
+dangerous: false

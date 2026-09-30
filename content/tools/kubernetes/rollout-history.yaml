@@ -1,0 +1,20 @@
+id: kubectl-rollout-history
+tool: kubernetes
+category: deployments
+name: kubectl rollout history
+title: View rollout history
+slug: rollout-history
+description: Displays revision history for a deployment or another supported resource.
+syntax:
+  - kubectl rollout history deployment/<name>
+examples:
+  - command: kubectl rollout history deployment/web
+    description: Displays the available rollout revisions for the web deployment.
+flags: []
+tags:
+  - deployment
+  - rollout
+  - history
+difficulty: beginner
+common: true
+dangerous: false

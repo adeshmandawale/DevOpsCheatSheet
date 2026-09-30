@@ -1,0 +1,24 @@
+id: kubernetes-api-resources
+tool: kubernetes
+category: inspection
+name: kubectl api-resources
+title: List available API resources
+slug: api-resources
+description: Display the Kubernetes API resources supported by the current cluster.
+syntax:
+  - kubectl api-resources
+examples:
+  - command: kubectl api-resources
+    description: List resource types available through the Kubernetes API.
+flags:
+  - flag: --namespaced
+    meaning: Filter resources by whether they are namespace-scoped.
+  - flag: --api-group
+    meaning: Filter resources by API group.
+tags:
+  - kubectl
+  - api
+  - resources
+difficulty: beginner
+common: true
+dangerous: false

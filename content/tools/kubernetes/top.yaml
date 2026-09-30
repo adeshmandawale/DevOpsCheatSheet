@@ -1,0 +1,31 @@
+id: kubernetes-top
+tool: kubernetes
+category: monitoring
+name: kubectl top
+title: View resource usage
+slug: top
+description: Display CPU and memory usage for nodes or pods when Metrics Server
+  is available.
+syntax:
+  - kubectl top nodes
+  - kubectl top pods
+  - kubectl top pod <name>
+examples:
+  - command: kubectl top nodes
+    description: Show CPU and memory usage for cluster nodes.
+  - command: kubectl top pods
+    description: Show CPU and memory usage for pods.
+flags:
+  - flag: -n, --namespace
+    meaning: Specify the namespace.
+  - flag: --containers
+    meaning: Display usage for individual containers.
+tags:
+  - kubectl
+  - metrics
+  - cpu
+  - memory
+  - monitoring
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,29 @@
+id: kubernetes-apply
+tool: kubernetes
+category: workloads
+name: kubectl apply
+title: Create or update resources
+slug: apply
+description: Create or update Kubernetes resources from manifest files.
+syntax:
+  - kubectl apply -f <file>
+  - kubectl apply -f <directory>
+  - kubectl apply -f <url>
+examples:
+  - command: kubectl apply -f deployment.yaml
+    description: Create or update resources defined in a manifest.
+  - command: kubectl apply -f manifests/
+    description: Apply all supported manifests in a directory.
+flags:
+  - flag: -f, --filename
+    meaning: Specify the manifest file, directory, or URL.
+  - flag: --dry-run
+    meaning: Preview the operation without applying changes.
+tags:
+  - kubectl
+  - deployment
+  - manifests
+  - configuration
+difficulty: beginner
+common: true
+dangerous: true

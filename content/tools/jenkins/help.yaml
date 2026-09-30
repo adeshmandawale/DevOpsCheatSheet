@@ -1,0 +1,21 @@
+id: jenkins-help
+tool: jenkins
+category: cli
+name: help
+title: Jenkins CLI Help
+slug: help
+description: Display Jenkins CLI help and information about available commands.
+syntax:
+  - java -jar jenkins-cli.jar -s <jenkins-url> help
+  - java -jar jenkins-cli.jar -s <jenkins-url> help <command>
+examples:
+  - command: java -jar jenkins-cli.jar -s https://jenkins.example.com help
+    description: Display available Jenkins CLI commands.
+flags: []
+tags:
+  - cli
+  - help
+  - reference
+difficulty: beginner
+common: true
+dangerous: false

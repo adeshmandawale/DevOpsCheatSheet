@@ -1,0 +1,20 @@
+id: kubectl-proxy
+tool: kubernetes
+category: networking
+name: kubectl proxy
+title: Run a local Kubernetes API proxy
+slug: proxy
+description: Runs a local proxy to the Kubernetes API server.
+syntax:
+  - kubectl proxy
+examples:
+  - command: kubectl proxy
+    description: Starts a local proxy that can be used to access the Kubernetes API.
+flags: []
+tags:
+  - networking
+  - api
+  - proxy
+difficulty: intermediate
+common: false
+dangerous: false

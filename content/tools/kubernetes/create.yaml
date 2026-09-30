@@ -1,0 +1,27 @@
+id: kubernetes-create
+tool: kubernetes
+category: workloads
+name: kubectl create
+title: Create Kubernetes resources
+slug: create
+description: Create Kubernetes resources directly from the command line or from manifests.
+syntax:
+  - kubectl create <resource> <name>
+  - kubectl create -f <file>
+examples:
+  - command: kubectl create namespace dev
+    description: Create a namespace named dev.
+  - command: kubectl create -f deployment.yaml
+    description: Create resources from a manifest.
+flags:
+  - flag: -f, --filename
+    meaning: Specify a manifest file or directory.
+  - flag: --dry-run
+    meaning: Preview the resource creation.
+tags:
+  - kubectl
+  - create
+  - resources
+difficulty: beginner
+common: true
+dangerous: true

@@ -1,0 +1,32 @@
+id: kubernetes-get
+tool: kubernetes
+category: inspection
+name: kubectl get
+title: List Kubernetes resources
+slug: get
+description: Display Kubernetes resources such as pods, services, deployments, and nodes.
+syntax:
+  - kubectl get <resource>
+  - kubectl get <resource> -n <namespace>
+  - kubectl get <resource> -o wide
+examples:
+  - command: kubectl get pods
+    description: List pods in the current namespace.
+  - command: kubectl get pods -A
+    description: List pods across all namespaces.
+  - command: kubectl get deployments -o wide
+    description: Show deployments with additional information.
+flags:
+  - flag: -A, --all-namespaces
+    meaning: List resources across all namespaces.
+  - flag: -n, --namespace
+    meaning: Specify the namespace.
+  - flag: -o, --output
+    meaning: Choose the output format.
+tags:
+  - kubectl
+  - resources
+  - inspection
+difficulty: beginner
+common: true
+dangerous: false

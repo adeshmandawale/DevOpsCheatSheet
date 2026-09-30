@@ -1,0 +1,20 @@
+id: jenkins-environment
+tool: jenkins
+category: pipeline
+name: environment
+title: Jenkins Pipeline Environment
+slug: environment
+description: Define environment variables that are available to Jenkins Pipeline steps.
+syntax:
+  - environment { KEY = 'value' }
+examples:
+  - command: environment { APP_ENV = 'staging' }
+    description: Set APP_ENV for the Pipeline.
+flags: []
+tags:
+  - pipeline
+  - environment
+  - variables
+difficulty: beginner
+common: true
+dangerous: false

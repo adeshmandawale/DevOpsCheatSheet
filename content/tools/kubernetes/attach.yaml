@@ -1,0 +1,20 @@
+id: kubectl-attach
+tool: kubernetes
+category: debugging
+name: kubectl attach
+title: Attach to a running container
+slug: attach
+description: Attaches the terminal to a running container in a pod.
+syntax:
+  - kubectl attach <pod> -c <container>
+examples:
+  - command: kubectl attach web -c nginx
+    description: Attaches the terminal to the nginx container in the web pod.
+flags: []
+tags:
+  - pods
+  - containers
+  - debugging
+difficulty: intermediate
+common: false
+dangerous: false

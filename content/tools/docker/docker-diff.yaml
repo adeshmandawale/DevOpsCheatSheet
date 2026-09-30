@@ -1,0 +1,21 @@
+id: docker-diff
+tool: docker
+category: containers
+name: docker diff
+title: Inspect filesystem changes
+slug: docker-diff
+description: Shows files and directories that were added, changed, or deleted in
+  a container filesystem.
+syntax:
+  - docker diff <container>
+examples:
+  - command: docker diff my-container
+    description: Shows filesystem changes made inside the container since it was created.
+flags: []
+tags:
+  - debugging
+  - filesystem
+  - container
+difficulty: intermediate
+common: true
+dangerous: false

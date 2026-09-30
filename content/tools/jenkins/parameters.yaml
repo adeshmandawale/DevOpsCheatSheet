@@ -1,0 +1,23 @@
+id: jenkins-parameters
+tool: jenkins
+category: pipeline
+name: parameters
+title: Jenkins Pipeline Parameters
+slug: parameters
+description: Define parameters that users can provide when starting a Jenkins Pipeline.
+syntax:
+  - "parameters { string(name: 'ENV', defaultValue: 'staging') }"
+examples:
+  - command: |-
+      parameters {
+          choice(name: 'ENV', choices: ['dev', 'staging', 'prod'])
+      }
+    description: Allow users to select the deployment environment.
+flags: []
+tags:
+  - pipeline
+  - parameters
+  - input
+difficulty: intermediate
+common: true
+dangerous: false

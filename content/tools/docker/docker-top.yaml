@@ -1,0 +1,20 @@
+id: docker-top
+tool: docker
+category: monitoring
+name: docker top
+title: View processes in a container
+slug: docker-top
+description: Displays the processes currently running inside a container.
+syntax:
+  - docker top <container>
+examples:
+  - command: docker top my-container
+    description: Shows the processes running inside the specified container.
+flags: []
+tags:
+  - processes
+  - monitoring
+  - debugging
+difficulty: beginner
+common: true
+dangerous: false

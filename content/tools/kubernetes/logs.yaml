@@ -1,0 +1,32 @@
+id: kubernetes-logs
+tool: kubernetes
+category: debugging
+name: kubectl logs
+title: View container logs
+slug: logs
+description: Print logs from a container running inside a Kubernetes pod.
+syntax:
+  - kubectl logs <pod>
+  - kubectl logs <pod> -c <container>
+  - kubectl logs -f <pod>
+examples:
+  - command: kubectl logs nginx
+    description: Display logs from the nginx pod.
+  - command: kubectl logs -f nginx
+    description: Follow logs from the nginx pod.
+  - command: kubectl logs nginx -c app
+    description: Display logs from a specific container.
+flags:
+  - flag: -f, --follow
+    meaning: Stream logs continuously.
+  - flag: -c, --container
+    meaning: Specify the container name.
+  - flag: --previous
+    meaning: Show logs from the previous container instance.
+tags:
+  - kubectl
+  - logs
+  - debugging
+difficulty: beginner
+common: true
+dangerous: false

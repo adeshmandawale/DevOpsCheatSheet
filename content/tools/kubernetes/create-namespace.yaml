@@ -1,0 +1,19 @@
+id: kubectl-create-namespace
+tool: kubernetes
+category: namespaces
+name: kubectl create namespace
+title: Create a namespace
+slug: create-namespace
+description: Creates a new Kubernetes namespace.
+syntax:
+  - kubectl create namespace <name>
+examples:
+  - command: kubectl create namespace development
+    description: Creates a namespace named development.
+flags: []
+tags:
+  - namespace
+  - resources
+difficulty: beginner
+common: true
+dangerous: false

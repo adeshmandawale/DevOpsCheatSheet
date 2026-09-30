@@ -1,0 +1,22 @@
+id: jenkins-crumb-issuer
+tool: jenkins
+category: rest-api
+name: crumb-issuer
+title: Jenkins CSRF Crumb API
+slug: crumb-issuer
+description: Retrieve a Jenkins CSRF crumb for requests that require CSRF
+  protection. API tokens are preferred where supported.
+syntax:
+  - curl <jenkins-url>/crumbIssuer/api/json
+examples:
+  - command: curl https://jenkins.example.com/crumbIssuer/api/json
+    description: Retrieve the Jenkins CSRF crumb and its field name.
+flags: []
+tags:
+  - rest-api
+  - csrf
+  - security
+  - crumb
+difficulty: intermediate
+common: false
+dangerous: false

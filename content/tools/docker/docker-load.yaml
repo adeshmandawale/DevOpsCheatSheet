@@ -1,0 +1,20 @@
+id: docker-load
+tool: docker
+category: images
+name: docker load
+title: Load images from an archive
+slug: docker-load
+description: Loads Docker images from a tar archive.
+syntax:
+  - docker load -i <file.tar>
+examples:
+  - command: docker load -i nginx.tar
+    description: Loads Docker images from the archive into the local image store.
+flags: []
+tags:
+  - image
+  - backup
+  - import
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,24 @@
+id: jenkins-retry
+tool: jenkins
+category: pipeline
+name: retry
+title: Jenkins Pipeline Retry
+slug: retry
+description: Retry Pipeline execution or a block of steps when failures occur.
+syntax:
+  - options { retry(3) }
+  - retry(3) { ... }
+examples:
+  - command: |-
+      retry(3) {
+          sh 'curl https://example.com'
+      }
+    description: Retry the block up to three times if it fails.
+flags: []
+tags:
+  - pipeline
+  - retry
+  - resilience
+difficulty: intermediate
+common: true
+dangerous: false

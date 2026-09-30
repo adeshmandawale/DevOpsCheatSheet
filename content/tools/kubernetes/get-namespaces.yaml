@@ -1,0 +1,21 @@
+id: kubernetes-namespace
+tool: kubernetes
+category: namespaces
+name: kubectl get namespaces
+title: List namespaces
+slug: get-namespaces
+description: List namespaces available in the current Kubernetes cluster.
+syntax:
+  - kubectl get namespaces
+  - kubectl get ns
+examples:
+  - command: kubectl get namespaces
+    description: List all namespaces.
+flags: []
+tags:
+  - kubectl
+  - namespace
+  - inspection
+difficulty: beginner
+common: true
+dangerous: false
