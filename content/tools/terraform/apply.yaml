@@ -1,0 +1,34 @@
+id: terraform-apply
+tool: terraform
+category: workflow
+name: terraform apply
+title: Apply Terraform Changes
+slug: apply
+description: Create or update infrastructure according to the Terraform
+  configuration and execution plan.
+syntax:
+  - terraform apply
+  - terraform apply tfplan
+  - terraform apply -auto-approve
+examples:
+  - command: terraform apply
+    description: Review the plan and apply approved infrastructure changes.
+  - command: terraform apply tfplan
+    description: Apply a previously saved execution plan.
+flags:
+  - flag: -auto-approve
+    meaning: Apply changes without interactive approval.
+  - flag: -var
+    meaning: Set a Terraform input variable.
+  - flag: -var-file
+    meaning: Load variable values from a file.
+  - flag: -replace
+    meaning: Force replacement of a specific resource.
+tags:
+  - apply
+  - workflow
+  - infrastructure
+  - deployment
+difficulty: beginner
+common: true
+dangerous: true

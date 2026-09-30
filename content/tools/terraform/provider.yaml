@@ -1,0 +1,27 @@
+id: terraform-provider
+tool: terraform
+category: providers
+name: provider
+title: Configure Terraform Provider
+slug: provider
+description: Configure a provider that Terraform uses to interact with an
+  external API or platform.
+syntax:
+  - |-
+    provider "aws" {
+      region = var.region
+    }
+examples:
+  - command: |-
+      provider "aws" {
+        region = "ap-south-1"
+      }
+    description: Configure the AWS provider for the Mumbai region.
+flags: []
+tags:
+  - provider
+  - aws
+  - configuration
+difficulty: beginner
+common: true
+dangerous: false

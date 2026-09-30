@@ -1,0 +1,29 @@
+id: terraform-for-each
+tool: terraform
+category: meta-arguments
+name: for_each
+title: Create Multiple Terraform Instances with for_each
+slug: for-each
+description: Use the for_each meta-argument to create one resource instance for
+  each item in a collection.
+syntax:
+  - |-
+    resource "aws_instance" "web" {
+      for_each = var.instances
+    }
+examples:
+  - command: |-
+      resource "aws_s3_bucket" "app" {
+        for_each = toset(var.bucket_names)
+        bucket   = each.value
+      }
+    description: Create one S3 bucket for each name in a set.
+flags: []
+tags:
+  - for-each
+  - meta-argument
+  - loop
+  - resource
+difficulty: intermediate
+common: true
+dangerous: false

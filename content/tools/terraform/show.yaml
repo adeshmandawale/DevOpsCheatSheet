@@ -1,0 +1,28 @@
+id: terraform-show
+tool: terraform
+category: inspection
+name: terraform show
+title: Show Terraform State or Plan
+slug: show
+description: Display the contents of the current state or a saved Terraform plan.
+syntax:
+  - terraform show
+  - terraform show tfplan
+  - terraform show -json tfplan
+examples:
+  - command: terraform show
+    description: Display the current Terraform state in human-readable form.
+  - command: terraform show -json tfplan
+    description: Display a saved plan as JSON.
+flags:
+  - flag: -json
+    meaning: Output machine-readable JSON.
+tags:
+  - show
+  - inspect
+  - plan
+  - state
+  - json
+difficulty: beginner
+common: true
+dangerous: false

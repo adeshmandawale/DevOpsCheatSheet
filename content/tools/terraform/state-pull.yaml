@@ -1,0 +1,22 @@
+id: terraform-state-pull
+tool: terraform
+category: state
+name: terraform state pull
+title: Download Terraform State
+slug: state-pull
+description: Download the current state from the configured backend and print it
+  to standard output.
+syntax:
+  - terraform state pull > terraform.tfstate
+examples:
+  - command: terraform state pull > terraform.tfstate
+    description: Save the current remote state locally for inspection.
+flags: []
+tags:
+  - state
+  - backend
+  - backup
+  - inspection
+difficulty: intermediate
+common: false
+dangerous: false

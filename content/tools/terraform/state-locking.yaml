@@ -1,0 +1,29 @@
+id: terraform-lock
+tool: terraform
+category: state
+name: state locking
+title: Terraform State Locking
+slug: state-locking
+description: Terraform automatically locks state for operations that could write
+  state when the configured backend supports locking.
+syntax:
+  - terraform plan -lock=false
+  - terraform apply -lock=false
+examples:
+  - command: terraform plan
+    description: Run a normal operation with state locking enabled by default when
+      supported.
+flags:
+  - flag: -lock=false
+    meaning: Disable state locking for the operation; avoid unless you understand
+      the concurrency risk.
+  - flag: -lock-timeout
+    meaning: Specify how long Terraform should wait to acquire a state lock.
+tags:
+  - state
+  - locking
+  - concurrency
+  - backend
+difficulty: intermediate
+common: true
+dangerous: true

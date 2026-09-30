@@ -1,0 +1,25 @@
+id: terraform-data
+tool: terraform
+category: data-sources
+name: data
+title: Define Terraform Data Source
+slug: data
+description: Read information from an external system or existing infrastructure
+  without managing the object itself.
+syntax:
+  - |-
+    data "aws_ami" "ubuntu" {
+      most_recent = true
+    }
+examples:
+  - command: data "aws_caller_identity" "current" {}
+    description: Read the AWS account identity of the current credentials.
+flags: []
+tags:
+  - data
+  - data-source
+  - existing
+  - read
+difficulty: beginner
+common: true
+dangerous: false

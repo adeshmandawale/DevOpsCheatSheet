@@ -1,0 +1,23 @@
+id: terraform-tfvars
+tool: terraform
+category: variables
+name: terraform.tfvars
+title: Terraform Variable Values File
+slug: tfvars
+description: Use a .tfvars file to provide values for Terraform input variables.
+syntax:
+  - environment = "staging"
+  - instance_count = 3
+examples:
+  - command: |-
+      environment = "staging"
+      instance_count = 3
+    description: Provide environment-specific variable values.
+flags: []
+tags:
+  - tfvars
+  - variables
+  - configuration
+difficulty: beginner
+common: true
+dangerous: false

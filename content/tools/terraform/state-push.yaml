@@ -1,0 +1,25 @@
+id: terraform-state-push
+tool: terraform
+category: state
+name: terraform state push
+title: Upload Terraform State
+slug: state-push
+description: Upload a local state file to the configured backend. Use only when
+  you understand the state implications.
+syntax:
+  - terraform state push terraform.tfstate
+examples:
+  - command: terraform state push terraform.tfstate
+    description: Push a local state file to the configured backend.
+flags:
+  - flag: -force
+    meaning: Override Terraform's normal lineage and serial checks; use with extreme
+      caution.
+tags:
+  - state
+  - backend
+  - recovery
+  - advanced
+difficulty: advanced
+common: false
+dangerous: true

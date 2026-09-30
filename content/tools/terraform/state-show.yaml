@@ -1,0 +1,21 @@
+id: terraform-state-show
+tool: terraform
+category: state
+name: terraform state show
+title: Inspect a Terraform State Resource
+slug: state-show
+description: Display detailed state information for a specific resource.
+syntax:
+  - terraform state show <resource_address>
+examples:
+  - command: terraform state show aws_instance.web
+    description: Display the stored state attributes of an EC2 instance.
+flags: []
+tags:
+  - state
+  - show
+  - resource
+  - debugging
+difficulty: beginner
+common: true
+dangerous: false

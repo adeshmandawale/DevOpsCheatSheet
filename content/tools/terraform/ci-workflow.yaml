@@ -1,0 +1,27 @@
+id: terraform-ci-workflow
+tool: terraform
+category: automation
+name: Terraform CI Workflow
+title: Typical Terraform CI/CD Workflow
+slug: ci-workflow
+description: A practical sequence for validating and planning Terraform changes in CI/CD.
+syntax:
+  - terraform fmt -check
+  - terraform init
+  - terraform validate
+  - terraform plan -out=tfplan
+examples:
+  - command: terraform fmt -check && terraform init && terraform validate &&
+      terraform plan -out=tfplan
+    description: Run formatting checks, initialize Terraform, validate
+      configuration, and generate a saved plan.
+flags: []
+tags:
+  - ci-cd
+  - automation
+  - workflow
+  - plan
+  - validate
+difficulty: intermediate
+common: true
+dangerous: false

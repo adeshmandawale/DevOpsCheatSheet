@@ -1,0 +1,30 @@
+id: terraform-output
+tool: terraform
+category: configuration
+name: terraform output
+title: Read Terraform Outputs
+slug: output
+description: Display output values declared by the Terraform configuration.
+syntax:
+  - terraform output
+  - terraform output public_ip
+  - terraform output -raw public_ip
+  - terraform output -json
+examples:
+  - command: terraform output public_ip
+    description: Display the value of the public_ip output.
+  - command: terraform output -raw public_ip
+    description: Return a string output without Terraform's JSON-style formatting.
+flags:
+  - flag: -raw
+    meaning: Return a single primitive value in raw form.
+  - flag: -json
+    meaning: Return outputs as JSON.
+tags:
+  - output
+  - variables
+  - values
+  - inspection
+difficulty: beginner
+common: true
+dangerous: false

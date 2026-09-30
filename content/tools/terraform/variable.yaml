@@ -1,0 +1,26 @@
+id: terraform-variable
+tool: terraform
+category: variables
+name: variable
+title: Define Terraform Input Variable
+slug: variable
+description: Declare an input variable that allows configuration values to be
+  supplied externally.
+syntax:
+  - variable "region" { type = string }
+  - variable "environment" { type = string default = "dev" }
+examples:
+  - command: |-
+      variable "environment" {
+        type    = string
+        default = "dev"
+      }
+    description: Define an environment variable with a default value.
+flags: []
+tags:
+  - variable
+  - input
+  - configuration
+difficulty: beginner
+common: true
+dangerous: false

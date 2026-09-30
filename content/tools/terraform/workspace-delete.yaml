@@ -1,0 +1,22 @@
+id: terraform-workspace-delete
+tool: terraform
+category: workspaces
+name: terraform workspace delete
+title: Delete Terraform Workspace
+slug: workspace-delete
+description: Delete an existing Terraform workspace.
+syntax:
+  - terraform workspace delete <name>
+examples:
+  - command: terraform workspace delete feature-test
+    description: Delete the feature-test workspace.
+flags:
+  - flag: -force
+    meaning: Delete a workspace even when it has managed resources.
+tags:
+  - workspace
+  - delete
+  - state
+difficulty: intermediate
+common: false
+dangerous: true

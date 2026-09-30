@@ -41,6 +41,9 @@ const toolColors: Record<
   ansible: {
     text: "text-rose-400",
   },
+   terraform: {
+    text: "text-violet-400",
+  }
 };
 
 export default async function CommandPage({

@@ -1,0 +1,23 @@
+id: terraform-var-cli
+tool: terraform
+category: variables
+name: -var
+title: Set Terraform Variable from CLI
+slug: var-cli
+description: Pass an input variable value directly to Terraform from the command line.
+syntax:
+  - terraform plan -var='environment=staging'
+examples:
+  - command: terraform plan -var='environment=staging'
+    description: Set the environment variable to staging for the plan.
+flags:
+  - flag: -var
+    meaning: Set a variable using key=value syntax.
+tags:
+  - variable
+  - cli
+  - plan
+  - apply
+difficulty: beginner
+common: true
+dangerous: false

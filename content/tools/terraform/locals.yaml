@@ -1,0 +1,28 @@
+id: terraform-local
+tool: terraform
+category: configuration
+name: locals
+title: Define Terraform Local Values
+slug: locals
+description: Define reusable local expressions within a Terraform module.
+syntax:
+  - |-
+    locals {
+      common_tags = {
+        Environment = var.environment
+      }
+    }
+examples:
+  - command: |-
+      locals {
+        name_prefix = "app-${var.environment}"
+      }
+    description: Create a reusable name prefix from an input variable.
+flags: []
+tags:
+  - locals
+  - expressions
+  - configuration
+difficulty: beginner
+common: true
+dangerous: false

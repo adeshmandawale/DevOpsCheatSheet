@@ -1,0 +1,35 @@
+id: terraform-sensitive
+tool: terraform
+category: security
+name: sensitive
+title: Mark Terraform Values Sensitive
+slug: sensitive
+description: Mark variables or outputs as sensitive so Terraform hides their
+  values in normal CLI output.
+syntax:
+  - |-
+    variable "db_password" {
+      type      = string
+      sensitive = true
+    }
+  - |-
+    output "db_password" {
+      value     = var.db_password
+      sensitive = true
+    }
+examples:
+  - command: |-
+      variable "db_password" {
+        type      = string
+        sensitive = true
+      }
+    description: Mark a database password variable as sensitive.
+flags: []
+tags:
+  - security
+  - secrets
+  - sensitive
+  - variables
+difficulty: intermediate
+common: true
+dangerous: false

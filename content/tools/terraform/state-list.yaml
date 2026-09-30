@@ -1,0 +1,22 @@
+id: terraform-state-list
+tool: terraform
+category: state
+name: terraform state list
+title: List Terraform State Resources
+slug: state-list
+description: List all resource addresses currently tracked in Terraform state.
+syntax:
+  - terraform state list
+  - terraform state list 'module.web'
+examples:
+  - command: terraform state list
+    description: List every resource tracked in the current state.
+flags: []
+tags:
+  - state
+  - list
+  - resources
+  - inspection
+difficulty: beginner
+common: true
+dangerous: false

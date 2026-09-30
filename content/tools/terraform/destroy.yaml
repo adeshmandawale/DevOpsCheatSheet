@@ -1,0 +1,28 @@
+id: terraform-destroy
+tool: terraform
+category: workflow
+name: terraform destroy
+title: Destroy Managed Infrastructure
+slug: destroy
+description: Destroy infrastructure managed by the current Terraform configuration.
+syntax:
+  - terraform destroy
+  - terraform destroy -auto-approve
+examples:
+  - command: terraform destroy
+    description: Preview and confirm destruction of managed infrastructure.
+flags:
+  - flag: -auto-approve
+    meaning: Destroy resources without interactive approval.
+  - flag: -var
+    meaning: Set a Terraform input variable.
+  - flag: -var-file
+    meaning: Load variable values from a file.
+tags:
+  - destroy
+  - delete
+  - workflow
+  - infrastructure
+difficulty: beginner
+common: true
+dangerous: true

@@ -1,0 +1,21 @@
+id: terraform-state-mv
+tool: terraform
+category: state
+name: terraform state mv
+title: Move a Terraform State Resource
+slug: state-mv
+description: Move a resource or module instance to a different address in Terraform state.
+syntax:
+  - terraform state mv <source> <destination>
+examples:
+  - command: terraform state mv aws_instance.web aws_instance.application
+    description: Rename a resource address in state without recreating the infrastructure.
+flags: []
+tags:
+  - state
+  - move
+  - refactor
+  - resource
+difficulty: advanced
+common: false
+dangerous: true

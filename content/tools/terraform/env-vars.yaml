@@ -1,0 +1,23 @@
+id: terraform-env-vars
+tool: terraform
+category: variables
+name: TF_VAR_*
+title: Set Terraform Variables with Environment Variables
+slug: env-vars
+description: Provide Terraform input variables through environment variables
+  named with the TF_VAR_ prefix.
+syntax:
+  - export TF_VAR_environment=staging
+examples:
+  - command: export TF_VAR_environment=staging
+    description: Set the Terraform environment variable without placing the value
+      directly in the command arguments.
+flags: []
+tags:
+  - variables
+  - environment
+  - ci-cd
+  - automation
+difficulty: beginner
+common: true
+dangerous: false

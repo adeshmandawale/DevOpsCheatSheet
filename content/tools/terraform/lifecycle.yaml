@@ -1,0 +1,37 @@
+id: terraform-lifecycle
+tool: terraform
+category: meta-arguments
+name: lifecycle
+title: Control Terraform Resource Lifecycle
+slug: lifecycle
+description: Customize how Terraform creates, replaces, updates, and destroys a resource.
+syntax:
+  - |-
+    lifecycle {
+      create_before_destroy = true
+    }
+  - |-
+    lifecycle {
+      prevent_destroy = true
+    }
+examples:
+  - command: |-
+      lifecycle {
+        create_before_destroy = true
+      }
+    description: Create a replacement resource before destroying the existing one.
+flags:
+  - flag: create_before_destroy
+    meaning: Create a replacement before destroying the current resource.
+  - flag: prevent_destroy
+    meaning: Prevent Terraform from destroying the resource.
+  - flag: ignore_changes
+    meaning: Ignore selected attribute changes when planning.
+tags:
+  - lifecycle
+  - resource
+  - replacement
+  - safety
+difficulty: intermediate
+common: true
+dangerous: false

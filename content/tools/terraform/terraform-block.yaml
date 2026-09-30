@@ -1,0 +1,28 @@
+id: terraform-terraform-block
+tool: terraform
+category: configuration
+name: terraform
+title: Terraform Configuration Block
+slug: terraform-block
+description: Configure Terraform settings such as required providers, Terraform
+  version constraints, and backend configuration.
+syntax:
+  - |-
+    terraform {
+      required_version = ">= 1.6.0"
+    }
+examples:
+  - command: |-
+      terraform {
+        required_version = ">= 1.6.0"
+      }
+    description: Require a minimum Terraform CLI version.
+flags: []
+tags:
+  - terraform
+  - configuration
+  - version
+  - provider
+difficulty: beginner
+common: true
+dangerous: false

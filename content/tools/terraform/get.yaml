@@ -1,0 +1,23 @@
+id: terraform-get
+tool: terraform
+category: modules
+name: terraform get
+title: Download Terraform Modules
+slug: get
+description: Download and update modules referenced by the current configuration.
+syntax:
+  - terraform get
+  - terraform get -update
+examples:
+  - command: terraform get
+    description: Download modules referenced by the configuration.
+flags:
+  - flag: -update
+    meaning: Check for and download newer module versions where applicable.
+tags:
+  - get
+  - modules
+  - download
+difficulty: beginner
+common: false
+dangerous: false

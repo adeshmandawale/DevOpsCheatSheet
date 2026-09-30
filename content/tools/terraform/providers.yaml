@@ -1,0 +1,21 @@
+id: terraform-providers
+tool: terraform
+category: providers
+name: terraform providers
+title: List Terraform Providers
+slug: providers
+description: Display the providers required by the configuration and their
+  module relationships.
+syntax:
+  - terraform providers
+examples:
+  - command: terraform providers
+    description: Show required providers for the current configuration.
+flags: []
+tags:
+  - providers
+  - dependencies
+  - inspection
+difficulty: beginner
+common: true
+dangerous: false

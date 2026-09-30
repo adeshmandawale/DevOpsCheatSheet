@@ -1,0 +1,21 @@
+id: terraform-import
+tool: terraform
+category: state
+name: terraform import
+title: Import Existing Infrastructure
+slug: import
+description: Import an existing infrastructure object into Terraform state.
+syntax:
+  - terraform import <resource_address> <resource_id>
+examples:
+  - command: terraform import aws_instance.web i-0123456789abcdef0
+    description: Import an existing AWS instance into the aws_instance.web resource.
+flags: []
+tags:
+  - import
+  - state
+  - existing
+  - resource
+difficulty: intermediate
+common: true
+dangerous: true

@@ -1,0 +1,20 @@
+id: terraform-workspace-new
+tool: terraform
+category: workspaces
+name: terraform workspace new
+title: Create Terraform Workspace
+slug: workspace-new
+description: Create a new Terraform workspace and switch to it.
+syntax:
+  - terraform workspace new <name>
+examples:
+  - command: terraform workspace new staging
+    description: Create and select a staging workspace.
+flags: []
+tags:
+  - workspace
+  - environment
+  - state
+difficulty: beginner
+common: true
+dangerous: false

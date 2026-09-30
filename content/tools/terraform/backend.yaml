@@ -1,0 +1,33 @@
+id: terraform-backend
+tool: terraform
+category: state
+name: backend
+title: Configure Terraform Backend
+slug: backend
+description: Configure where Terraform stores state and how state locking is handled.
+syntax:
+  - |-
+    terraform {
+      backend "s3" {
+        bucket = "my-terraform-state"
+        key    = "prod/terraform.tfstate"
+        region = "ap-south-1"
+      }
+    }
+examples:
+  - command: |-
+      backend "s3" {
+        bucket = "my-terraform-state"
+        key    = "prod/terraform.tfstate"
+        region = "ap-south-1"
+      }
+    description: Configure an S3 backend for remote Terraform state.
+flags: []
+tags:
+  - backend
+  - state
+  - remote-state
+  - s3
+difficulty: intermediate
+common: true
+dangerous: false

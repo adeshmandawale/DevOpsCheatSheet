@@ -1,0 +1,25 @@
+id: terraform-force-unlock
+tool: terraform
+category: state
+name: terraform force-unlock
+title: Force Unlock Terraform State
+slug: force-unlock
+description: Remove a state lock when Terraform has stopped unexpectedly and the
+  lock is known to be stale.
+syntax:
+  - terraform force-unlock <lock-id>
+examples:
+  - command: terraform force-unlock 123456789
+    description: Remove a stale state lock after confirming no other Terraform
+      operation is running.
+flags:
+  - flag: -force
+    meaning: Skip interactive confirmation.
+tags:
+  - state
+  - lock
+  - unlock
+  - recovery
+difficulty: advanced
+common: false
+dangerous: true

@@ -1,0 +1,25 @@
+id: terraform-module-source
+tool: terraform
+category: modules
+name: module source
+title: Specify Terraform Module Source
+slug: module-source
+description: Specify where Terraform should obtain a module's source code.
+syntax:
+  - source = "./modules/network"
+  - source = "git::https://github.com/example/network.git"
+examples:
+  - command: |-
+      module "network" {
+        source = "git::https://github.com/example/network.git"
+      }
+    description: Load a module from a Git repository.
+flags: []
+tags:
+  - module
+  - source
+  - git
+  - registry
+difficulty: intermediate
+common: true
+dangerous: false

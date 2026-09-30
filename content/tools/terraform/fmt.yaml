@@ -1,0 +1,29 @@
+id: terraform-fmt
+tool: terraform
+category: workflow
+name: terraform fmt
+title: Format Terraform Configuration
+slug: fmt
+description: Format Terraform configuration files using Terraform's canonical style.
+syntax:
+  - terraform fmt
+  - terraform fmt -recursive
+  - terraform fmt -check
+examples:
+  - command: terraform fmt -recursive
+    description: Format Terraform files in the current directory and all child directories.
+flags:
+  - flag: -recursive
+    meaning: Format files recursively in subdirectories.
+  - flag: -check
+    meaning: Check formatting without changing files.
+  - flag: -diff
+    meaning: Display formatting differences.
+tags:
+  - fmt
+  - format
+  - style
+  - workflow
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,25 @@
+id: terraform-terraform-lock
+tool: terraform
+category: providers
+name: .terraform.lock.hcl
+title: Terraform Dependency Lock File
+slug: lock-file
+description: Track selected provider versions and checksums to make provider
+  installation reproducible.
+syntax:
+  - terraform init
+examples:
+  - command: terraform init
+    description: Generate or update .terraform.lock.hcl based on provider selections.
+flags:
+  - flag: -upgrade
+    meaning: Allow Terraform to select newer provider versions within configured
+      constraints.
+tags:
+  - lock-file
+  - provider
+  - dependencies
+  - reproducibility
+difficulty: intermediate
+common: true
+dangerous: false

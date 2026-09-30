@@ -1,0 +1,20 @@
+id: terraform-workspace-show
+tool: terraform
+category: workspaces
+name: terraform workspace show
+title: Show Current Workspace
+slug: workspace-show
+description: Display the name of the currently selected Terraform workspace.
+syntax:
+  - terraform workspace show
+examples:
+  - command: terraform workspace show
+    description: Display the active workspace.
+flags: []
+tags:
+  - workspace
+  - environment
+  - inspection
+difficulty: beginner
+common: true
+dangerous: false

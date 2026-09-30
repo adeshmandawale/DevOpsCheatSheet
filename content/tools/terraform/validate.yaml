@@ -1,0 +1,24 @@
+id: terraform-validate
+tool: terraform
+category: workflow
+name: terraform validate
+title: Validate Terraform Configuration
+slug: validate
+description: Validate the syntax and internal consistency of Terraform configuration.
+syntax:
+  - terraform validate
+  - terraform validate -json
+examples:
+  - command: terraform validate
+    description: Check whether the Terraform configuration is valid.
+flags:
+  - flag: -json
+    meaning: Return validation results in machine-readable JSON.
+tags:
+  - validate
+  - syntax
+  - configuration
+  - workflow
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,26 @@
+id: terraform-refresh-only
+tool: terraform
+category: state
+name: terraform apply -refresh-only
+title: Refresh Terraform State
+slug: refresh-only
+description: Update Terraform state to reflect remote infrastructure without
+  making configuration-driven changes.
+syntax:
+  - terraform plan -refresh-only
+  - terraform apply -refresh-only
+examples:
+  - command: terraform plan -refresh-only
+    description: Preview changes Terraform would make to state based on remote
+      infrastructure.
+flags:
+  - flag: -refresh-only
+    meaning: Only refresh state and do not propose normal configuration changes.
+tags:
+  - refresh
+  - state
+  - drift
+  - inspection
+difficulty: intermediate
+common: true
+dangerous: false

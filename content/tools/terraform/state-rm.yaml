@@ -1,0 +1,22 @@
+id: terraform-state-rm
+tool: terraform
+category: state
+name: terraform state rm
+title: Remove Resource from Terraform State
+slug: state-rm
+description: Remove a resource from Terraform state without destroying the real
+  infrastructure.
+syntax:
+  - terraform state rm <resource_address>
+examples:
+  - command: terraform state rm aws_instance.legacy
+    description: Stop Terraform from managing the resource while leaving it running.
+flags: []
+tags:
+  - state
+  - remove
+  - unmanage
+  - resource
+difficulty: advanced
+common: false
+dangerous: true

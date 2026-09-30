@@ -1,0 +1,32 @@
+id: terraform-init
+tool: terraform
+category: workflow
+name: terraform init
+title: Initialize Terraform
+slug: init
+description: Initialize a Terraform working directory, download providers and
+  modules, and configure the backend.
+syntax:
+  - terraform init
+  - terraform init -upgrade
+examples:
+  - command: terraform init
+    description: Initialize the current Terraform configuration.
+  - command: terraform init -upgrade
+    description: Initialize and upgrade providers and modules to allowed newer versions.
+flags:
+  - flag: -upgrade
+    meaning: Upgrade providers and modules to newer allowed versions.
+  - flag: -reconfigure
+    meaning: Reconfigure the backend without migrating existing state.
+  - flag: -migrate-state
+    meaning: Attempt to migrate existing state to a newly configured backend.
+tags:
+  - init
+  - workflow
+  - provider
+  - backend
+  - modules
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,23 @@
+id: terraform-var-file
+tool: terraform
+category: variables
+name: -var-file
+title: Load Terraform Variable File
+slug: var-file
+description: Load input variable values from a .tfvars or .tfvars.json file.
+syntax:
+  - terraform plan -var-file=staging.tfvars
+examples:
+  - command: terraform plan -var-file=staging.tfvars
+    description: Run a plan using values from staging.tfvars.
+flags:
+  - flag: -var-file
+    meaning: Specify a file containing variable values.
+tags:
+  - variables
+  - tfvars
+  - configuration
+  - environment
+difficulty: beginner
+common: true
+dangerous: false

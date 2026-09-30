@@ -1,0 +1,20 @@
+id: terraform-version
+tool: terraform
+category: core-cli
+name: terraform version
+title: Show Terraform Version
+slug: version
+description: Display the installed Terraform version and provider/plugin information.
+syntax:
+  - terraform version
+examples:
+  - command: terraform version
+    description: Display the installed Terraform version.
+flags: []
+tags:
+  - version
+  - diagnostics
+  - cli
+difficulty: beginner
+common: true
+dangerous: false

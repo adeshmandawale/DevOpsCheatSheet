@@ -1,0 +1,24 @@
+id: terraform-json-plan
+tool: terraform
+category: automation
+name: terraform show -json
+title: Export Terraform Plan as JSON
+slug: json-plan
+description: Convert a saved Terraform plan into JSON for CI/CD tooling, policy
+  checks, or automation.
+syntax:
+  - terraform show -json tfplan > tfplan.json
+examples:
+  - command: terraform show -json tfplan > tfplan.json
+    description: Export a saved plan as JSON for automated processing.
+flags:
+  - flag: -json
+    meaning: Output the plan or state in JSON format.
+tags:
+  - json
+  - plan
+  - automation
+  - ci-cd
+difficulty: intermediate
+common: true
+dangerous: false

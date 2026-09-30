@@ -1,0 +1,22 @@
+id: terraform-graph
+tool: terraform
+category: inspection
+name: terraform graph
+title: Generate Terraform Dependency Graph
+slug: graph
+description: Generate a Graphviz representation of Terraform's resource dependency graph.
+syntax:
+  - terraform graph
+  - terraform graph | dot -Tpng > graph.png
+examples:
+  - command: terraform graph | dot -Tpng > graph.png
+    description: Generate a PNG visualization of Terraform dependencies using Graphviz.
+flags: []
+tags:
+  - graph
+  - dependencies
+  - graphviz
+  - inspection
+difficulty: intermediate
+common: false
+dangerous: false

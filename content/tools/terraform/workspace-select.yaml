@@ -1,0 +1,20 @@
+id: terraform-workspace-select
+tool: terraform
+category: workspaces
+name: terraform workspace select
+title: Select Terraform Workspace
+slug: workspace-select
+description: Switch the current Terraform working directory to another workspace.
+syntax:
+  - terraform workspace select <name>
+examples:
+  - command: terraform workspace select production
+    description: Switch to the production workspace.
+flags: []
+tags:
+  - workspace
+  - environment
+  - state
+difficulty: beginner
+common: true
+dangerous: false

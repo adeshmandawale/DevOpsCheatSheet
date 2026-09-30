@@ -1,0 +1,24 @@
+id: terraform-target
+tool: terraform
+category: workflow
+name: -target
+title: Target Terraform Resource
+slug: target
+description: Limit a Terraform plan or apply operation to a specific resource or
+  module address. Intended mainly for exceptional situations.
+syntax:
+  - terraform plan -target=aws_instance.web
+examples:
+  - command: terraform plan -target=aws_instance.web
+    description: Limit planning to the specified resource.
+flags:
+  - flag: -target
+    meaning: Specify a resource or module address to target.
+tags:
+  - target
+  - plan
+  - apply
+  - troubleshooting
+difficulty: advanced
+common: false
+dangerous: true

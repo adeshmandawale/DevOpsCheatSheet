@@ -1,0 +1,22 @@
+id: terraform-console
+tool: terraform
+category: inspection
+name: terraform console
+title: Terraform Expression Console
+slug: console
+description: Open an interactive console for evaluating Terraform expressions
+  using the current configuration and state.
+syntax:
+  - terraform console
+examples:
+  - command: terraform console
+    description: Open the Terraform expression console.
+flags: []
+tags:
+  - console
+  - expressions
+  - debugging
+  - inspection
+difficulty: intermediate
+common: false
+dangerous: false

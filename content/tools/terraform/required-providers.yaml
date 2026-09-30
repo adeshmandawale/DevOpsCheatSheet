@@ -1,0 +1,35 @@
+id: terraform-required-providers
+tool: terraform
+category: providers
+name: required_providers
+title: Declare Terraform Provider Requirements
+slug: required-providers
+description: Declare provider sources and acceptable provider version constraints.
+syntax:
+  - |-
+    terraform {
+      required_providers {
+        aws = {
+          source  = "hashicorp/aws"
+          version = "~> 6.0"
+        }
+      }
+    }
+examples:
+  - command: |-
+      required_providers {
+        aws = {
+          source  = "hashicorp/aws"
+          version = "~> 6.0"
+        }
+      }
+    description: Declare the HashiCorp AWS provider and a compatible version range.
+flags: []
+tags:
+  - provider
+  - version
+  - dependency
+  - configuration
+difficulty: intermediate
+common: true
+dangerous: false

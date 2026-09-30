@@ -1,0 +1,23 @@
+id: terraform-init-backend-migration
+tool: terraform
+category: state
+name: terraform init -migrate-state
+title: Migrate Terraform State
+slug: init-migrate-state
+description: Migrate existing Terraform state when changing backend configuration.
+syntax:
+  - terraform init -migrate-state
+examples:
+  - command: terraform init -migrate-state
+    description: Attempt to migrate state to the newly configured backend.
+flags:
+  - flag: -migrate-state
+    meaning: Migrate existing state to the new backend configuration.
+tags:
+  - backend
+  - state
+  - migration
+  - init
+difficulty: advanced
+common: false
+dangerous: true

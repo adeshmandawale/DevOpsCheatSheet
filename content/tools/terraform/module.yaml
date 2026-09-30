@@ -1,0 +1,31 @@
+id: terraform-module
+tool: terraform
+category: modules
+name: module
+title: Use a Terraform Module
+slug: module
+description: Declare a reusable Terraform module from a local path, registry, or
+  remote source.
+syntax:
+  - |-
+    module "network" {
+      source = "./modules/network"
+    }
+  - |-
+    module "vpc" {
+      source = "terraform-aws-modules/vpc/aws"
+    }
+examples:
+  - command: |-
+      module "network" {
+        source = "./modules/network"
+      }
+    description: Load a reusable local network module.
+flags: []
+tags:
+  - module
+  - reuse
+  - configuration
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,24 @@
+id: terraform-replace
+tool: terraform
+category: workflow
+name: -replace
+title: Force Terraform Resource Replacement
+slug: replace
+description: Tell Terraform to replace a specific resource during the next plan or apply.
+syntax:
+  - terraform plan -replace=aws_instance.web
+  - terraform apply -replace=aws_instance.web
+examples:
+  - command: terraform plan -replace=aws_instance.web
+    description: Preview replacement of the specified instance.
+flags:
+  - flag: -replace
+    meaning: Force replacement of a resource instance during the operation.
+tags:
+  - replace
+  - resource
+  - plan
+  - apply
+difficulty: intermediate
+common: true
+dangerous: true

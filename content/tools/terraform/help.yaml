@@ -1,0 +1,23 @@
+id: terraform-help
+tool: terraform
+category: core-cli
+name: terraform help
+title: Terraform CLI Help
+slug: help
+description: Display Terraform CLI help and usage information.
+syntax:
+  - terraform -help
+  - terraform <command> -help
+examples:
+  - command: terraform plan -help
+    description: Display help for the terraform plan command.
+flags:
+  - flag: -help
+    meaning: Display command usage information.
+tags:
+  - help
+  - reference
+  - cli
+difficulty: beginner
+common: true
+dangerous: false

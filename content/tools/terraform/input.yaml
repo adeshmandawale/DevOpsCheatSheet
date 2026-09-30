@@ -1,0 +1,23 @@
+id: terraform-input
+tool: terraform
+category: workflow
+name: -input
+title: Control Terraform Interactive Input
+slug: input
+description: Control whether Terraform asks for interactive input during operations.
+syntax:
+  - terraform plan -input=false
+examples:
+  - command: terraform plan -input=false
+    description: Run a plan without prompting for missing variable input.
+flags:
+  - flag: -input=false
+    meaning: Disable interactive prompts.
+tags:
+  - input
+  - automation
+  - ci-cd
+  - pipeline
+difficulty: beginner
+common: true
+dangerous: false

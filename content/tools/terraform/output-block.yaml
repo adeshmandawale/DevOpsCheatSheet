@@ -1,0 +1,26 @@
+id: terraform-output-block
+tool: terraform
+category: configuration
+name: output
+title: Define Terraform Output
+slug: output-block
+description: Declare a value that Terraform exposes after applying the configuration.
+syntax:
+  - |-
+    output "instance_ip" {
+      value = aws_instance.web.public_ip
+    }
+examples:
+  - command: |-
+      output "instance_ip" {
+        value = aws_instance.web.public_ip
+      }
+    description: Expose an EC2 instance public IP as a Terraform output.
+flags: []
+tags:
+  - output
+  - configuration
+  - resource
+difficulty: beginner
+common: true
+dangerous: false

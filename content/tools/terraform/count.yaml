@@ -1,0 +1,28 @@
+id: terraform-count
+tool: terraform
+category: meta-arguments
+name: count
+title: Create Multiple Terraform Instances with count
+slug: count
+description: Use the count meta-argument to create multiple instances of a
+  resource or module.
+syntax:
+  - |-
+    resource "aws_instance" "web" {
+      count = 3
+    }
+examples:
+  - command: |-
+      resource "aws_instance" "web" {
+        count = var.instance_count
+      }
+    description: Create a configurable number of instances.
+flags: []
+tags:
+  - count
+  - meta-argument
+  - loop
+  - resource
+difficulty: intermediate
+common: true
+dangerous: false

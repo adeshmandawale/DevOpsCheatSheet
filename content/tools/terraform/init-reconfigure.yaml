@@ -1,0 +1,25 @@
+id: terraform-init-reconfigure
+tool: terraform
+category: state
+name: terraform init -reconfigure
+title: Reconfigure Terraform Backend
+slug: init-reconfigure
+description: Reinitialize Terraform while ignoring the existing backend
+  configuration and without attempting state migration.
+syntax:
+  - terraform init -reconfigure
+examples:
+  - command: terraform init -reconfigure
+    description: Reconfigure the backend when the previous backend settings should
+      not be migrated.
+flags:
+  - flag: -reconfigure
+    meaning: Ignore previous backend configuration and reinitialize the backend.
+tags:
+  - backend
+  - state
+  - init
+  - reconfigure
+difficulty: intermediate
+common: false
+dangerous: true
