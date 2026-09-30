@@ -130,7 +130,7 @@ export default function KubernetesPage() {
                     <span
                       className={`rounded-full border px-2.5 py-1 text-xs font-medium capitalize ${
                         command.difficulty === "beginner"
-                          ? "border-violet-500/40 bg-violet-500/10 text-violet-400"
+                          ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-400"
                           : command.difficulty === "intermediate"
                             ? "border-amber-500/40 bg-amber-500/10 text-amber-400"
                             : "border-red-500/40 bg-red-500/10 text-red-400"

@@ -4,16 +4,10 @@ import CopyButton from "@/components/ui/CopyButton";
 import { getCommands } from "@/lib/content/commands";
 
 const categoryLabels: Record<string, string> = {
-  basics: "Basics",
-  images: "Images",
-  registry: "Registry",
-  containers: "Containers",
-  execution: "Execution",
-  inspection: "Inspection",
-  networking: "Networking",
-  volumes: "Volumes",
-  cleanup: "Cleanup",
-  compose: "Docker Compose",
+  administration: "Administration",
+  cli: "CLI",
+  pipeline: "Pipeline",
+  "rest-api": "REST API",
 };
 
 function formatCategory(category: string) {
@@ -29,8 +23,8 @@ function formatCategory(category: string) {
   );
 }
 
-export default function DockerPage() {
-  const commands = getCommands("docker");
+export default function JenkinsPage() {
+  const commands = getCommands("jenkins");
 
   const groupedCommands = commands.reduce<
     Record<string, typeof commands>
@@ -51,17 +45,18 @@ export default function DockerPage() {
   return (
     <AppShell>
       <section>
-        <p className="text-sm font-medium text-sky-400">
-          DOCKER
+        <p className="text-sm font-medium text-red-400">
+          JENKINS
         </p>
 
         <h1 className="mt-2 text-4xl font-bold tracking-tight text-white">
-          Docker Commands
+          Jenkins Commands
         </h1>
 
         <p className="mt-4 max-w-2xl text-zinc-400">
-          Practical Docker commands organized by category, with
-          syntax, examples, flags, and explanations.
+          Practical Jenkins Pipeline, CLI, REST API, and
+          administration commands with syntax, examples, flags,
+          and explanations.
         </p>
       </section>
 
@@ -75,7 +70,7 @@ export default function DockerPage() {
             <a
               key={category}
               href={`#${category}`}
-              className="rounded-full border border-zinc-700/80 bg-zinc-950/60 px-3 py-1.5 text-xs font-medium text-zinc-400 transition-all duration-200 hover:border-sky-500/50 hover:bg-sky-500/10 hover:text-sky-300"
+              className="rounded-full border border-zinc-700/80 bg-zinc-950/60 px-3 py-1.5 text-xs font-medium text-zinc-400 transition-all duration-200 hover:border-red-500/50 hover:bg-red-500/10 hover:text-red-300"
             >
               {formatCategory(category)}
             </a>
@@ -90,19 +85,17 @@ export default function DockerPage() {
             id={category}
             className="scroll-mt-24"
           >
-            <div className="mb-5 flex items-end justify-between">
-              <div>
-                <h2 className="text-xl font-semibold text-white">
-                  {formatCategory(category)}
-                </h2>
+            <div className="mb-5">
+              <h2 className="text-xl font-semibold text-white">
+                {formatCategory(category)}
+              </h2>
 
-                <p className="mt-1 text-sm text-zinc-500">
-                  {groupedCommands[category].length}{" "}
-                  {groupedCommands[category].length === 1
-                    ? "command"
-                    : "commands"}
-                </p>
-              </div>
+              <p className="mt-1 text-sm text-zinc-500">
+                {groupedCommands[category].length}{" "}
+                {groupedCommands[category].length === 1
+                  ? "command"
+                  : "commands"}
+              </p>
             </div>
 
             <div className="grid gap-4 md:grid-cols-2">
@@ -114,8 +107,8 @@ export default function DockerPage() {
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <Link
-                        href={`/command/docker/${command.slug}`}
-                        className="font-mono text-lg font-semibold text-sky-400 transition hover:text-sky-300"
+                        href={`/command/jenkins/${command.slug}`}
+                        className="font-mono text-lg font-semibold text-red-400 transition hover:text-red-300"
                       >
                         {command.name}
                       </Link>
@@ -155,9 +148,9 @@ export default function DockerPage() {
                           </p>
 
                           <p className="mt-1 text-xs leading-5 text-red-300/70">
-                            This command can modify, delete, or affect
-                            Docker resources. Make sure you understand
-                            the command before running it.
+                            This command can modify Jenkins jobs,
+                            configuration, or server state. Make sure
+                            you understand the command before running it.
                           </p>
                         </div>
                       </div>

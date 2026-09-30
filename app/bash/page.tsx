@@ -127,12 +127,12 @@ export default async function BashPage({
                 </div>
 
                 <span
-                  className={`shrink-0 rounded-full border px-2.5 py-1 text-xs font-medium capitalize ${
-                    command.difficulty === "beginner"
-                      ? "border-teal-500/40 bg-teal-500/10 text-teal-400"
-                      : command.difficulty === "intermediate"
-                        ? "border-teal-500/40 bg-teal-500/10 text-teal-400"
-                        : "border-red-500/40 bg-red-500/10 text-red-400"
+                  className={`rounded-full border px-2.5 py-1 text-xs font-medium capitalize ${
+                        command.difficulty === "beginner"
+                          ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-400"
+                          : command.difficulty === "intermediate"
+                            ? "border-amber-500/40 bg-amber-500/10 text-amber-400"
+                            : "border-red-500/40 bg-red-500/10 text-red-400"
                   }`}
                 >
                   {command.difficulty}
