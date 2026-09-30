@@ -1,0 +1,20 @@
+id: import-tasks
+tool: ansible
+category: playbooks
+name: import_tasks
+title: Import tasks statically
+slug: import-tasks
+description: Import a task file statically into a playbook.
+syntax:
+  - "- ansible.builtin.import_tasks: tasks/web.yml"
+examples:
+  - command: "- ansible.builtin.import_tasks: tasks/web.yml"
+    description: Statically import web tasks.
+flags: []
+tags:
+  - tasks
+  - import
+  - reuse
+difficulty: intermediate
+common: true
+dangerous: false

@@ -1,0 +1,27 @@
+id: group-module
+tool: ansible
+category: modules
+name: ansible.builtin.group
+title: Manage groups
+slug: group-module
+description: Create or remove groups on managed systems.
+syntax:
+  - |-
+    ansible.builtin.group:
+      name: developers
+      state: present
+examples:
+  - command: "ansible.builtin.group:\\n  name: developers\\n  state: present"
+    description: Ensure a developers group exists.
+flags:
+  - flag: name
+    meaning: Group name.
+  - flag: state
+    meaning: Desired group state.
+tags:
+  - groups
+  - linux
+  - permissions
+difficulty: beginner
+common: true
+dangerous: false

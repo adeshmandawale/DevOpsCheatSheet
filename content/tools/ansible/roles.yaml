@@ -1,0 +1,22 @@
+id: roles
+tool: ansible
+category: roles
+name: roles
+title: Organize automation with roles
+slug: roles
+description: Structure reusable Ansible automation into standardized role directories.
+syntax:
+  - |-
+    roles:
+      - role: nginx
+examples:
+  - command: "roles:\\n  - role: nginx"
+    description: Apply the nginx role to a play.
+flags: []
+tags:
+  - roles
+  - reuse
+  - architecture
+difficulty: intermediate
+common: true
+dangerous: false

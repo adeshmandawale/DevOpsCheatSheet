@@ -1,0 +1,31 @@
+id: ansible-playbook
+tool: ansible
+category: core-cli
+name: ansible-playbook
+title: Run a playbook
+slug: ansible-playbook
+description: Execute one or more Ansible playbooks against the configured inventory.
+syntax:
+  - ansible-playbook -i inventory.ini site.yml
+  - ansible-playbook -i inventory.ini site.yml --check
+examples:
+  - command: ansible-playbook -i inventory.ini site.yml
+    description: Execute a playbook against the inventory.
+  - command: ansible-playbook -i inventory.ini site.yml --check
+    description: Run the playbook in check mode without making changes.
+flags:
+  - flag: -i
+    meaning: Specify the inventory.
+  - flag: --check
+    meaning: Perform a dry run.
+  - flag: --diff
+    meaning: Show changes for supported modules.
+  - flag: --limit
+    meaning: Restrict execution to selected hosts.
+tags:
+  - playbook
+  - automation
+  - cli
+difficulty: beginner
+common: true
+dangerous: true

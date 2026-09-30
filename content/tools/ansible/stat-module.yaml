@@ -1,0 +1,27 @@
+id: stat-module
+tool: ansible
+category: modules
+name: ansible.builtin.stat
+title: Inspect file metadata
+slug: stat-module
+description: Retrieve information about files, directories, and links.
+syntax:
+  - |-
+    ansible.builtin.stat:
+      path: /etc/nginx/nginx.conf
+      register: nginx_config
+examples:
+  - command: "ansible.builtin.stat:\\n  path: /etc/nginx/nginx.conf"
+    description: Collect metadata about an Nginx configuration file.
+flags:
+  - flag: path
+    meaning: Path to inspect.
+  - flag: checksum_algorithm
+    meaning: Select the checksum algorithm.
+tags:
+  - files
+  - metadata
+  - checks
+difficulty: beginner
+common: true
+dangerous: false

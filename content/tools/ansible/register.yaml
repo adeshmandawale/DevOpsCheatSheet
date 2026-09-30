@@ -1,0 +1,23 @@
+id: register
+tool: ansible
+category: variables
+name: register
+title: Store task output
+slug: register
+description: Save the result of a task in a variable for later tasks.
+syntax:
+  - |-
+    - name: Check uptime
+      ansible.builtin.command: uptime
+      register: uptime_result
+examples:
+  - command: "register: uptime_result"
+    description: Store command output in uptime_result.
+flags: []
+tags:
+  - register
+  - variables
+  - results
+difficulty: beginner
+common: true
+dangerous: false

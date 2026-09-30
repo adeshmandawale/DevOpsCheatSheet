@@ -1,0 +1,22 @@
+id: diff-mode
+tool: ansible
+category: execution
+name: --diff
+title: Show file differences
+slug: diff-mode
+description: Display before-and-after differences for modules that support diff mode.
+syntax:
+  - ansible-playbook site.yml --diff
+examples:
+  - command: ansible-playbook site.yml --check --diff
+    description: Preview configuration changes with file diffs.
+flags:
+  - flag: --diff
+    meaning: Show differences for supported modules.
+tags:
+  - diff
+  - configuration
+  - review
+difficulty: beginner
+common: true
+dangerous: false

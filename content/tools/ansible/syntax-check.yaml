@@ -1,0 +1,22 @@
+id: syntax-check
+tool: ansible
+category: execution
+name: --syntax-check
+title: Validate playbook syntax
+slug: syntax-check
+description: Check a playbook for YAML and Ansible syntax errors without executing it.
+syntax:
+  - ansible-playbook site.yml --syntax-check
+examples:
+  - command: ansible-playbook site.yml --syntax-check
+    description: Validate the playbook before execution.
+flags:
+  - flag: --syntax-check
+    meaning: Validate playbook syntax.
+tags:
+  - validation
+  - yaml
+  - debug
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,29 @@
+id: debug
+tool: ansible
+category: modules
+name: debug
+title: Print debugging information
+slug: debug
+description: Display variables or messages while a playbook runs.
+syntax:
+  - |-
+    ansible.builtin.debug:
+      msg: "Hello {{ inventory_hostname }}"
+  - |-
+    ansible.builtin.debug:
+      var: ansible_facts
+examples:
+  - command: 'ansible.builtin.debug:\n  msg: "Hello {{ inventory_hostname }}"'
+    description: Print a message containing the current hostname.
+flags:
+  - flag: msg
+    meaning: Print a message.
+  - flag: var
+    meaning: Print the value of a variable.
+tags:
+  - debug
+  - variables
+  - troubleshooting
+difficulty: beginner
+common: true
+dangerous: false

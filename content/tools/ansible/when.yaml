@@ -1,0 +1,21 @@
+id: when
+tool: ansible
+category: conditionals
+name: when
+title: Run tasks conditionally
+slug: when
+description: Control whether a task executes based on a condition.
+syntax:
+  - "when: ansible_os_family == 'Debian'"
+  - "when: nginx_installed"
+examples:
+  - command: "when: ansible_os_family == 'Debian'"
+    description: Run a task only on Debian-family systems.
+flags: []
+tags:
+  - conditionals
+  - when
+  - logic
+difficulty: beginner
+common: true
+dangerous: false

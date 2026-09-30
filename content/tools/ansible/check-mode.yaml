@@ -1,0 +1,22 @@
+id: check-mode
+tool: ansible
+category: execution
+name: --check
+title: Run in check mode
+slug: check-mode
+description: Simulate playbook execution without applying changes for supported modules.
+syntax:
+  - ansible-playbook site.yml --check
+examples:
+  - command: ansible-playbook site.yml --check
+    description: Preview what a playbook would change.
+flags:
+  - flag: --check
+    meaning: Enable check or dry-run mode.
+tags:
+  - check
+  - dry-run
+  - safety
+difficulty: beginner
+common: true
+dangerous: false

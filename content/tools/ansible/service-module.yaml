@@ -1,0 +1,31 @@
+id: service-module
+tool: ansible
+category: modules
+name: ansible.builtin.service
+title: Manage services
+slug: service-module
+description: Start, stop, restart, enable, or disable services.
+syntax:
+  - |-
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: true
+examples:
+  - command: "ansible.builtin.service:\\n  name: nginx\\n  state:
+      started\\n  enabled: true"
+    description: Start Nginx and enable it at boot.
+flags:
+  - flag: name
+    meaning: Service name.
+  - flag: state
+    meaning: Desired service state.
+  - flag: enabled
+    meaning: Enable or disable startup at boot.
+tags:
+  - services
+  - systemd
+  - nginx
+difficulty: beginner
+common: true
+dangerous: true

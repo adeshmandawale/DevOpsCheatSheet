@@ -1,0 +1,22 @@
+id: fact-caching
+tool: ansible
+category: facts
+name: fact caching
+title: Cache gathered facts
+slug: fact-caching
+description: Persist gathered facts so they can be reused without contacting
+  every host each time.
+syntax:
+  - gathering = smart
+  - fact_caching = jsonfile
+examples:
+  - command: fact_caching = jsonfile
+    description: Configure a fact cache backend.
+flags: []
+tags:
+  - facts
+  - cache
+  - performance
+difficulty: advanced
+common: false
+dangerous: false

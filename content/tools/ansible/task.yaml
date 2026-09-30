@@ -1,0 +1,24 @@
+id: task
+tool: ansible
+category: playbooks
+name: task
+title: Define a task
+slug: task
+description: Define a single unit of work inside an Ansible play.
+syntax:
+  - |-
+    - name: Install nginx
+      ansible.builtin.package:
+        name: nginx
+        state: present
+examples:
+  - command: "- name: Install nginx"
+    description: Give a task a descriptive name and execute a module.
+flags: []
+tags:
+  - tasks
+  - modules
+  - playbook
+difficulty: beginner
+common: true
+dangerous: false

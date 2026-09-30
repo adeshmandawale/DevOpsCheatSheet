@@ -1,0 +1,27 @@
+id: playbook
+tool: ansible
+category: playbooks
+name: playbook
+title: Create a playbook
+slug: playbook
+description: Define automation using YAML plays, hosts, and tasks.
+syntax:
+  - |-
+    - name: Configure webservers
+      hosts: webservers
+      tasks:
+        - name: Install nginx
+          ansible.builtin.package:
+            name: nginx
+            state: present
+examples:
+  - command: "hosts: webservers"
+    description: Target the webservers inventory group.
+flags: []
+tags:
+  - playbook
+  - yaml
+  - automation
+difficulty: beginner
+common: true
+dangerous: false

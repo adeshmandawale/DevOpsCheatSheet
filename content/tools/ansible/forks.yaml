@@ -1,0 +1,24 @@
+id: forks
+tool: ansible
+category: execution
+name: forks
+title: Control parallel execution
+slug: forks
+description: Control how many hosts Ansible can operate on concurrently.
+syntax:
+  - ansible-playbook site.yml --forks 20
+examples:
+  - command: ansible-playbook site.yml --forks 20
+    description: Allow up to 20 parallel host operations.
+flags:
+  - flag: -f
+    meaning: Set the number of parallel processes.
+  - flag: --forks
+    meaning: Set the number of parallel processes.
+tags:
+  - parallel
+  - performance
+  - execution
+difficulty: intermediate
+common: false
+dangerous: false

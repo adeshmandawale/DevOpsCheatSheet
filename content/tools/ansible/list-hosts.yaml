@@ -1,0 +1,22 @@
+id: list-hosts
+tool: ansible
+category: execution
+name: --list-hosts
+title: List targeted hosts
+slug: list-hosts
+description: Show which hosts would be targeted without running tasks.
+syntax:
+  - ansible-playbook site.yml --list-hosts
+examples:
+  - command: ansible-playbook site.yml --list-hosts
+    description: Inspect the hosts selected by the playbook.
+flags:
+  - flag: --list-hosts
+    meaning: List targeted hosts.
+tags:
+  - hosts
+  - debug
+  - planning
+difficulty: beginner
+common: true
+dangerous: false

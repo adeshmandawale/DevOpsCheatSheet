@@ -1,0 +1,25 @@
+id: strategy
+tool: ansible
+category: execution
+name: strategy
+title: Control task execution strategy
+slug: strategy
+description: Choose how Ansible schedules tasks across hosts.
+syntax:
+  - "strategy: linear"
+  - "strategy: free"
+examples:
+  - command: "strategy: free"
+    description: Allow hosts to proceed independently when ready.
+flags:
+  - flag: linear
+    meaning: Default strategy that keeps hosts synchronized by task.
+  - flag: free
+    meaning: Allow hosts to run ahead independently.
+tags:
+  - strategy
+  - parallel
+  - execution
+difficulty: advanced
+common: false
+dangerous: false

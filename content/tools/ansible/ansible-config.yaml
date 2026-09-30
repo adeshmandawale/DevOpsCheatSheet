@@ -1,0 +1,26 @@
+id: ansible-config
+tool: ansible
+category: core-cli
+name: ansible-config
+title: Inspect Ansible configuration
+slug: ansible-config
+description: View and inspect Ansible configuration settings.
+syntax:
+  - ansible-config dump
+  - ansible-config view
+examples:
+  - command: ansible-config dump
+    description: Display the active configuration values.
+  - command: ansible-config view
+    description: Display the contents of the active configuration file.
+flags:
+  - flag: dump
+    meaning: Show configuration values.
+  - flag: view
+    meaning: Display the configuration file.
+tags:
+  - configuration
+  - ansible.cfg
+difficulty: beginner
+common: true
+dangerous: false

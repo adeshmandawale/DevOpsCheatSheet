@@ -1,0 +1,25 @@
+id: shell-module
+tool: ansible
+category: modules
+name: ansible.builtin.shell
+title: Run a shell command
+slug: shell-module
+description: Execute commands through the remote shell when shell features are required.
+syntax:
+  - 'ansible.builtin.shell: "echo $HOME"'
+  - 'ansible.builtin.shell: "cat /etc/os-release | grep PRETTY"'
+examples:
+  - command: 'ansible.builtin.shell: "echo $HOME"'
+    description: Run a shell expression on the remote host.
+flags:
+  - flag: cmd
+    meaning: Shell command to execute.
+  - flag: chdir
+    meaning: Change directory before execution.
+tags:
+  - shell
+  - command
+  - execution
+difficulty: beginner
+common: true
+dangerous: true

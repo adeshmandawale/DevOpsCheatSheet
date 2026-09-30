@@ -1,0 +1,23 @@
+id: with-items
+tool: ansible
+category: loops
+name: with_items
+title: Loop using with_items
+slug: with-items
+description: Use the legacy with_items loop syntax when maintaining older playbooks.
+syntax:
+  - |-
+    with_items:
+      - nginx
+      - git
+examples:
+  - command: with_items:\n  - nginx\n  - git
+    description: Iterate over package names.
+flags: []
+tags:
+  - loop
+  - legacy
+  - iteration
+difficulty: intermediate
+common: false
+dangerous: false

@@ -1,0 +1,30 @@
+id: lineinfile-module
+tool: ansible
+category: modules
+name: ansible.builtin.lineinfile
+title: Manage a line in a file
+slug: lineinfile-module
+description: Ensure a specific line or regular-expression match exists in a file.
+syntax:
+  - |-
+    ansible.builtin.lineinfile:
+      path: /etc/hosts
+      line: '10.0.0.10 app.example.com'
+examples:
+  - command: "ansible.builtin.lineinfile:\\n  path: /etc/hosts\\n  line: '10.0.0.10
+      app.example.com'"
+    description: Ensure a host entry exists.
+flags:
+  - flag: path
+    meaning: Target file.
+  - flag: line
+    meaning: Line to insert or replace.
+  - flag: regexp
+    meaning: Pattern used to identify an existing line.
+tags:
+  - files
+  - configuration
+  - regex
+difficulty: intermediate
+common: true
+dangerous: false

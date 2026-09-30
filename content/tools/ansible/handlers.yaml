@@ -1,0 +1,25 @@
+id: handlers
+tool: ansible
+category: playbooks
+name: handlers
+title: Run handlers on change
+slug: handlers
+description: Define tasks that run only when notified by another task.
+syntax:
+  - |-
+    handlers:
+      - name: Restart nginx
+        ansible.builtin.service:
+          name: nginx
+          state: restarted
+examples:
+  - command: "notify: Restart nginx"
+    description: Notify a handler after a configuration change.
+flags: []
+tags:
+  - handlers
+  - notify
+  - services
+difficulty: intermediate
+common: true
+dangerous: false

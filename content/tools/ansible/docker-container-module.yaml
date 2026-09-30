@@ -1,0 +1,32 @@
+id: docker-container-module
+tool: ansible
+category: containers
+name: community.docker.docker_container
+title: Manage Docker containers
+slug: docker-container-module
+description: Create, start, stop, and manage Docker containers using the
+  community Docker collection.
+syntax:
+  - |-
+    community.docker.docker_container:
+      name: nginx
+      image: nginx:latest
+      state: started
+examples:
+  - command: "community.docker.docker_container:\\n  name: nginx\\n  image:
+      nginx:latest\\n  state: started"
+    description: Ensure an Nginx container is running.
+flags:
+  - flag: name
+    meaning: Container name.
+  - flag: image
+    meaning: Container image.
+  - flag: state
+    meaning: Desired container state.
+tags:
+  - docker
+  - containers
+  - community
+difficulty: intermediate
+common: false
+dangerous: true

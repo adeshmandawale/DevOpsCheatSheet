@@ -1,0 +1,27 @@
+id: block
+tool: ansible
+category: error-handling
+name: block
+title: Group tasks for error handling
+slug: block
+description: Group related tasks and optionally define rescue and always behavior.
+syntax:
+  - |-
+    block:
+      - name: Main task
+        ansible.builtin.command: /bin/true
+    rescue:
+      - name: Recovery task
+        ansible.builtin.debug:
+          msg: Recovery
+examples:
+  - command: "block:\\n  - name: Main task"
+    description: Group tasks into an error-handling block.
+flags: []
+tags:
+  - block
+  - rescue
+  - error-handling
+difficulty: intermediate
+common: false
+dangerous: false

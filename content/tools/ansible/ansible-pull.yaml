@@ -1,0 +1,22 @@
+id: ansible-pull
+tool: ansible
+category: core-cli
+name: ansible-pull
+title: Pull and run a playbook
+slug: ansible-pull
+description: Pull a playbook from a version-controlled repository and execute it locally.
+syntax:
+  - ansible-pull -U https://github.com/example/infra.git site.yml
+examples:
+  - command: ansible-pull -U https://github.com/example/infra.git site.yml
+    description: Pull automation from Git and run the specified playbook.
+flags:
+  - flag: -U
+    meaning: Repository URL containing the playbook.
+tags:
+  - git
+  - pull
+  - automation
+difficulty: advanced
+common: false
+dangerous: true

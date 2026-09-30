@@ -1,0 +1,30 @@
+id: template-module
+tool: ansible
+category: modules
+name: ansible.builtin.template
+title: Deploy Jinja2 templates
+slug: template-module
+description: Render a Jinja2 template using variables and copy the result to a host.
+syntax:
+  - |-
+    ansible.builtin.template:
+      src: nginx.conf.j2
+      dest: /etc/nginx/nginx.conf
+examples:
+  - command: "ansible.builtin.template:\\n  src: nginx.conf.j2\\n  dest:
+      /etc/nginx/nginx.conf"
+    description: Render and deploy an Nginx configuration template.
+flags:
+  - flag: src
+    meaning: Template source file.
+  - flag: dest
+    meaning: Destination path.
+  - flag: mode
+    meaning: Set destination permissions.
+tags:
+  - template
+  - jinja2
+  - configuration
+difficulty: intermediate
+common: true
+dangerous: false

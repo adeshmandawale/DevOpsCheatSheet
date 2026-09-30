@@ -1,0 +1,27 @@
+id: ansible-galaxy
+tool: ansible
+category: collections
+name: ansible-galaxy
+title: Manage roles and collections
+slug: ansible-galaxy
+description: Install, create, list, and manage Ansible roles and collections.
+syntax:
+  - ansible-galaxy role install geerlingguy.nginx
+  - ansible-galaxy collection install community.general
+examples:
+  - command: ansible-galaxy role install geerlingguy.nginx
+    description: Install a role from Ansible Galaxy.
+  - command: ansible-galaxy collection install community.general
+    description: Install the community.general collection.
+flags:
+  - flag: role install
+    meaning: Install an Ansible role.
+  - flag: collection install
+    meaning: Install a collection.
+tags:
+  - galaxy
+  - roles
+  - collections
+difficulty: beginner
+common: true
+dangerous: false

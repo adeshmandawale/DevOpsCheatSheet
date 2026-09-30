@@ -1,0 +1,34 @@
+id: ansible-vault
+tool: ansible
+category: security
+name: ansible-vault
+title: Encrypt sensitive data
+slug: ansible-vault
+description: Encrypt, decrypt, view, and edit sensitive Ansible variables and files.
+syntax:
+  - ansible-vault create secrets.yml
+  - ansible-vault encrypt secrets.yml
+  - ansible-vault decrypt secrets.yml
+examples:
+  - command: ansible-vault create secrets.yml
+    description: Create a new encrypted variables file.
+  - command: ansible-vault encrypt secrets.yml
+    description: Encrypt an existing file.
+flags:
+  - flag: create
+    meaning: Create a new encrypted file.
+  - flag: encrypt
+    meaning: Encrypt an existing file.
+  - flag: decrypt
+    meaning: Decrypt an encrypted file.
+  - flag: view
+    meaning: View an encrypted file.
+  - flag: edit
+    meaning: Edit an encrypted file.
+tags:
+  - vault
+  - secrets
+  - security
+difficulty: intermediate
+common: true
+dangerous: true

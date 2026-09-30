@@ -1,0 +1,24 @@
+id: include-vars
+tool: ansible
+category: variables
+name: include_vars
+title: Load variables from a file
+slug: include-vars
+description: Load variables from an external YAML or JSON file during execution.
+syntax:
+  - |-
+    - ansible.builtin.include_vars:
+        file: vars/production.yml
+examples:
+  - command: "- ansible.builtin.include_vars:\\n    file: vars/production.yml"
+    description: Load environment-specific variables.
+flags:
+  - flag: file
+    meaning: Variable file to load.
+tags:
+  - variables
+  - yaml
+  - configuration
+difficulty: intermediate
+common: false
+dangerous: false

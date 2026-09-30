@@ -1,0 +1,29 @@
+id: ansible-inventory
+tool: ansible
+category: core-cli
+name: ansible-inventory
+title: Inspect Ansible inventory
+slug: ansible-inventory
+description: Display, validate, or graph the hosts defined in an Ansible inventory.
+syntax:
+  - ansible-inventory -i inventory.ini --list
+  - ansible-inventory -i inventory.ini --graph
+examples:
+  - command: ansible-inventory -i inventory.ini --list
+    description: Print the inventory as JSON.
+  - command: ansible-inventory -i inventory.ini --graph
+    description: Display the inventory host and group hierarchy.
+flags:
+  - flag: -i
+    meaning: Specify the inventory source.
+  - flag: --list
+    meaning: List inventory data.
+  - flag: --graph
+    meaning: Show inventory as a graph.
+tags:
+  - inventory
+  - hosts
+  - debug
+difficulty: beginner
+common: true
+dangerous: false

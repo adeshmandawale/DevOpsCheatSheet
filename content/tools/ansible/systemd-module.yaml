@@ -1,0 +1,30 @@
+id: systemd-module
+tool: ansible
+category: modules
+name: ansible.builtin.systemd_service
+title: Manage systemd services
+slug: systemd-module
+description: Control systemd services and reload the systemd manager.
+syntax:
+  - |-
+    ansible.builtin.systemd_service:
+      name: nginx
+      state: restarted
+      enabled: true
+examples:
+  - command: "ansible.builtin.systemd_service:\\n  name: nginx\\n  state: restarted"
+    description: Restart an Nginx systemd service.
+flags:
+  - flag: name
+    meaning: Systemd unit name.
+  - flag: state
+    meaning: Desired service state.
+  - flag: daemon_reload
+    meaning: Reload systemd manager configuration.
+tags:
+  - systemd
+  - services
+  - linux
+difficulty: intermediate
+common: true
+dangerous: true

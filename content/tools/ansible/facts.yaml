@@ -1,0 +1,27 @@
+id: facts
+tool: ansible
+category: facts
+name: gather_facts
+title: Gather system facts
+slug: facts
+description: Collect information about operating systems, hardware, networking,
+  and other host properties.
+syntax:
+  - "gather_facts: true"
+  - |-
+    - name: Show OS
+      ansible.builtin.debug:
+        var: ansible_facts.distribution
+examples:
+  - command: "gather_facts: true"
+    description: Enable automatic fact gathering for a play.
+flags:
+  - flag: gather_facts
+    meaning: Enable or disable automatic fact gathering.
+tags:
+  - facts
+  - inventory
+  - system
+difficulty: beginner
+common: true
+dangerous: false

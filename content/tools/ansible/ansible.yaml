@@ -1,0 +1,31 @@
+id: ansible
+tool: ansible
+category: core-cli
+name: ansible
+title: Run an ad-hoc command
+slug: ansible
+description: Execute a module directly against hosts without creating a playbook.
+syntax:
+  - ansible all -i inventory.ini -m ping
+  - ansible webservers -i inventory.ini -m shell -a 'uptime'
+examples:
+  - command: ansible all -i inventory.ini -m ping
+    description: Test connectivity to all inventory hosts.
+  - command: ansible webservers -i inventory.ini -m shell -a 'uptime'
+    description: Run uptime on webservers.
+flags:
+  - flag: -i
+    meaning: Specify the inventory.
+  - flag: -m
+    meaning: Select the module.
+  - flag: -a
+    meaning: Pass module arguments.
+  - flag: -b
+    meaning: Become another user, usually root.
+tags:
+  - cli
+  - ad-hoc
+  - modules
+difficulty: beginner
+common: true
+dangerous: false

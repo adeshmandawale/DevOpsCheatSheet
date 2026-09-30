@@ -1,0 +1,26 @@
+id: tags
+tool: ansible
+category: execution
+name: tags
+title: Select tasks with tags
+slug: tags
+description: Label tasks so selected portions of a playbook can be executed.
+syntax:
+  - |-
+    - name: Configure nginx
+      tags: [nginx, config]
+examples:
+  - command: ansible-playbook site.yml --tags nginx
+    description: Run only tasks tagged nginx.
+flags:
+  - flag: --tags
+    meaning: Run tasks matching specified tags.
+  - flag: --skip-tags
+    meaning: Skip tasks matching specified tags.
+tags:
+  - tags
+  - execution
+  - filtering
+difficulty: intermediate
+common: true
+dangerous: false

@@ -1,0 +1,30 @@
+id: user-module
+tool: ansible
+category: modules
+name: ansible.builtin.user
+title: Manage users
+slug: user-module
+description: Create, modify, lock, or remove users on managed systems.
+syntax:
+  - |-
+    ansible.builtin.user:
+      name: deploy
+      state: present
+      groups: sudo
+examples:
+  - command: "ansible.builtin.user:\\n  name: deploy\\n  state: present"
+    description: Ensure a deploy user exists.
+flags:
+  - flag: name
+    meaning: Username.
+  - flag: state
+    meaning: Desired user state.
+  - flag: groups
+    meaning: Groups assigned to the user.
+tags:
+  - users
+  - linux
+  - accounts
+difficulty: beginner
+common: true
+dangerous: true

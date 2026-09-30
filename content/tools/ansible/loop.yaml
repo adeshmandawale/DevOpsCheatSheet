@@ -1,0 +1,24 @@
+id: loop
+tool: ansible
+category: loops
+name: loop
+title: Repeat a task
+slug: loop
+description: Execute a task once for each item in a list.
+syntax:
+  - |-
+    loop:
+      - nginx
+      - git
+      - curl
+examples:
+  - command: loop:\n  - nginx\n  - git\n  - curl
+    description: Repeat a package installation task for three packages.
+flags: []
+tags:
+  - loop
+  - iteration
+  - tasks
+difficulty: beginner
+common: true
+dangerous: false

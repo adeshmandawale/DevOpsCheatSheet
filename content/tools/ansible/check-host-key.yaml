@@ -1,0 +1,22 @@
+id: check-host-key
+tool: ansible
+category: configuration
+name: host_key_checking
+title: Configure SSH host key checking
+slug: check-host-key
+description: Control whether Ansible verifies SSH host keys for managed hosts.
+syntax:
+  - |-
+    [defaults]
+    host_key_checking = True
+examples:
+  - command: host_key_checking = True
+    description: Keep SSH host key verification enabled.
+flags: []
+tags:
+  - ssh
+  - security
+  - configuration
+difficulty: intermediate
+common: true
+dangerous: false

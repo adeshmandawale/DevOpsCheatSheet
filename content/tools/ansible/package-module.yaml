@@ -1,0 +1,28 @@
+id: package-module
+tool: ansible
+category: modules
+name: ansible.builtin.package
+title: Manage packages
+slug: package-module
+description: Install or remove packages using the host's package manager.
+syntax:
+  - |-
+    ansible.builtin.package:
+      name: nginx
+      state: present
+examples:
+  - command: "ansible.builtin.package:\\n  name: nginx\\n  state: present"
+    description: Ensure Nginx is installed.
+flags:
+  - flag: name
+    meaning: Package name.
+  - flag: state
+    meaning: Desired package state.
+tags:
+  - packages
+  - apt
+  - yum
+  - dnf
+difficulty: beginner
+common: true
+dangerous: false

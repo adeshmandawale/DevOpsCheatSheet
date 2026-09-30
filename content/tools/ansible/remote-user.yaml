@@ -1,0 +1,23 @@
+id: remote-user
+tool: ansible
+category: configuration
+name: remote_user
+title: Set the SSH remote user
+slug: remote-user
+description: Specify the default user Ansible uses to connect to managed hosts.
+syntax:
+  - "remote_user: deploy"
+  - |-
+    [defaults]
+    remote_user = deploy
+examples:
+  - command: "remote_user: deploy"
+    description: Connect to managed hosts as deploy.
+flags: []
+tags:
+  - ssh
+  - user
+  - configuration
+difficulty: beginner
+common: true
+dangerous: false

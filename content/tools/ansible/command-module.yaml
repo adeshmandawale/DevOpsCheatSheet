@@ -1,0 +1,27 @@
+id: command-module
+tool: ansible
+category: modules
+name: ansible.builtin.command
+title: Run a command
+slug: command-module
+description: Execute a command on managed hosts without invoking a shell.
+syntax:
+  - "ansible.builtin.command: uptime"
+  - |-
+    ansible.builtin.command:
+      cmd: whoami
+examples:
+  - command: "ansible.builtin.command: uptime"
+    description: Execute uptime on the managed host.
+flags:
+  - flag: cmd
+    meaning: Command to execute.
+  - flag: chdir
+    meaning: Change directory before execution.
+tags:
+  - command
+  - shell
+  - execution
+difficulty: beginner
+common: true
+dangerous: true

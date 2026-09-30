@@ -1,0 +1,29 @@
+id: copy-module
+tool: ansible
+category: modules
+name: ansible.builtin.copy
+title: Copy files
+slug: copy-module
+description: Copy files or inline content to managed hosts.
+syntax:
+  - |-
+    ansible.builtin.copy:
+      src: app.conf
+      dest: /etc/app/app.conf
+examples:
+  - command: "ansible.builtin.copy:\\n  src: app.conf\\n  dest: /etc/app/app.conf"
+    description: Copy a configuration file to the remote host.
+flags:
+  - flag: src
+    meaning: Source file on the controller.
+  - flag: dest
+    meaning: Destination path on the managed host.
+  - flag: mode
+    meaning: Set file permissions.
+tags:
+  - files
+  - copy
+  - configuration
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,25 @@
+id: serial
+tool: ansible
+category: execution
+name: serial
+title: Control rolling execution
+slug: serial
+description: Execute a play against hosts in controlled batches.
+syntax:
+  - "serial: 2"
+  - |-
+    serial:
+      - 10%
+      - 50%
+      - 100%
+examples:
+  - command: "serial: 2"
+    description: Process two hosts at a time.
+flags: []
+tags:
+  - rolling
+  - deployment
+  - batch
+difficulty: intermediate
+common: true
+dangerous: false

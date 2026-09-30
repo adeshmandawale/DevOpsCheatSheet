@@ -1,0 +1,20 @@
+id: include-tasks
+tool: ansible
+category: playbooks
+name: include_tasks
+title: Include tasks dynamically
+slug: include-tasks
+description: Load a task file dynamically during playbook execution.
+syntax:
+  - "- ansible.builtin.include_tasks: tasks/web.yml"
+examples:
+  - command: "- ansible.builtin.include_tasks: tasks/web.yml"
+    description: Include web-related tasks from another file.
+flags: []
+tags:
+  - tasks
+  - include
+  - reuse
+difficulty: intermediate
+common: true
+dangerous: false

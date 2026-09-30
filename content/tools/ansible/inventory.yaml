@@ -1,0 +1,26 @@
+id: inventory
+tool: ansible
+category: inventory
+name: inventory
+title: Define hosts and groups
+slug: inventory
+description: Define managed hosts and organize them into inventory groups.
+syntax:
+  - |-
+    [webservers]
+    web01
+    web02
+
+    [dbservers]
+    db01
+examples:
+  - command: "[webservers]\\nweb01\\nweb02"
+    description: Create a webservers inventory group.
+flags: []
+tags:
+  - inventory
+  - hosts
+  - groups
+difficulty: beginner
+common: true
+dangerous: false

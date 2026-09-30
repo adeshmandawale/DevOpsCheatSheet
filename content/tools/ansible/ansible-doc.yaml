@@ -1,0 +1,27 @@
+id: ansible-doc
+tool: ansible
+category: core-cli
+name: ansible-doc
+title: Read module documentation
+slug: ansible-doc
+description: Display documentation for Ansible modules, plugins, and keywords.
+syntax:
+  - ansible-doc copy
+  - ansible-doc -l
+examples:
+  - command: ansible-doc copy
+    description: Read documentation for the copy module.
+  - command: ansible-doc -l
+    description: List available modules.
+flags:
+  - flag: -l
+    meaning: List available plugins or modules.
+  - flag: -s
+    meaning: Show a module's minimal example.
+tags:
+  - documentation
+  - modules
+  - help
+difficulty: beginner
+common: true
+dangerous: false

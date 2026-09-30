@@ -1,0 +1,32 @@
+id: apt-module
+tool: ansible
+category: modules
+name: ansible.builtin.apt
+title: Manage Debian packages
+slug: apt-module
+description: Install, remove, update, and manage packages on Debian-family systems.
+syntax:
+  - |-
+    ansible.builtin.apt:
+      name: nginx
+      state: present
+      update_cache: true
+examples:
+  - command: "ansible.builtin.apt:\\n  name: nginx\\n  state:
+      present\\n  update_cache: true"
+    description: Install Nginx after updating package metadata.
+flags:
+  - flag: name
+    meaning: Package name.
+  - flag: state
+    meaning: Desired package state.
+  - flag: update_cache
+    meaning: Update the package cache.
+tags:
+  - apt
+  - debian
+  - ubuntu
+  - packages
+difficulty: beginner
+common: true
+dangerous: false

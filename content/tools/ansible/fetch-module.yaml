@@ -1,0 +1,29 @@
+id: fetch-module
+tool: ansible
+category: modules
+name: ansible.builtin.fetch
+title: Copy files from remote hosts
+slug: fetch-module
+description: Transfer files from managed hosts back to the Ansible controller.
+syntax:
+  - |-
+    ansible.builtin.fetch:
+      src: /var/log/app.log
+      dest: ./logs/
+examples:
+  - command: "ansible.builtin.fetch:\\n  src: /var/log/app.log\\n  dest: ./logs/"
+    description: Fetch a remote log file to the controller.
+flags:
+  - flag: src
+    meaning: Remote source file.
+  - flag: dest
+    meaning: Controller destination.
+  - flag: flat
+    meaning: Avoid creating the host directory structure.
+tags:
+  - files
+  - transfer
+  - logs
+difficulty: beginner
+common: false
+dangerous: false

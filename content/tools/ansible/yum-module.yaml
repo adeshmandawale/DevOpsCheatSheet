@@ -1,0 +1,28 @@
+id: yum-module
+tool: ansible
+category: modules
+name: ansible.builtin.yum
+title: Manage RPM packages
+slug: yum-module
+description: Manage packages on systems using the Yum package manager.
+syntax:
+  - |-
+    ansible.builtin.yum:
+      name: nginx
+      state: present
+examples:
+  - command: "ansible.builtin.yum:\\n  name: nginx\\n  state: present"
+    description: Install Nginx using Yum.
+flags:
+  - flag: name
+    meaning: Package name.
+  - flag: state
+    meaning: Desired package state.
+tags:
+  - yum
+  - redhat
+  - centos
+  - packages
+difficulty: beginner
+common: true
+dangerous: false

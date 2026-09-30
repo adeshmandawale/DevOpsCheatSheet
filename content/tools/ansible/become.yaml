@@ -1,0 +1,27 @@
+id: become
+tool: ansible
+category: execution
+name: become
+title: Run tasks with privilege escalation
+slug: become
+description: Execute tasks as another user, commonly root.
+syntax:
+  - "become: true"
+  - |-
+    become: true
+    become_user: root
+examples:
+  - command: "become: true"
+    description: Enable privilege escalation for a play or task.
+flags:
+  - flag: become
+    meaning: Enable privilege escalation.
+  - flag: become_user
+    meaning: Select the user to become.
+tags:
+  - sudo
+  - privilege
+  - root
+difficulty: beginner
+common: true
+dangerous: true

@@ -1,0 +1,30 @@
+id: file-module
+tool: ansible
+category: modules
+name: ansible.builtin.file
+title: Manage files and directories
+slug: file-module
+description: Create, remove, modify, or manage permissions on files and directories.
+syntax:
+  - |-
+    ansible.builtin.file:
+      path: /opt/app
+      state: directory
+      mode: '0755'
+examples:
+  - command: "ansible.builtin.file:\\n  path: /opt/app\\n  state: directory"
+    description: Ensure an application directory exists.
+flags:
+  - flag: path
+    meaning: Target path.
+  - flag: state
+    meaning: Desired file or directory state.
+  - flag: mode
+    meaning: Set permissions.
+tags:
+  - files
+  - directories
+  - permissions
+difficulty: beginner
+common: true
+dangerous: true

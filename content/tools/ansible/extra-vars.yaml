@@ -1,0 +1,25 @@
+id: extra-vars
+tool: ansible
+category: variables
+name: --extra-vars
+title: Pass variables at runtime
+slug: extra-vars
+description: Override or provide variables when launching an Ansible command.
+syntax:
+  - ansible-playbook site.yml -e 'env=production'
+  - ansible-playbook site.yml --extra-vars 'version=1.2.0'
+examples:
+  - command: ansible-playbook site.yml -e 'env=production'
+    description: Pass an environment variable to the playbook.
+flags:
+  - flag: -e
+    meaning: Define extra variables.
+  - flag: --extra-vars
+    meaning: Define extra variables.
+tags:
+  - variables
+  - runtime
+  - deployment
+difficulty: beginner
+common: true
+dangerous: true

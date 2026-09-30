@@ -1,0 +1,30 @@
+id: get-url-module
+tool: ansible
+category: modules
+name: ansible.builtin.get_url
+title: Download files
+slug: get-url-module
+description: Download files from HTTP, HTTPS, or FTP URLs.
+syntax:
+  - |-
+    ansible.builtin.get_url:
+      url: https://example.com/app.tar.gz
+      dest: /tmp/app.tar.gz
+examples:
+  - command: "ansible.builtin.get_url:\\n  url:
+      https://example.com/app.tar.gz\\n  dest: /tmp/app.tar.gz"
+    description: Download an application archive.
+flags:
+  - flag: url
+    meaning: Remote URL.
+  - flag: dest
+    meaning: Destination path.
+  - flag: checksum
+    meaning: Verify the downloaded file.
+tags:
+  - download
+  - http
+  - files
+difficulty: beginner
+common: true
+dangerous: false

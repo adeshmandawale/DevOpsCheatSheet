@@ -1,0 +1,23 @@
+id: collections
+tool: ansible
+category: collections
+name: collections
+title: Use Ansible collections
+slug: collections
+description: Package and consume modules, plugins, roles, and other Ansible
+  content through collections.
+syntax:
+  - |-
+    collections:
+      - community.general
+examples:
+  - command: collections:\n  - community.general
+    description: Declare a collection used by a playbook.
+flags: []
+tags:
+  - collections
+  - modules
+  - galaxy
+difficulty: intermediate
+common: true
+dangerous: false

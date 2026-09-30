@@ -1,0 +1,25 @@
+id: inventory-variables
+tool: ansible
+category: inventory
+name: host/group vars
+title: Define inventory variables
+slug: inventory-variables
+description: Assign variables to individual hosts or groups in inventory.
+syntax:
+  - |-
+    [webservers:vars]
+    http_port=8080
+  - |-
+    [webservers]
+    web01 ansible_host=10.0.0.10
+examples:
+  - command: "[webservers:vars]\\nhttp_port=8080"
+    description: Set a variable for every host in the group.
+flags: []
+tags:
+  - inventory
+  - variables
+  - groups
+difficulty: beginner
+common: true
+dangerous: false

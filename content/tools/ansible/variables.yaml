@@ -1,0 +1,23 @@
+id: variables
+tool: ansible
+category: variables
+name: vars
+title: Define variables
+slug: variables
+description: Define reusable values for Ansible tasks and templates.
+syntax:
+  - |-
+    vars:
+      app_port: 8080
+      app_name: myapp
+examples:
+  - command: "vars:\\n  app_port: 8080"
+    description: Define a variable named app_port.
+flags: []
+tags:
+  - variables
+  - yaml
+  - data
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,25 @@
+id: connection
+tool: ansible
+category: configuration
+name: connection
+title: Choose the connection type
+slug: connection
+description: Specify how Ansible connects to managed hosts.
+syntax:
+  - "connection: ssh"
+  - "connection: local"
+examples:
+  - command: "connection: local"
+    description: Execute tasks locally instead of using SSH.
+flags:
+  - flag: ssh
+    meaning: Connect using SSH.
+  - flag: local
+    meaning: Execute on the controller host.
+tags:
+  - connection
+  - ssh
+  - local
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,23 @@
+id: environment
+tool: ansible
+category: variables
+name: environment
+title: Set environment variables
+slug: environment
+description: Provide environment variables to commands and modules.
+syntax:
+  - |-
+    environment:
+      APP_ENV: production
+      APP_PORT: '8080'
+examples:
+  - command: "environment:\\n  APP_ENV: production"
+    description: Set APP_ENV for tasks in a play.
+flags: []
+tags:
+  - environment
+  - variables
+  - configuration
+difficulty: beginner
+common: true
+dangerous: false

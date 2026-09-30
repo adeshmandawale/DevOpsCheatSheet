@@ -1,0 +1,20 @@
+id: notify
+tool: ansible
+category: playbooks
+name: notify
+title: Notify a handler
+slug: notify
+description: Trigger a handler when a task reports a change.
+syntax:
+  - "notify: Restart nginx"
+examples:
+  - command: "notify: Restart nginx"
+    description: Trigger the matching Restart nginx handler.
+flags: []
+tags:
+  - notify
+  - handlers
+  - change
+difficulty: intermediate
+common: true
+dangerous: false

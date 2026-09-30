@@ -1,0 +1,23 @@
+id: limit
+tool: ansible
+category: execution
+name: --limit
+title: Restrict target hosts
+slug: limit
+description: Restrict a playbook or ad-hoc command to selected hosts or groups.
+syntax:
+  - ansible-playbook site.yml --limit web01
+  - ansible-playbook site.yml --limit webservers
+examples:
+  - command: ansible-playbook site.yml --limit web01
+    description: Run the playbook only against web01.
+flags:
+  - flag: --limit
+    meaning: Limit execution to matching hosts.
+tags:
+  - limit
+  - hosts
+  - execution
+difficulty: beginner
+common: true
+dangerous: false

@@ -1,0 +1,20 @@
+id: role-init
+tool: ansible
+category: roles
+name: ansible-galaxy init
+title: Create a role skeleton
+slug: role-init
+description: Generate the standard directory structure for an Ansible role.
+syntax:
+  - ansible-galaxy role init nginx
+examples:
+  - command: ansible-galaxy role init nginx
+    description: Create a new nginx role.
+flags: []
+tags:
+  - roles
+  - scaffold
+  - galaxy
+difficulty: beginner
+common: true
+dangerous: false
